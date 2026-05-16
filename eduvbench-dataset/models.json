@@ -1,0 +1,122 @@
+{
+  "version": "v1",
+  "description": "EduVBench v1 target video generation models for evaluation",
+  "models": [
+    {
+      "id": "veo31",
+      "name": "Veo 3.1",
+      "provider": "Google DeepMind",
+      "fal_endpoint": "fal-ai/veo3.1",
+      "audio": true,
+      "max_resolution": "4K",
+      "default_resolution": "720p",
+      "default_duration_sec": 8,
+      "cost_per_sec_usd": 0.4,
+      "cost_per_8sec_usd": 3.2,
+      "open_source": false,
+      "notes": "Chain-of-Frames (CoF) reasoning, built-in audio generation"
+    },
+    {
+      "id": "sora2",
+      "name": "Sora 2",
+      "provider": "OpenAI",
+      "fal_endpoint": "fal-ai/sora-2/text-to-video/pro",
+      "audio": false,
+      "max_resolution": "1080p",
+      "default_resolution": "720p",
+      "default_duration_sec": 8,
+      "cost_per_sec_usd": 0.35,
+      "cost_per_8sec_usd": 2.8,
+      "open_source": false,
+      "notes": "MATH 94.0%, MMMU 75.53% on VideoThinkBench"
+    },
+    {
+      "id": "kling3",
+      "name": "Kling 3.0",
+      "provider": "Kuaishou",
+      "fal_endpoint": "fal-ai/kling-video/v3/standard",
+      "audio": true,
+      "max_resolution": "1080p",
+      "default_resolution": "720p",
+      "default_duration_sec": 8,
+      "cost_per_sec_usd": 0.05,
+      "cost_per_8sec_usd": 0.4,
+      "open_source": false,
+      "notes": "Optional audio generation support"
+    },
+    {
+      "id": "wan22",
+      "name": "Wan 2.2",
+      "provider": "Alibaba",
+      "fal_endpoint": "fal-ai/wan/v2.2-5b/text-to-video",
+      "audio": false,
+      "max_resolution": "720p",
+      "default_resolution": "720p",
+      "default_duration_sec": 6.7,
+      "max_frames": 161,
+      "fps": 24,
+      "cost_per_sec_usd": 0.1,
+      "cost_per_8sec_usd": 0.8,
+      "open_source": true,
+      "license": "Apache 2.0",
+      "notes": "Open-source, MoE architecture, max 161 frames (~6.7s)"
+    },
+    {
+      "id": "wan26",
+      "name": "Wan 2.6",
+      "provider": "Alibaba",
+      "fal_endpoint": "wan/v2.6/text-to-video",
+      "audio": false,
+      "max_resolution": "1080p",
+      "default_resolution": "720p",
+      "default_duration_sec": 10,
+      "cost_per_sec_usd": 0.1,
+      "cost_per_8sec_usd": 1.0,
+      "open_source": false,
+      "notes": "Multi-shot support, LLM prompt expansion, 8s snaps to 10s"
+    }
+  ],
+  "evaluation_vlm": {
+    "judges": [
+      {
+        "id": "gemini-3-flash",
+        "name": "Gemini 3 Flash Preview",
+        "model_id": "google/gemini-3-flash-preview",
+        "provider": "OpenRouter",
+        "video_native": true,
+        "input_method": "frame_images",
+        "frames_per_video": 8,
+        "reasoning_effort": null,
+        "cost_per_m_input": 0.50,
+        "cost_per_m_output": 3.00,
+        "notes": "Near Pro-level reasoning, 4x cheaper, nothink mode"
+      },
+      {
+        "id": "gpt-4o",
+        "name": "GPT-4o",
+        "model_id": "openai/gpt-4o",
+        "provider": "OpenRouter",
+        "video_native": false,
+        "input_method": "frame_images",
+        "frames_per_video": 8,
+        "cost_per_m_input": 2.50,
+        "cost_per_m_output": 10.00,
+        "notes": "ICLR 2025 validated judge reliability, strongest rubric reasoning"
+      }
+    ],
+    "output_format": "json_schema",
+    "score_merging": {
+      "method": "mean_with_flag",
+      "flag_threshold": 2.0,
+      "description": "Average both scores if diff <= 2.0; flag for review if diff > 2.0"
+    },
+    "bias_detection": {
+      "same_vendor_pairs": {
+        "gemini-3-pro": ["veo31"],
+        "gpt-4o": ["sora2"]
+      },
+      "tests": ["wilcoxon_signed_rank", "two_way_anova"],
+      "significance_level": 0.05
+    }
+  }
+}

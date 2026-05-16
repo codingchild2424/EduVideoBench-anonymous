@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-02-18T22:16:27.500536",
+  "leaderboard": [
+    {
+      "rank": 1,
+      "model_id": "kling3",
+      "model_name": "Kling 3.0",
+      "final_score": 0.0,
+      "safety_gate_passed": false,
+      "knowledge_score": 0.442715,
+      "skills_score": 0.415515,
+      "attitude_score": 0.352127,
+      "items_flagged": 43,
+      "icc_2_1": 0.414568
+    }
+  ]
+}

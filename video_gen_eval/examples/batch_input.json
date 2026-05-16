@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Pythagorean Theorem",
+    "problem_text": "In a right triangle, if one leg is 3cm and another leg is 4cm, find the length of the hypotenuse.",
+    "subject": "math",
+    "grade_level": "middle school",
+    "duration": 30
+  },
+  {
+    "title": "Quadratic Equation",
+    "problem_text": "Solve the equation: x² - 5x + 6 = 0",
+    "subject": "math",
+    "grade_level": "high school",
+    "duration": 30
+  },
+  {
+    "title": "Simple Prompt",
+    "prompt": "Create an animated explanation of how photosynthesis works in plants, showing sunlight, water, and carbon dioxide being converted into glucose and oxygen.",
+    "duration": 20,
+    "aspect_ratio": "16:9"
+  }
+]

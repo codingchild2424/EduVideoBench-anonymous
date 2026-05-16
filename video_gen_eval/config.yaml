@@ -1,0 +1,51 @@
+# =============================================================================
+# Educational Video Generation Configuration
+# =============================================================================
+
+# Output settings
+output_dir: "./outputs"
+
+# Default model settings
+default_model: "veo31"  # sora2, veo31, kling3, wan22, wan26
+
+# Video generation defaults
+video:
+  duration: 8           # seconds
+  resolution: "1080p"   # 480p, 720p, 1080p, 4k (veo31 only)
+  aspect_ratio: "16:9"  # 16:9, 9:16, 1:1 (kling3 only supports 1:1)
+
+# Model-specific settings
+models:
+  sora2:
+    timeout: 600
+    use_pro: true       # true = Pro endpoint (1080p, $0.30-0.50/s), false = Standard (720p, $0.10/s)
+
+  veo31:
+    timeout: 600
+    generate_audio: true
+    use_fast: false      # true = fast endpoint (lower cost)
+
+  kling3:
+    timeout: 600
+    generate_audio: true
+    cfg_scale: 0.5
+    negative_prompt: "blur, distort, and low quality"
+
+  wan22:
+    timeout: 600
+    use_a14b: false     # true = A14B MoE model, false = 5B model
+
+  wan26:
+    timeout: 600
+    expand_prompt: true  # LLM prompt expansion
+
+# Educational content settings
+education:
+  default_subject: "math"
+  default_grade: "middle school"
+  explanation_style: "step-by-step explanation"
+
+# Logging
+logging:
+  level: "INFO"         # DEBUG, INFO, WARNING, ERROR
+  format: "%(asctime)s - %(levelname)s - %(message)s"

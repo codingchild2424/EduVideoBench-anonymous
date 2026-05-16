@@ -1,0 +1,3149 @@
+{
+  "version": "v1",
+  "dimension": "Skills",
+  "description": "EduVBench v1 Skills dimension: 28 S-PF + 34 S-UC + 8 S-VIU = 70 entries",
+  "total_items": 86,
+  "prompts": [
+    {
+      "id": "EVB-Sci-High-S-PF-V1-001",
+      "subject": "science",
+      "grade_level": "high",
+      "category": "S-PF",
+      "subcategory": "S-PF-V1",
+      "prompt_text": "Generate a video visualizing electron orbital arrangement inside an atom. Show the nucleus at the center with protons and neutrons, then depict s, p, and d orbitals as probability clouds at different energy levels. Electrons should appear as moving points within their respective orbital shapes, with each shell clearly labeled (1s, 2s, 2p, etc.).",
+      "ground_truth": {
+        "correct_answer": "Accurate depiction of atomic electron orbitals with correct shapes and energy level ordering",
+        "key_visual_elements": [
+          "central nucleus with protons and neutrons",
+          "s-orbital as spherical cloud",
+          "p-orbitals as dumbbell shapes along x/y/z axes",
+          "d-orbitals with clover-leaf geometry",
+          "electron probability density visualization",
+          "energy level labels"
+        ],
+        "key_steps": [
+          "Show nucleus structure",
+          "Display 1s orbital",
+          "Build up to 2s and 2p orbitals",
+          "Show electron filling order",
+          "Label each orbital and energy level"
+        ]
+      },
+      "rubric_criteria": "9-10: Orbital shapes are scientifically accurate (s=sphere, p=dumbbell, d=clover), energy levels correctly ordered, electron probability density clearly visualized. 7-8: Orbital shapes are mostly accurate with minor errors, energy levels are mostly correct, and electron probability density is generally well-represented. 5-6: Some orbital shapes are correct, but there are noticeable inaccuracies in others; energy levels may be mislabeled or unclear, and electron density visualization is inconsistent. 3-4: Atom-related imagery present but orbital shapes are incorrect or electrons shown as simple circular orbits (Bohr model) instead of quantum mechanical clouds. 1-2: Little to no accurate representation of electron orbitals; energy levels are missing or entirely incorrect, and electron visualization does not reflect quantum mechanics.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-ELow-S-PF-V2-002",
+      "subject": "math",
+      "grade_level": "elementary_low",
+      "category": "S-PF",
+      "subcategory": "S-PF-V2",
+      "prompt_text": "Generate a video visually showing fraction addition 1/2 + 1/4 using area models. Start with two identical rectangular bars. Shade 1/2 of the first bar and 1/4 of the second bar. Then show the first bar being divided into fourths to create a common denominator, revealing that 1/2 equals 2/4. Combine the shaded regions to show the result is 3/4.",
+      "ground_truth": {
+        "correct_answer": "1/2 + 1/4 = 3/4, demonstrated through area model visualization",
+        "key_visual_elements": [
+          "two identical rectangular bars",
+          "1/2 shaded region",
+          "1/4 shaded region",
+          "subdivision into fourths",
+          "combined shaded area showing 3/4",
+          "fraction labels"
+        ],
+        "key_steps": [
+          "Display two identical bars",
+          "Shade 1/2 of first bar",
+          "Shade 1/4 of second bar",
+          "Subdivide first bar into fourths",
+          "Show equivalence 1/2 = 2/4",
+          "Combine to show 2/4 + 1/4 = 3/4"
+        ]
+      },
+      "rubric_criteria": "9-10: Fraction bars are proportionally accurate, common denominator conversion is clear, final answer 3/4 is correctly shown and labeled. 7-8: Fraction bars are mostly accurate, common denominator conversion is shown but may lack clarity, final answer is correct but labeling could be improved. 5-6: Fraction bars are present but may have minor proportional inaccuracies, common denominator conversion is attempted but not fully clear, final answer is shown but lacks clear labeling. 3-4: Bars and shaded regions appear but proportions are incorrect or the common denominator step is missing. 1-2: Fraction bars are missing or highly inaccurate, common denominator conversion is not attempted, final answer is incorrect or not shown.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-EHigh-S-PF-V3-003",
+      "subject": "science",
+      "grade_level": "elementary_high",
+      "category": "S-PF",
+      "subcategory": "S-PF-V3",
+      "prompt_text": "Generate a video showing the complete metamorphosis of a butterfly: a caterpillar feeding on leaves, then forming a chrysalis (pupa), and finally emerging as an adult butterfly with fully expanded wings. Show the temporal progression with each stage clearly visible and labeled.",
+      "ground_truth": {
+        "correct_answer": "Complete butterfly metamorphosis shown in four stages: egg, larva (caterpillar), pupa (chrysalis), adult butterfly",
+        "key_visual_elements": [
+          "caterpillar on leaf",
+          "silk thread attachment",
+          "chrysalis formation",
+          "chrysalis hanging from branch",
+          "butterfly emerging",
+          "wings expanding and drying",
+          "stage labels"
+        ],
+        "key_steps": [
+          "Caterpillar feeds on leaves",
+          "Caterpillar attaches to branch",
+          "Chrysalis/pupa forms around caterpillar",
+          "Time passes showing transformation",
+          "Adult butterfly emerges from chrysalis",
+          "Wings expand and dry"
+        ]
+      },
+      "rubric_criteria": "9-10: All metamorphosis stages shown in correct biological sequence with accurate morphological details at each stage. 7-8: Most stages are shown in the correct sequence with minor inaccuracies in morphological details or labeling. 5-6: Some stages are shown, but there are noticeable inaccuracies in sequence or morphological details, and labeling may be unclear. 3-4: Butterfly and caterpillar appear but transformation sequence is incomplete or stages are out of order. 1-2: Few or no stages of metamorphosis are shown, with significant errors in sequence and lack of clear labeling.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Col-S-PF-V4-004",
+      "subject": "science",
+      "grade_level": "college",
+      "category": "S-PF",
+      "subcategory": "S-PF-V4",
+      "prompt_text": "Generate a video showing a rotating DNA double helix structure in 3D. Display the sugar-phosphate backbone as two spiraling ribbons, with complementary base pairs (adenine-thymine and guanine-cytosine) connecting the strands as horizontal rungs. The helix should rotate slowly to reveal the major and minor grooves, with color-coded nucleotide bases.",
+      "ground_truth": {
+        "correct_answer": "Accurate 3D rotating DNA double helix with correct structural features",
+        "key_visual_elements": [
+          "two antiparallel sugar-phosphate backbone strands",
+          "A-T base pairs with two hydrogen bonds",
+          "G-C base pairs with three hydrogen bonds",
+          "major groove",
+          "minor groove",
+          "right-handed helix",
+          "color-coded bases"
+        ],
+        "key_steps": [
+          "Show double helix from side view",
+          "Rotate to reveal 3D structure",
+          "Highlight base pair connections",
+          "Show major and minor groove difference",
+          "Display color-coded nucleotide labels"
+        ]
+      },
+      "rubric_criteria": "9-10: DNA helix is right-handed (B-form), base pairs are correctly matched (A-T, G-C), major and minor grooves are distinguishable, backbone is continuous. 7-8: DNA helix is right-handed with mostly correct base pairing, grooves are visible but not clearly defined, backbone is mostly continuous. 5-6: Helix is mostly correct with some errors in base pairing or groove visibility, backbone may have minor discontinuities. 3-4: Helical structure is present but base pairing is incorrect or helix chirality is wrong. 1-2: Helix is poorly constructed with significant errors in structure, base pairing, and groove identification.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Mid-S-PF-C1-005",
+      "subject": "science",
+      "grade_level": "middle",
+      "category": "S-PF",
+      "subcategory": "S-PF-C1",
+      "prompt_text": "Generate a video showing an active volcano crater with lava activity. Depict glowing red-orange magma bubbling and flowing inside the crater, volcanic gases rising as steam plumes, and solidified lava formations along the crater rim. Include a wide establishing shot transitioning to a closer view of the lava surface.",
+      "ground_truth": {
+        "correct_answer": "Realistic volcanic crater scene demonstrating magma behavior and volcanic activity",
+        "key_visual_elements": [
+          "volcanic crater from above",
+          "glowing red-orange magma",
+          "bubbling lava surface",
+          "steam and gas plumes",
+          "solidified lava on crater walls",
+          "volcanic rocks and ash"
+        ],
+        "key_steps": [
+          "Wide shot of volcanic landscape",
+          "Zoom into crater opening",
+          "Show bubbling magma in crater",
+          "Depict gas and steam emissions",
+          "Show lava flow patterns"
+        ]
+      },
+      "rubric_criteria": "9-10: Volcanic environment is realistic and geologically accurate, lava behavior is physically plausible, clear connection between visual and earth science concepts. 7-8: Volcanic scene is mostly realistic with minor inaccuracies, lava behavior is generally plausible, and the video mostly aligns with earth science concepts. 5-6: Volcanic imagery is somewhat realistic but contains noticeable inaccuracies, lava behavior is occasionally plausible, and the connection to earth science concepts is weak. 3-4: Volcano-related imagery present but environment is cartoonish or lava behavior is unrealistic. 1-2: Volcanic scene is highly unrealistic with no plausible lava behavior, lacking any educational value or connection to earth science concepts.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-High-S-PF-C2-006",
+      "subject": "math",
+      "grade_level": "high",
+      "category": "S-PF",
+      "subcategory": "S-PF-C2",
+      "prompt_text": "Generate a video showing a real-life application of the Pythagorean theorem in a construction setting. A builder uses a measuring tape to check that a wall corner forms a right angle by measuring 3 feet along one wall, 4 feet along the other, and verifying the diagonal is exactly 5 feet. Show the triangle overlay with labeled measurements a=3, b=4, c=5 and the equation 3 squared + 4 squared = 5 squared.",
+      "ground_truth": {
+        "correct_answer": "Pythagorean theorem (a^2 + b^2 = c^2) applied in construction using 3-4-5 triangle",
+        "key_visual_elements": [
+          "construction site or building corner",
+          "measuring tape",
+          "right angle at wall corner",
+          "triangle overlay with sides labeled 3, 4, 5",
+          "equation display: 9 + 16 = 25"
+        ],
+        "key_steps": [
+          "Show construction setting with wall corner",
+          "Measure 3 feet along one wall",
+          "Measure 4 feet along perpendicular wall",
+          "Measure diagonal as 5 feet",
+          "Overlay right triangle with labels",
+          "Display Pythagorean equation"
+        ]
+      },
+      "rubric_criteria": "9-10: Real-world construction context is convincing, measurements are clearly shown, Pythagorean relationship is accurately visualized with correct math. 7-8: Construction context is mostly realistic, measurements are shown but may lack clarity, Pythagorean theorem is demonstrated with minor inaccuracies. 5-6: Construction setting is somewhat relevant, measurements are partially shown, and the Pythagorean theorem is mentioned but not effectively visualized. 3-4: Construction scene present but measurements are unclear or the mathematical connection is not visually demonstrated. 1-2: Construction context is missing or irrelevant, measurements are not shown, and the Pythagorean theorem is not addressed.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-Mid-S-PF-C3-007",
+      "subject": "social",
+      "grade_level": "middle",
+      "category": "S-PF",
+      "subcategory": "S-PF-C3",
+      "prompt_text": "Generate a video depicting a historical civil service examination hall in imperial China. Show rows of small individual examination cubicles, candidates writing with brush and ink, proctors patrolling the aisles, and scrolls of Confucian texts on the desks. The scene should convey the serious, high-stakes atmosphere of the keju examination system.",
+      "ground_truth": {
+        "correct_answer": "Historically contextualized scene of the imperial Chinese civil service examination system",
+        "key_visual_elements": [
+          "examination hall with rows of cubicles",
+          "candidates in traditional clothing",
+          "brush and ink writing implements",
+          "Confucian text scrolls",
+          "patrolling proctors",
+          "traditional Chinese architecture"
+        ],
+        "key_steps": [
+          "Establish historical examination hall setting",
+          "Show individual cubicles with candidates",
+          "Depict writing with brush and ink",
+          "Show proctors monitoring",
+          "Convey the formal atmosphere"
+        ]
+      },
+      "rubric_criteria": "9-10: Historical setting is period-accurate with appropriate architecture, clothing, and examination procedures clearly depicted. 7-8: Scene mostly accurate with minor historical inaccuracies; key elements like cubicles and proctors are present but may lack some detail. 5-6: Basic historical elements are present but with noticeable inaccuracies or omissions in architecture or clothing; the atmosphere of the examination is somewhat conveyed. 3-4: Generic historical scene present but lacks specific details of the examination system. 1-2: Scene is largely inaccurate or anachronistic, missing key elements like cubicles or proctors, failing to convey the historical context.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Col-S-PF-C4-008",
+      "subject": "science",
+      "grade_level": "college",
+      "category": "S-PF",
+      "subcategory": "S-PF-C4",
+      "prompt_text": "Generate a video showing a modern surgical operating room environment. Depict a sterile operating room with surgical lights overhead, a patient on the operating table covered in sterile drapes, a surgical team wearing gowns, gloves and masks, and an anesthesia monitoring station displaying vital signs. Show the team performing a coordinated procedure.",
+      "ground_truth": {
+        "correct_answer": "Realistic workplace environment of a surgical operating room for medical education",
+        "key_visual_elements": [
+          "operating room with overhead surgical lights",
+          "sterile drapes on patient",
+          "surgical team in full PPE",
+          "surgical instruments on tray",
+          "anesthesia monitoring equipment",
+          "vital signs display"
+        ],
+        "key_steps": [
+          "Establish sterile operating room environment",
+          "Show surgical team in position",
+          "Display monitoring equipment with vital signs",
+          "Depict coordinated surgical activity",
+          "Show instrument handling procedures"
+        ]
+      },
+      "rubric_criteria": "9-10: Operating room is realistic with correct sterile procedures, appropriate equipment, and professional team dynamics clearly shown. 7-8: Operating room is mostly realistic with minor inaccuracies in sterile procedures or equipment, but team dynamics are well-depicted. 5-6: Operating room setting is somewhat realistic, but there are noticeable errors in sterile procedures or equipment, and team dynamics are only partially shown. 3-4: Medical setting present but sterile technique is incorrect or equipment is unrealistic. 1-2: Operating room is poorly depicted with significant inaccuracies in sterile procedures, equipment, and team dynamics.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-ELow-S-PF-M1-009",
+      "subject": "science",
+      "grade_level": "elementary_low",
+      "category": "S-PF",
+      "subcategory": "S-PF-M1",
+      "prompt_text": "Generate a video that opens with the curiosity-provoking question 'Why does water boil at 100 degrees Celsius?' displayed as animated text. Show a pot of water on a stove gradually heating up, with bubbles forming at the bottom and rising to the surface. Include a thermometer showing the temperature climbing from room temperature to 100 degrees Celsius, with a dramatic visual moment when boiling begins.",
+      "ground_truth": {
+        "correct_answer": "Curiosity-driven opening about water boiling point with engaging visual demonstration",
+        "key_visual_elements": [
+          "animated question text",
+          "pot of water on heat source",
+          "thermometer with rising temperature",
+          "small bubbles forming at bottom",
+          "vigorous boiling at 100C",
+          "steam rising"
+        ],
+        "key_steps": [
+          "Display curiosity question as animated text",
+          "Show pot of calm water",
+          "Heat source activates",
+          "Thermometer shows rising temperature",
+          "Small bubbles appear",
+          "Full boiling at 100C with steam"
+        ]
+      },
+      "rubric_criteria": "9-10: Opening question is visually engaging, the heating process shows clear progression, the 100C boiling point is dramatically highlighted to spark curiosity. 7-8: Opening question is present and somewhat engaging, the heating process is mostly clear, and the boiling point is highlighted but lacks dramatic emphasis. 5-6: Opening question is present but not engaging, the heating process is shown but lacks clarity, and the boiling point is mentioned without emphasis. 3-4: Water and heat are shown but there is no question framing or the curiosity element is absent. 1-2: Video lacks a clear educational focus, with no question or clear demonstration of the boiling process.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-EHigh-S-PF-M2-010",
+      "subject": "math",
+      "grade_level": "elementary_high",
+      "category": "S-PF",
+      "subcategory": "S-PF-M2",
+      "prompt_text": "Generate a video showing what coding and computational thinking can create. Begin with a child typing simple code on a computer, then show the results: an animated game character jumping across platforms, a colorful fractal pattern being generated, and a simple robot following programmed commands. End with text reading 'You can build all of this with math and code.'",
+      "ground_truth": {
+        "correct_answer": "Motivational video demonstrating the creative power of coding and mathematical thinking",
+        "key_visual_elements": [
+          "child at computer typing code",
+          "animated game character",
+          "colorful fractal pattern",
+          "robot following commands",
+          "motivational closing text"
+        ],
+        "key_steps": [
+          "Show child writing code",
+          "Transition to game character animation",
+          "Display fractal pattern generation",
+          "Show robot executing commands",
+          "Display motivational closing message"
+        ]
+      },
+      "rubric_criteria": "9-10: Clear connection between coding activity and creative outputs, motivational message is strong, age-appropriate excitement generated. 7-8: Good connection between coding and outcomes, motivational message is present but could be more engaging, excitement is somewhat evident. 5-6: Basic connection between coding and outcomes, motivational message is weak, excitement is minimal. 3-4: Computer or coding imagery present but the motivational link between effort and outcome is unclear. 1-2: Little to no connection between coding activity and outcomes, motivational message is absent, lacks excitement.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-High-S-PF-M3-011",
+      "subject": "social",
+      "grade_level": "high",
+      "category": "S-PF",
+      "subcategory": "S-PF-M3",
+      "prompt_text": "Generate a video presenting the plastic pollution crisis as a motivating problem situation. Show pristine ocean footage transitioning to scenes of plastic debris floating on the surface, marine animals entangled in plastic waste, and a beach covered with microplastic particles. Include text overlays with statistics such as '8 million tons of plastic enter the ocean every year' to provoke urgency and concern.",
+      "ground_truth": {
+        "correct_answer": "Problem-situation video about plastic pollution designed to motivate environmental awareness",
+        "key_visual_elements": [
+          "pristine ocean scene",
+          "floating plastic debris",
+          "entangled marine life",
+          "microplastic-covered beach",
+          "statistical text overlays",
+          "contrast between clean and polluted scenes"
+        ],
+        "key_steps": [
+          "Open with beautiful ocean footage",
+          "Transition to plastic debris on water",
+          "Show impact on marine animals",
+          "Display microplastics on beach",
+          "Overlay pollution statistics",
+          "Create sense of urgency"
+        ]
+      },
+      "rubric_criteria": "9-10: Strong emotional impact through visual contrast, accurate statistics, clear problem framing that motivates action. 7-8: Good use of contrasting visuals and statistics, with some emotional engagement and a mostly clear problem framing. 5-6: Adequate visuals and statistics, but limited emotional impact and somewhat unclear problem framing. 3-4: Pollution imagery present but emotional engagement is weak and no clear problem framing. 1-2: Poor or absent visuals, inaccurate or missing statistics, and no discernible problem framing or emotional engagement.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-Mid-S-PF-M4-012",
+      "subject": "arts",
+      "grade_level": "middle",
+      "category": "S-PF",
+      "subcategory": "S-PF-M4",
+      "prompt_text": "Generate a video showing young scientists conducting research in a modern laboratory to serve as an inspirational role model clip. Depict a diverse group of young researchers (varied genders and ethnicities) working together: examining samples under microscopes, recording data on tablets, discussing results around a whiteboard, and celebrating a successful experiment with excited expressions.",
+      "ground_truth": {
+        "correct_answer": "Inspirational role model video showing diverse young scientists engaged in research",
+        "key_visual_elements": [
+          "modern laboratory setting",
+          "diverse young researchers",
+          "microscopes and lab equipment",
+          "data recording on tablets",
+          "whiteboard discussion",
+          "collaborative celebration"
+        ],
+        "key_steps": [
+          "Show modern lab environment",
+          "Introduce diverse young researchers",
+          "Depict hands-on research activities",
+          "Show collaborative discussion",
+          "Celebrate successful results"
+        ]
+      },
+      "rubric_criteria": "9-10: Diverse and relatable young scientists shown actively engaged in research, inspiring and aspirational mood clearly conveyed. 7-8: Young scientists are mostly diverse and engaged, with a generally positive and motivational tone, though some elements may lack clarity. 5-6: Some diversity among young scientists is present, but engagement and inspirational aspects are inconsistent or unclear. 3-4: Laboratory scene present but researchers are not diverse or the inspirational quality is absent. 1-2: Video lacks diversity, engagement, and fails to convey an inspirational or educational message.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-High-S-PF-D1-013",
+      "subject": "science",
+      "grade_level": "high",
+      "category": "S-PF",
+      "subcategory": "S-PF-D1",
+      "prompt_text": "Generate a video demonstrating the water electrolysis experiment step-by-step. Show: (1) filling a beaker with water and adding a small amount of sodium hydroxide as electrolyte, (2) placing two electrodes connected to a DC power supply into the water, (3) turning on the power supply, (4) gas bubbles forming at both electrodes — hydrogen at the cathode and oxygen at the anode, (5) collecting the gases in inverted test tubes, with hydrogen producing twice the volume of oxygen.",
+      "ground_truth": {
+        "correct_answer": "Step-by-step demonstration of water electrolysis: 2H2O -> 2H2 + O2",
+        "key_visual_elements": [
+          "beaker with water and electrolyte",
+          "two electrodes",
+          "DC power supply",
+          "gas bubbles at electrodes",
+          "inverted collection tubes",
+          "2:1 hydrogen to oxygen volume ratio",
+          "step number labels"
+        ],
+        "key_steps": [
+          "Prepare water with electrolyte",
+          "Insert electrodes",
+          "Connect to DC power supply",
+          "Turn on power and observe bubbles",
+          "Collect gases in inverted tubes",
+          "Compare gas volumes (H2 is 2x O2)"
+        ]
+      },
+      "rubric_criteria": "9-10: All experimental steps shown in correct order, gas collection is accurate with correct 2:1 volume ratio, electrode labeling (cathode/anode) is correct. 7-8: Most steps are shown in correct order, gas collection is mostly accurate with minor errors in volume ratio, electrode labeling is mostly correct. 5-6: Some steps are shown but may be out of order, gas collection has noticeable errors in volume ratio, electrode labeling is inconsistent. 3-4: Electrolysis setup shown but steps are incomplete, gas ratio is incorrect, or electrode labels are missing. 1-2: Few or no steps are shown, significant errors in setup and gas collection, electrode labeling is absent.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-Mid-S-PF-D2-014",
+      "subject": "math",
+      "grade_level": "middle",
+      "category": "S-PF",
+      "subcategory": "S-PF-D2",
+      "prompt_text": "Generate a video demonstrating step-by-step solving of a system of linear equations: x + y = 5 and 2x - y = 1. Show: (1) writing both equations, (2) using the addition/elimination method by adding the two equations to eliminate y, (3) obtaining 3x = 6, (4) solving x = 2, (5) substituting x = 2 back into the first equation to find y = 3, (6) verifying the solution (2, 3) in both original equations.",
+      "ground_truth": {
+        "correct_answer": "x = 2, y = 3 solved by elimination method",
+        "key_visual_elements": [
+          "two equations written clearly",
+          "addition of equations shown",
+          "simplified equation 3x = 6",
+          "solution x = 2",
+          "substitution step",
+          "verification in both equations",
+          "step labels"
+        ],
+        "key_steps": [
+          "Write both equations",
+          "Add equations to eliminate y",
+          "Simplify to 3x = 6",
+          "Solve for x = 2",
+          "Substitute x = 2 into x + y = 5",
+          "Find y = 3",
+          "Verify (2, 3) satisfies both equations"
+        ]
+      },
+      "rubric_criteria": "9-10: Each algebraic step is clearly shown with correct mathematical operations, verification step included, step-by-step progression is easy to follow. 7-8: Most algebraic steps are shown correctly, with minor errors in operations or clarity; verification step is present but may lack detail. 5-6: Some algebraic steps are shown, but there are noticeable errors or omissions in operations; verification step may be incomplete or unclear. 3-4: Equations appear but solution steps contain errors or skip critical steps. 1-2: Few or no algebraic steps are shown, with significant errors or omissions; verification step is missing or incorrect.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-EHigh-S-PF-D3-015",
+      "subject": "arts",
+      "grade_level": "elementary_high",
+      "category": "S-PF",
+      "subcategory": "S-PF-D3",
+      "prompt_text": "Generate a video demonstrating a watercolor gradient technique (also called a wash). Show a hand holding a watercolor brush, wetting the paper first, then loading the brush with concentrated blue pigment and applying a stroke at the top of the paper. Demonstrate adding more water with each successive stroke moving downward, creating a smooth gradient from dark blue at the top to very light blue at the bottom.",
+      "ground_truth": {
+        "correct_answer": "Watercolor gradient wash technique from dark to light",
+        "key_visual_elements": [
+          "watercolor brush",
+          "wet paper surface",
+          "concentrated blue pigment",
+          "horizontal brush strokes",
+          "gradual color transition",
+          "dark top to light bottom gradient"
+        ],
+        "key_steps": [
+          "Wet the paper surface",
+          "Load brush with concentrated pigment",
+          "Apply first dark stroke at top",
+          "Add water to dilute",
+          "Apply successive lighter strokes moving down",
+          "Achieve smooth dark-to-light gradient"
+        ]
+      },
+      "rubric_criteria": "9-10: Technique is clearly demonstrated with correct sequence (wet paper, load brush, progressive dilution), resulting gradient is smooth and visually appealing. 7-8: Technique is mostly correct with minor errors in sequence or dilution, resulting in a mostly smooth gradient with slight unevenness. 5-6: Technique is partially demonstrated with noticeable errors in sequence or dilution, resulting in a somewhat uneven gradient. 3-4: Painting activity shown but gradient technique steps are unclear or result is uneven. 1-2: Technique is poorly demonstrated with incorrect sequence and no clear gradient, resulting in a blotchy or inconsistent appearance.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-ELow-S-PF-D4-016",
+      "subject": "science",
+      "grade_level": "elementary_low",
+      "category": "S-PF",
+      "subcategory": "S-PF-D4",
+      "prompt_text": "Generate a video demonstrating how to operate a light microscope step-by-step. Show: (1) placing the microscope on a flat surface and plugging in the light, (2) placing a prepared slide on the stage and securing it with clips, (3) starting with the lowest magnification objective lens (4x), (4) using the coarse focus knob to bring the specimen into rough focus, (5) switching to a higher magnification (10x) and using the fine focus knob, (6) observing the specimen clearly in the eyepiece.",
+      "ground_truth": {
+        "correct_answer": "Step-by-step light microscope operation procedure",
+        "key_visual_elements": [
+          "light microscope on flat surface",
+          "prepared slide on stage",
+          "stage clips",
+          "objective lens turret",
+          "coarse focus knob",
+          "fine focus knob",
+          "eyepiece view of specimen"
+        ],
+        "key_steps": [
+          "Set up microscope on flat surface",
+          "Turn on light source",
+          "Place slide on stage with clips",
+          "Start at lowest magnification (4x)",
+          "Use coarse focus knob",
+          "Switch to higher magnification (10x)",
+          "Use fine focus knob for sharp image"
+        ]
+      },
+      "rubric_criteria": "9-10: All microscope operation steps shown in correct order, microscope parts are accurately depicted, safe handling practices demonstrated. 7-8: Most steps are shown in correct order with minor omissions or inaccuracies, and safe handling is mostly demonstrated. 5-6: Some steps are shown but may be out of order or inaccurately depicted, with inconsistent demonstration of safe handling. 3-4: Microscope is shown but operational steps are incomplete or out of order. 1-2: Few or no steps are shown, with significant inaccuracies and unsafe handling practices evident.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-ELow-S-PF-V1-017",
+      "subject": "social",
+      "grade_level": "elementary_low",
+      "category": "S-PF",
+      "subcategory": "S-PF-V1",
+      "prompt_text": "Generate a video visualizing the water cycle at a microscopic level, showing individual water molecules evaporating from a lake surface, rising as vapor, clustering together to form cloud droplets through condensation, and then falling back to the ground as rain. Use a zoom-in effect to show the molecular-level activity within the larger water cycle.",
+      "ground_truth": {
+        "correct_answer": "Microscopic visualization of water molecules during the water cycle",
+        "key_visual_elements": [
+          "lake surface",
+          "individual water molecules",
+          "evaporation with rising molecules",
+          "condensation into cloud droplets",
+          "molecular clustering",
+          "rain falling back to surface"
+        ],
+        "key_steps": [
+          "Show lake surface at macro level",
+          "Zoom into molecular level",
+          "Depict water molecules evaporating",
+          "Show molecules rising as vapor",
+          "Molecules condense into droplets in clouds",
+          "Rain falls back to surface"
+        ]
+      },
+      "rubric_criteria": "9-10: Molecular-level water cycle processes are scientifically plausible, zoom transitions are smooth, connection between micro and macro scales is clear. 7-8: Water cycle processes are mostly accurate with minor scientific inaccuracies, zoom transitions are mostly smooth, and the connection between scales is mostly clear. 5-6: Water cycle processes are somewhat accurate but contain noticeable scientific inaccuracies, zoom transitions are somewhat choppy, and the connection between scales is somewhat unclear. 3-4: Water cycle imagery present but molecular-level detail is absent or scientifically inaccurate. 1-2: Water cycle imagery is minimal or missing, with no molecular-level detail and significant scientific inaccuracies.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-High-S-PF-C2-018",
+      "subject": "arts",
+      "grade_level": "high",
+      "category": "S-PF",
+      "subcategory": "S-PF-C2",
+      "prompt_text": "Generate a video showing a real-life application of the golden ratio in architecture and art. Display the Parthenon facade with a golden rectangle overlay showing how its proportions approximate 1:1.618, then transition to a nautilus shell spiral with a golden spiral overlaid, and finally show a painter composing a canvas using golden ratio guidelines to place the focal point.",
+      "ground_truth": {
+        "correct_answer": "Real-world applications of the golden ratio (1:1.618) in architecture, nature, and art composition",
+        "key_visual_elements": [
+          "Parthenon facade",
+          "golden rectangle overlay",
+          "ratio annotation 1:1.618",
+          "nautilus shell",
+          "golden spiral overlay",
+          "painter composing with golden guidelines"
+        ],
+        "key_steps": [
+          "Show Parthenon with golden rectangle overlay",
+          "Label the ratio 1:1.618",
+          "Transition to nautilus shell with spiral",
+          "Show painter using golden ratio for composition",
+          "Highlight the focal point placement"
+        ]
+      },
+      "rubric_criteria": "9-10: Golden ratio is accurately depicted with correct proportions, real-world examples are convincing, overlays align well with actual structures. 7-8: Golden ratio is mostly accurate with minor proportional errors, examples are relevant but may lack depth, overlays generally align with structures. 5-6: Golden ratio is somewhat depicted but with noticeable errors, examples are present but not well-explained, overlays partially align with structures. 3-4: Architecture or spiral imagery present but golden ratio proportions are inaccurate or connection is not demonstrated. 1-2: Golden ratio is inaccurately depicted or missing, examples are irrelevant or absent, overlays do not align with structures.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-Col-S-PF-M3-019",
+      "subject": "math",
+      "grade_level": "college",
+      "category": "S-PF",
+      "subcategory": "S-PF-M3",
+      "prompt_text": "Generate a video presenting the problem situation of exponential growth in epidemiology. Start with a single infected individual on a map, show that person infecting two others, each of those infecting two more, and so on. Display an exponential growth curve graph alongside the spreading animation, with the equation N(t) = N0 * 2^t shown. Overlay text: 'After 10 generations, 1 becomes 1024. How do we model and predict this?'",
+      "ground_truth": {
+        "correct_answer": "Problem-situation framing of exponential growth in disease spreading, motivating mathematical modeling",
+        "key_visual_elements": [
+          "map with spreading infection dots",
+          "branching tree of infections",
+          "exponential growth curve graph",
+          "equation N(t) = N0 * 2^t",
+          "text overlay with 1024 statistic"
+        ],
+        "key_steps": [
+          "Show single infected individual",
+          "Demonstrate 1->2->4->8 branching",
+          "Display exponential curve growing",
+          "Show equation N(t) = N0 * 2^t",
+          "Overlay motivating question about modeling"
+        ]
+      },
+      "rubric_criteria": "9-10: Exponential growth concept is powerfully visualized with correct mathematical representation, problem framing motivates curiosity about mathematical modeling. 7-8: Visualization of exponential growth is clear and mostly accurate, with minor errors in mathematical representation, and the problem framing somewhat encourages interest in modeling. 5-6: Basic depiction of exponential growth is present but lacks clarity or contains noticeable mathematical inaccuracies, with minimal effort to engage viewers in modeling. 3-4: Spreading imagery present but mathematical connection is weak or equation is incorrect. 1-2: Poor or absent visualization of exponential growth, with no correct mathematical representation or engagement in the problem situation.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-EHigh-S-PF-D3-020",
+      "subject": "social",
+      "grade_level": "elementary_high",
+      "category": "S-PF",
+      "subcategory": "S-PF-D3",
+      "prompt_text": "Generate a video demonstrating the technique of reading and interpreting a world map. Show: (1) identifying the compass rose with cardinal directions (N, S, E, W), (2) using the map legend to understand symbols for mountains, rivers, and cities, (3) locating the equator and the prime meridian, (4) finding a specific country by using latitude and longitude coordinates, and (5) measuring approximate distance using the map scale bar.",
+      "ground_truth": {
+        "correct_answer": "Step-by-step technique for reading and interpreting a world map",
+        "key_visual_elements": [
+          "world map",
+          "compass rose with N/S/E/W",
+          "map legend with symbols",
+          "equator and prime meridian lines",
+          "latitude and longitude grid",
+          "scale bar"
+        ],
+        "key_steps": [
+          "Identify compass rose",
+          "Read map legend symbols",
+          "Locate equator and prime meridian",
+          "Use coordinates to find a country",
+          "Use scale bar to estimate distance"
+        ]
+      },
+      "rubric_criteria": "9-10: All map-reading steps clearly demonstrated in logical order, map features are accurately depicted, coordinates and scale use are correct. 7-8: Most map-reading steps are demonstrated with minor errors in depiction or order, and coordinates and scale are mostly correct. 5-6: Some map-reading steps are shown, but there are noticeable errors in depiction or order, and coordinates and scale use have several inaccuracies. 3-4: Map is shown but reading techniques are not clearly demonstrated or steps are missing. 1-2: Map is poorly presented with little to no demonstration of reading techniques, and significant errors in map features and use of coordinates and scale.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-High-S-PF-V-021",
+      "subject": "ela",
+      "grade_level": "high",
+      "category": "S-PF",
+      "subcategory": "S-PF-V",
+      "prompt_text": "Generate a video visualizing the concept of an unreliable narrator in literature. Show a character telling their version of events on one side of the screen while the 'actual events' unfold differently on the other side, revealing discrepancies between the narrator's account and reality. Use visual cues such as color shifts (warm tones for the narrator's version, cool tones for reality) and text labels marking 'Narrator's Version' and 'What Actually Happened.'",
+      "ground_truth": {
+        "correct_answer": "Visualization of unreliable narrator concept through split-screen comparison of narrator's account vs reality",
+        "key_visual_elements": [
+          "split-screen layout",
+          "narrator character",
+          "warm-toned narrator version",
+          "cool-toned reality version",
+          "discrepancy highlights",
+          "text labels for each perspective"
+        ],
+        "key_steps": [
+          "Introduce the narrator telling their story",
+          "Show narrator's version of events",
+          "Show the actual events simultaneously",
+          "Highlight discrepancies between versions",
+          "Label each perspective clearly"
+        ]
+      },
+      "rubric_criteria": "9-10: Unreliable narrator concept is clearly visualized with distinct perspectives, discrepancies are obvious, visual cues effectively distinguish narrator's account from reality. 7-8: The video mostly visualizes the unreliable narrator concept with clear perspectives, though some discrepancies may be less obvious; visual cues are mostly effective. 5-6: The video shows two perspectives, but the unreliable narrator concept is only partially clear, with some discrepancies not well highlighted; visual cues are inconsistent. 3-4: Two perspectives shown but the concept of unreliability is unclear or discrepancies are not visually distinguished. 1-2: The video fails to convey the unreliable narrator concept, with perspectives and discrepancies poorly executed or absent.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-Mid-S-PF-C-022",
+      "subject": "ela",
+      "grade_level": "middle",
+      "category": "S-PF",
+      "subcategory": "S-PF-C",
+      "prompt_text": "Generate a video connecting the themes of dystopian literature to real-world events. Show excerpts or descriptions from George Orwell's 1984 — surveillance, propaganda, and censorship — alongside real-world examples such as security cameras in public spaces, social media misinformation, and book banning debates. Draw visual parallels between the fictional and real-world scenarios with connecting lines or arrows.",
+      "ground_truth": {
+        "correct_answer": "Contextualization of dystopian literature themes (surveillance, propaganda, censorship) with real-world parallels",
+        "key_visual_elements": [
+          "1984 references (Big Brother, telescreens)",
+          "real-world surveillance examples",
+          "propaganda vs misinformation comparison",
+          "censorship parallels",
+          "connecting visual lines/arrows"
+        ],
+        "key_steps": [
+          "Introduce dystopian themes from 1984",
+          "Show surveillance theme alongside real-world cameras",
+          "Show propaganda theme alongside misinformation",
+          "Show censorship theme alongside book banning",
+          "Draw explicit visual connections"
+        ]
+      },
+      "rubric_criteria": "9-10: Literary themes are accurately identified and meaningfully connected to real-world events, visual parallels are clear and educational, connections are insightful. 7-8: Themes are identified and connected to real-world events with mostly clear visuals, though some connections may lack depth or insight. 5-6: Themes are identified with some attempt at connection to real-world events, but visuals may be unclear or connections superficial. 3-4: Literary references and real-world images present but connections between them are weak or forced. 1-2: Themes are misidentified or missing, with little to no connection to real-world events, visuals are unclear or irrelevant.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-ELow-S-PF-M-023",
+      "subject": "ela",
+      "grade_level": "elementary_low",
+      "category": "S-PF",
+      "subcategory": "S-PF-M",
+      "prompt_text": "Generate a video designed to inspire a love of reading in young children. Show an animated child opening a book and being transported into the story world — a magical forest with talking animals, a pirate ship on the ocean, and a castle in the clouds. Each scene comes alive from the book's pages, and text labels encourage 'Reading takes you anywhere!' The child smiles with excitement as each new world appears.",
+      "ground_truth": {
+        "correct_answer": "Motivational video inspiring reading interest by showing books as portals to imaginative worlds",
+        "key_visual_elements": [
+          "animated child with book",
+          "book pages transforming into story worlds",
+          "magical forest scene",
+          "pirate ship scene",
+          "castle scene",
+          "motivational text labels",
+          "excited child expressions"
+        ],
+        "key_steps": [
+          "Show child opening a book",
+          "Transform into magical forest world",
+          "Transform into pirate adventure",
+          "Transform into castle scene",
+          "Display motivational reading message"
+        ]
+      },
+      "rubric_criteria": "9-10: Imaginative story worlds are vivid and appealing, the connection between books and adventure is clear, the video genuinely inspires enthusiasm for reading. 7-8: Story worlds are mostly vivid and appealing, with a clear connection between books and adventure, and the video encourages interest in reading. 5-6: Story worlds are somewhat engaging, but the connection between books and adventure is only partially clear, with limited inspiration for reading. 3-4: Child and book present but the transformation into story worlds is unclear or uninspiring. 1-2: Story worlds are poorly depicted or absent, with no clear connection to reading, failing to inspire any interest.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-EHigh-S-PF-D-024",
+      "subject": "ela",
+      "grade_level": "elementary_high",
+      "category": "S-PF",
+      "subcategory": "S-PF-D",
+      "prompt_text": "Generate a video demonstrating the writing revision process for upper elementary students. Show an original draft paragraph with common errors (run-on sentences, vague word choice, missing details). Then demonstrate the revision steps: (1) break the run-on sentence into two sentences, (2) replace the vague word 'nice' with a more descriptive word 'generous,' (3) add a supporting detail sentence. Display the before-and-after versions side by side with changes highlighted in color.",
+      "ground_truth": {
+        "correct_answer": "Demonstration of the writing revision process: fixing run-ons, improving word choice, adding details, with before/after comparison",
+        "key_visual_elements": [
+          "original draft with errors marked",
+          "run-on sentence being split",
+          "vague word replaced with descriptive word",
+          "new detail sentence added",
+          "side-by-side before/after comparison",
+          "color-highlighted changes"
+        ],
+        "key_steps": [
+          "Show original draft paragraph",
+          "Identify run-on sentence and fix it",
+          "Identify vague word and replace it",
+          "Add a missing supporting detail",
+          "Show before-and-after comparison"
+        ]
+      },
+      "rubric_criteria": "9-10: All three revision steps clearly demonstrated, before/after versions are easy to compare, changes are highlighted and explained. 7-8: Most revision steps are shown with clear before/after comparisons, but some changes may not be highlighted or fully explained. 5-6: Some revision steps are demonstrated, but the comparison between before and after versions lacks clarity or detail. 3-4: Text editing shown but revision steps are unclear or the before/after comparison is missing. 1-2: Little to no demonstration of revision steps, with no clear comparison between original and revised text.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-Col-S-PF-D-025",
+      "subject": "ela",
+      "grade_level": "college",
+      "category": "S-PF",
+      "subcategory": "S-PF-D",
+      "prompt_text": "Generate a video demonstrating the process of close reading analysis for a college literature course. Show a passage from a poem (e.g., four lines of Emily Dickinson's 'Because I could not stop for Death'). Demonstrate: (1) identifying key literary devices (personification of Death, metaphor of carriage ride), (2) annotating the text with marginal notes, (3) connecting devices to the poem's theme of mortality, and (4) formulating an analytical thesis statement based on the close reading evidence.",
+      "ground_truth": {
+        "correct_answer": "Close reading analysis demonstration: identifying devices, annotating text, connecting to theme, formulating thesis",
+        "key_visual_elements": [
+          "poem passage displayed",
+          "literary device annotations in margins",
+          "personification and metaphor highlighted",
+          "theme connection arrows",
+          "thesis statement formulation"
+        ],
+        "key_steps": [
+          "Display the poem passage",
+          "Identify personification of Death",
+          "Identify metaphor of carriage ride",
+          "Annotate text with marginal notes",
+          "Connect devices to mortality theme",
+          "Formulate analytical thesis statement"
+        ]
+      },
+      "rubric_criteria": "9-10: Close reading process is methodical and scholarly, literary devices are correctly identified, annotations are meaningful, thesis logically follows from evidence. 7-8: Close reading is mostly thorough, with most literary devices accurately identified and annotations that generally support the theme, thesis is clear but may lack depth. 5-6: Close reading shows some understanding, with several literary devices identified but annotations are basic and connections to the theme are weak, thesis is present but underdeveloped. 3-4: Poem shown with some annotations but analysis is superficial or literary devices are incorrectly identified. 1-2: Close reading lacks structure, literary devices are not identified, annotations are minimal or irrelevant, no clear thesis is formulated.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-Col-S-PF-C-026",
+      "subject": "social",
+      "grade_level": "college",
+      "category": "S-PF",
+      "subcategory": "S-PF-C",
+      "prompt_text": "Generate a video contextualizing modern immigration policy by connecting it to historical migration patterns. Show a timeline spanning from the 19th-century waves of European immigration to the United States, through mid-20th-century labor migration programs (e.g., the Bracero Program), to contemporary debates over border policy and refugee resettlement. For each era, display archival-style imagery alongside text labels identifying push and pull factors (economic opportunity, political persecution, war). Draw visual parallels between historical and modern migration motivations, and conclude by showing how understanding historical patterns informs current policy discussions.",
+      "ground_truth": {
+        "correct_answer": "Contextualization of modern immigration policy through historical migration patterns, showing push/pull factors across eras",
+        "key_visual_elements": [
+          "timeline spanning 19th century to present",
+          "European immigration wave imagery",
+          "Bracero Program era depiction",
+          "contemporary border policy imagery",
+          "push and pull factor labels",
+          "visual parallels between eras"
+        ],
+        "key_steps": [
+          "Show 19th-century European immigration wave",
+          "Present mid-20th-century labor migration programs",
+          "Display contemporary immigration policy debates",
+          "Label push and pull factors for each era",
+          "Draw parallels between historical and modern motivations",
+          "Conclude with historical patterns informing policy"
+        ]
+      },
+      "rubric_criteria": "9-10: Historical migration eras are accurately depicted with correct push/pull factors, parallels between past and present are insightful and well-supported, timeline progression is clear and educational. 7-8: Most historical eras are accurately depicted with relevant push/pull factors, connections between past and present are mostly clear, and the timeline is generally informative. 5-6: Some historical eras are depicted with partial accuracy, push/pull factors are mentioned but not consistently connected to modern issues, and the timeline lacks clarity in parts. 3-4: Immigration-related imagery present but historical context is inaccurate or connections between eras are superficial. 1-2: Historical eras and push/pull factors are largely misrepresented or omitted, with little to no connection to modern immigration policy, and the timeline is confusing or missing.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-ELow-S-PF-M-027",
+      "subject": "arts",
+      "grade_level": "elementary_low",
+      "category": "S-PF",
+      "subcategory": "S-PF-M",
+      "prompt_text": "Generate a video designed to motivate young children to explore music through rhythm and body percussion. Show an animated character clapping hands, stomping feet, and patting knees in simple rhythmic patterns (e.g., clap-clap-stomp, clap-pat-clap-stomp). Display each body percussion action with a colorful label and a matching rhythmic notation (quarter notes, eighth notes) appearing on screen. The character should smile and invite the viewer to follow along, with text reading 'You can make music with your body!' appearing at the end.",
+      "ground_truth": {
+        "correct_answer": "Motivational video encouraging young children to explore rhythm through body percussion (clapping, stomping, patting)",
+        "key_visual_elements": [
+          "animated character performing body percussion",
+          "clapping hands action",
+          "stomping feet action",
+          "patting knees action",
+          "colorful action labels",
+          "simple rhythmic notation on screen",
+          "encouraging text at the end"
+        ],
+        "key_steps": [
+          "Introduce character ready to make music",
+          "Demonstrate clapping pattern",
+          "Demonstrate stomping pattern",
+          "Demonstrate patting knees pattern",
+          "Show combined rhythmic sequence",
+          "Display encouraging message"
+        ]
+      },
+      "rubric_criteria": "9-10: Body percussion actions are clearly demonstrated in correct rhythm, rhythmic notation matches the actions, the video is engaging and age-appropriate for young children, motivational tone is evident. 7-8: Body percussion actions are mostly clear with minor rhythm inaccuracies, rhythmic notation is mostly accurate, video is generally engaging and suitable for young children. 5-6: Body percussion actions are sometimes unclear, rhythmic notation is occasionally incorrect or missing, video is somewhat engaging but may not fully capture young children's interest. 3-4: Music-related actions shown but rhythm is unclear, notation is missing, or the tone is not engaging for young children. 1-2: Body percussion actions are confusing or incorrect, rhythmic notation is absent or completely inaccurate, video fails to engage or motivate young children.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-Col-S-PF-V-028",
+      "subject": "arts",
+      "grade_level": "college",
+      "category": "S-PF",
+      "subcategory": "S-PF-V",
+      "prompt_text": "Generate a video visualizing Renaissance linear perspective techniques in painting. Begin by showing a blank canvas with a horizon line drawn across the middle. Mark a single vanishing point on the horizon line. Demonstrate how orthogonal lines radiate from the vanishing point to create the illusion of depth, then overlay a simple architectural scene (a tiled floor receding into the distance, buildings on either side) onto the perspective grid. Label each element — horizon line, vanishing point, orthogonal lines, transversal lines — and briefly show how Filippo Brunelleschi's experiment and Leon Battista Alberti's treatise formalized these techniques.",
+      "ground_truth": {
+        "correct_answer": "Visualization of Renaissance linear perspective: vanishing point, horizon line, orthogonal lines demonstrated with architectural scene overlay",
+        "key_visual_elements": [
+          "blank canvas with horizon line",
+          "vanishing point on horizon",
+          "orthogonal lines radiating from vanishing point",
+          "transversal lines for depth measurement",
+          "architectural scene overlay (tiled floor, buildings)",
+          "labels for each perspective element",
+          "reference to Brunelleschi and Alberti"
+        ],
+        "key_steps": [
+          "Draw horizon line on canvas",
+          "Mark vanishing point on horizon",
+          "Draw orthogonal lines from vanishing point",
+          "Add transversal lines",
+          "Overlay architectural scene onto grid",
+          "Label all perspective elements",
+          "Reference Brunelleschi and Alberti"
+        ]
+      },
+      "rubric_criteria": "9-10: Perspective construction is geometrically accurate, all key elements are correctly labeled, architectural overlay demonstrates convincing depth illusion, historical references are accurate. 7-8: Perspective is mostly accurate with minor errors, most key elements are labeled, architectural scene mostly conveys depth, historical references are mostly correct. 5-6: Perspective has noticeable inaccuracies, several key elements are mislabeled or missing, architectural scene somewhat conveys depth, historical references are vague or partially incorrect. 3-4: Perspective-related imagery present but vanishing point or orthogonal lines are incorrect, or labels are missing. 1-2: Perspective construction is fundamentally flawed, key elements are absent or incorrectly labeled, architectural overlay fails to convey depth, historical references are incorrect or absent.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Mid-S-UC-1a-021",
+      "subject": "science",
+      "grade_level": "middle",
+      "category": "S-UC",
+      "subcategory": "S-UC-1a",
+      "prompt_text": "Generate an explanatory animation illustrating the process of photosynthesis. Show a plant leaf cross-section with chloroplasts visible inside mesophyll cells. Animate sunlight entering the leaf, water molecules being absorbed through roots and traveling up the stem, and carbon dioxide entering through stomata. Inside the chloroplast, show the light reactions producing ATP and NADPH, then the Calvin cycle converting CO2 into glucose. Display the overall equation: 6CO2 + 6H2O + light energy -> C6H12O6 + 6O2.",
+      "ground_truth": {
+        "correct_answer": "Explanatory animation of photosynthesis showing light reactions and Calvin cycle",
+        "key_visual_elements": [
+          "leaf cross-section",
+          "chloroplasts in mesophyll cells",
+          "sunlight rays",
+          "water molecules from roots",
+          "CO2 entering stomata",
+          "ATP and NADPH molecules",
+          "Calvin cycle diagram",
+          "glucose molecule",
+          "O2 release",
+          "overall equation"
+        ],
+        "key_steps": [
+          "Show leaf cross-section anatomy",
+          "Animate sunlight reaching chloroplasts",
+          "Show water uptake from roots",
+          "Depict CO2 entering through stomata",
+          "Illustrate light reactions in thylakoid",
+          "Show Calvin cycle producing glucose",
+          "Display overall equation"
+        ]
+      },
+      "rubric_criteria": "9-10: Photosynthesis process is scientifically accurate with clear animation of both light reactions and Calvin cycle, equation is correct, cellular structures are properly depicted. 7-8: Animation accurately depicts most stages of photosynthesis with minor inaccuracies in the depiction of cellular structures or chemical processes, equation is mostly correct. 5-6: Basic elements of photosynthesis are shown but with noticeable inaccuracies in scientific content or missing minor stages, equation may have errors. 3-4: Plant and light imagery present but photosynthesis process is inaccurate or incomplete, missing key stages. 1-2: Animation lacks coherence, with major scientific inaccuracies or omissions, failing to convey the photosynthesis process effectively.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-High-S-UC-1b-022",
+      "subject": "science",
+      "grade_level": "high",
+      "category": "S-UC",
+      "subcategory": "S-UC-1b",
+      "prompt_text": "Generate an explanatory animation of atomic structure showing the Bohr model transitioning to the quantum mechanical model. Start with a nucleus containing protons and neutrons, show electrons in fixed circular orbits (Bohr model), then transition to show electron probability clouds (orbitals). Highlight the difference between the two models with a split-screen comparison, labeling energy levels and subshells.",
+      "ground_truth": {
+        "correct_answer": "Explanatory animation comparing Bohr model and quantum mechanical model of atomic structure",
+        "key_visual_elements": [
+          "nucleus with protons and neutrons",
+          "Bohr model circular orbits",
+          "quantum mechanical probability clouds",
+          "split-screen comparison",
+          "energy level labels",
+          "subshell labels (s, p, d)"
+        ],
+        "key_steps": [
+          "Show nucleus structure",
+          "Display Bohr model with circular orbits",
+          "Transition to quantum mechanical model",
+          "Show electron probability clouds",
+          "Split-screen comparison of both models",
+          "Label energy levels and subshells"
+        ]
+      },
+      "rubric_criteria": "9-10: Both atomic models are scientifically accurate, transition between models is clear and educational, comparison effectively highlights the conceptual advancement. 7-8: Models are mostly accurate with a clear transition, but some minor details may be missing or slightly unclear; comparison is mostly effective in showing conceptual differences. 5-6: Models are presented with some inaccuracies or omissions, transition lacks clarity, and the comparison only partially highlights the differences between the models. 3-4: Atomic imagery present but models are confused or the distinction between Bohr and quantum models is unclear. 1-2: Models are inaccurate or missing, transition is absent or misleading, and comparison fails to convey any conceptual differences.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-ELow-S-UC-1c-023",
+      "subject": "social",
+      "grade_level": "elementary_low",
+      "category": "S-UC",
+      "subcategory": "S-UC-1c",
+      "prompt_text": "Generate an explanatory animation about earthquake safety and evacuation procedures for young students. Show an animated classroom scene where shaking begins, children performing 'Drop, Cover, and Hold On' under their desks, then following the teacher in an orderly line to an open evacuation area outside. Include labeled steps: 'Step 1: Drop under desk, Step 2: Cover your head, Step 3: Hold on, Step 4: Evacuate when shaking stops.'",
+      "ground_truth": {
+        "correct_answer": "Earthquake evacuation safety procedure animation for elementary students",
+        "key_visual_elements": [
+          "animated classroom",
+          "shaking motion effect",
+          "children under desks",
+          "hands covering head",
+          "orderly evacuation line",
+          "outdoor assembly area",
+          "step labels"
+        ],
+        "key_steps": [
+          "Classroom setting established",
+          "Earthquake shaking begins",
+          "Drop under desk",
+          "Cover head and neck",
+          "Hold on until shaking stops",
+          "Follow teacher to evacuation area",
+          "Assemble in open area outside"
+        ]
+      },
+      "rubric_criteria": "9-10: All safety steps clearly demonstrated in correct order, age-appropriate animation style, procedure is accurate and easy for young children to follow. 7-8: Most safety steps are shown in the correct order with minor omissions, animation is mostly age-appropriate, and the procedure is generally understandable for young children. 5-6: Some safety steps are shown but may be out of order or unclear, animation style may not fully engage young children, and understanding of procedure could be improved. 3-4: Earthquake scene present but safety procedures are incomplete or steps are out of order. 1-2: Safety steps are missing or incorrect, animation style is confusing or inappropriate for young children, and the procedure is difficult to understand.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-ELow-S-UC-1d-024",
+      "subject": "math",
+      "grade_level": "elementary_low",
+      "category": "S-UC",
+      "subcategory": "S-UC-1d",
+      "prompt_text": "Generate an explanatory animation teaching fraction addition using visual models. Show two pizza circles: one divided into 2 equal pieces with 1 piece shaded (1/2), and another divided into 4 equal pieces with 1 piece shaded (1/4). Animate the first pizza being re-divided into 4 pieces to show 1/2 = 2/4. Then combine the shaded pieces: 2/4 + 1/4 = 3/4. Display the final answer with the fraction 3/4 clearly labeled.",
+      "ground_truth": {
+        "correct_answer": "1/2 + 1/4 = 3/4 demonstrated through pizza circle area models",
+        "key_visual_elements": [
+          "two pizza circles",
+          "1/2 shaded in first pizza",
+          "1/4 shaded in second pizza",
+          "re-division animation",
+          "combined shaded area",
+          "fraction labels",
+          "final answer 3/4"
+        ],
+        "key_steps": [
+          "Show pizza divided in half with 1/2 shaded",
+          "Show pizza divided in fourths with 1/4 shaded",
+          "Re-divide half pizza into fourths",
+          "Show 1/2 = 2/4 equivalence",
+          "Combine 2/4 + 1/4",
+          "Display answer 3/4"
+        ]
+      },
+      "rubric_criteria": "9-10: Pizza fractions are proportionally accurate, common denominator conversion is visually clear, final answer 3/4 is correct and prominent. 7-8: Pizza fractions are mostly accurate with minor proportional errors, conversion to common denominator is shown but may lack clarity, final answer 3/4 is visible. 5-6: Pizza fractions are somewhat accurate but have noticeable proportional errors, conversion to common denominator is attempted but unclear, final answer 3/4 is present but not emphasized. 3-4: Pizza images present but fractions are disproportionate or the conversion step is missing. 1-2: Pizza images are missing or irrelevant, fractions are incorrect or not shown, conversion and final answer are absent.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-EHigh-S-UC-2a-025",
+      "subject": "science",
+      "grade_level": "elementary_high",
+      "category": "S-UC",
+      "subcategory": "S-UC-2a",
+      "prompt_text": "Generate an instructor-based lecture video where a teacher stands in front of a whiteboard explaining Newton's three laws of motion. The instructor writes 'Newton's 1st Law: An object at rest stays at rest' and demonstrates by sliding a book on a table. Then writes '2nd Law: F = ma' and shows pushing objects of different masses. Finally writes '3rd Law: Every action has an equal and opposite reaction' and demonstrates by pressing hands together.",
+      "ground_truth": {
+        "correct_answer": "Instructor-based lecture covering all three of Newton's laws of motion with demonstrations",
+        "key_visual_elements": [
+          "teacher at whiteboard",
+          "written Newton's 1st law text",
+          "book sliding demonstration",
+          "F = ma equation",
+          "objects of different masses",
+          "3rd law text",
+          "hands pressing together demonstration"
+        ],
+        "key_steps": [
+          "Teacher introduces Newton's laws",
+          "Write and explain 1st law (inertia)",
+          "Demonstrate with book on table",
+          "Write and explain 2nd law (F=ma)",
+          "Demonstrate with different masses",
+          "Write and explain 3rd law (action-reaction)",
+          "Demonstrate with hands pressing together"
+        ]
+      },
+      "rubric_criteria": "9-10: Natural human instructor, all three laws correctly stated and demonstrated, whiteboard text is legible, demonstrations clearly illustrate each law. 7-8: Human instructor present, most laws correctly stated and demonstrated, whiteboard text mostly legible, demonstrations mostly align with each law. 5-6: Instructor present, some laws correctly stated but demonstrations are unclear or partially incorrect, whiteboard text is partially legible. 3-4: Instructor figure present but laws are incorrectly stated or demonstrations do not match the laws. 1-2: Instructor absent or indistinct, laws are not stated, demonstrations are missing or irrelevant, whiteboard text is illegible.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-High-S-UC-2b-026",
+      "subject": "math",
+      "grade_level": "high",
+      "category": "S-UC",
+      "subcategory": "S-UC-2b",
+      "prompt_text": "Generate an instructor-based lecture video where a mathematics teacher explains the Pythagorean theorem at a chalkboard. The teacher draws a right triangle, labels the sides a, b, and c (hypotenuse), writes the formula a squared + b squared = c squared, and then demonstrates a proof by drawing squares on each side of the triangle and showing that the area of the square on the hypotenuse equals the sum of the areas of the other two squares.",
+      "ground_truth": {
+        "correct_answer": "Instructor-based lecture on the Pythagorean theorem with geometric proof",
+        "key_visual_elements": [
+          "teacher at chalkboard",
+          "right triangle with labeled sides",
+          "formula a^2 + b^2 = c^2",
+          "squares drawn on each side",
+          "area comparison visualization"
+        ],
+        "key_steps": [
+          "Draw right triangle on chalkboard",
+          "Label sides a, b, c",
+          "Write Pythagorean formula",
+          "Draw squares on each side",
+          "Show area of c-square equals sum of a-square and b-square",
+          "Summarize the theorem"
+        ]
+      },
+      "rubric_criteria": "9-10: Natural instructor, right triangle correctly drawn with accurate labels, geometric proof is mathematically correct and visually clear. 7-8: Instructor is clear and engaging, triangle and labels are mostly accurate, proof is correct but lacks some visual clarity. 5-6: Instructor is somewhat clear, triangle is drawn but labels may be inconsistent, proof is attempted but has minor mathematical or visual errors. 3-4: Teacher figure and triangle present but formula is wrong or proof is mathematically incorrect. 1-2: Instructor is unclear or absent, triangle is poorly drawn or mislabeled, proof is missing or completely incorrect.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-Col-S-UC-2c-027",
+      "subject": "social",
+      "grade_level": "college",
+      "category": "S-UC",
+      "subcategory": "S-UC-2c",
+      "prompt_text": "Generate an instructor-based lecture video featuring a diverse female professor of color teaching about global economic inequality. She stands before a presentation screen showing a world map with GDP per capita color-coded by region. She gestures toward the screen, points out disparities between the Global North and Global South, and discusses contributing factors while referencing specific data on the screen.",
+      "ground_truth": {
+        "correct_answer": "Instructor-based lecture with diverse instructor representation discussing global economic inequality",
+        "key_visual_elements": [
+          "female professor of color",
+          "presentation screen",
+          "world map with GDP color coding",
+          "Global North vs South regions highlighted",
+          "data charts or statistics",
+          "professional lecture setting"
+        ],
+        "key_steps": [
+          "Professor introduces the topic",
+          "Display world GDP map",
+          "Point out wealthy vs poor regions",
+          "Discuss Global North vs South disparity",
+          "Reference specific economic data",
+          "Discuss contributing factors"
+        ]
+      },
+      "rubric_criteria": "9-10: Diverse instructor is naturally depicted, content is accurate and data-driven, presentation style is professional and engaging, representation is respectful. 7-8: Instructor is well-represented, content is mostly accurate with minor data omissions, presentation is clear but lacks some engagement, diversity is thoughtfully included. 5-6: Instructor is present but lacks depth in representation, content is somewhat accurate but lacks depth, presentation is adequate but not engaging, diversity feels somewhat superficial. 3-4: Instructor present but appears unnatural, content is vague, or diversity representation feels tokenistic. 1-2: Instructor is poorly represented, content is inaccurate or misleading, presentation is unprofessional, diversity is ignored or misrepresented.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-EHigh-S-UC-2d-028",
+      "subject": "math",
+      "grade_level": "elementary_high",
+      "category": "S-UC",
+      "subcategory": "S-UC-2d",
+      "prompt_text": "Generate an instructor-based lecture video where a friendly, energetic elementary school teacher teaches multiplication tables to young students. The teacher uses a warm, encouraging tone, writes large colorful numbers on a whiteboard (3 x 4 = 12), and uses groups of objects (such as 3 groups of 4 apples) as visual aids. The classroom has bright, child-friendly decorations in the background.",
+      "ground_truth": {
+        "correct_answer": "Age-appropriate instructor-based lecture on multiplication for elementary students",
+        "key_visual_elements": [
+          "friendly elementary teacher",
+          "colorful whiteboard writing",
+          "large numbers",
+          "groups of objects (3 groups of 4 apples)",
+          "child-friendly classroom decorations",
+          "encouraging expressions"
+        ],
+        "key_steps": [
+          "Teacher introduces multiplication concept",
+          "Write 3 x 4 on whiteboard in large text",
+          "Show 3 groups of 4 objects",
+          "Count total objects to reach 12",
+          "Write 3 x 4 = 12",
+          "Encourage students with warm tone"
+        ]
+      },
+      "rubric_criteria": "9-10: Teacher is warm and age-appropriate, visual aids match the concept, mathematical content is correct, classroom setting is child-friendly and inviting. 7-8: Teacher is friendly but may lack some energy, visual aids are mostly relevant, mathematical content is mostly accurate, classroom setting is mostly engaging. 5-6: Teacher's tone is neutral, visual aids are somewhat relevant but may confuse, mathematical content has minor errors, classroom setting is somewhat appealing. 3-4: Teacher present but tone is not age-appropriate, or visual aids do not match the math being taught. 1-2: Teacher's tone is inappropriate or disengaging, visual aids are irrelevant or incorrect, mathematical content is largely incorrect, classroom setting is uninviting or distracting.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Col-S-UC-3a-029",
+      "subject": "science",
+      "grade_level": "college",
+      "category": "S-UC",
+      "subcategory": "S-UC-3a",
+      "prompt_text": "Generate a step-by-step tutorial video for an acid-base titration experiment. Show: (1) rinsing and filling a burette with NaOH solution, (2) pipetting 25 mL of HCl solution into an Erlenmeyer flask, (3) adding 2-3 drops of phenolphthalein indicator, (4) slowly opening the burette stopcock and adding NaOH dropwise while swirling the flask, (5) the solution turning pink at the endpoint, (6) reading the burette volume and calculating the concentration. Label each step clearly.",
+      "ground_truth": {
+        "correct_answer": "Step-by-step acid-base titration tutorial with phenolphthalein endpoint detection",
+        "key_visual_elements": [
+          "burette with NaOH",
+          "Erlenmeyer flask with HCl",
+          "pipette",
+          "phenolphthalein indicator drops",
+          "swirling motion",
+          "pink color change at endpoint",
+          "burette reading",
+          "step number labels"
+        ],
+        "key_steps": [
+          "Rinse and fill burette with NaOH",
+          "Pipette 25 mL HCl into flask",
+          "Add phenolphthalein indicator",
+          "Open stopcock and add NaOH dropwise",
+          "Swirl flask continuously",
+          "Observe persistent pink color at endpoint",
+          "Read burette and calculate concentration"
+        ]
+      },
+      "rubric_criteria": "9-10: All titration steps in correct order, glassware is accurately depicted, color change at endpoint is clear, proper laboratory technique shown. 7-8: Most titration steps are in correct order, glassware is mostly accurate, color change is visible but not emphasized, and laboratory technique is mostly correct. 5-6: Some titration steps are in correct order, glassware is somewhat accurate, color change is unclear, and laboratory technique is inconsistent. 3-4: Chemistry equipment present but steps are out of order or the endpoint detection is not properly shown. 1-2: Titration steps are mostly missing or incorrect, glassware is inaccurately depicted, and there is no visible color change or proper technique.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-ELow-S-UC-3b-030",
+      "subject": "arts",
+      "grade_level": "elementary_low",
+      "category": "S-UC",
+      "subcategory": "S-UC-3b",
+      "prompt_text": "Generate a step-by-step tutorial video demonstrating watercolor gradation technique for beginners. Show: (1) arranging watercolor paints, water cup, and thick paper, (2) wetting the brush and loading it with dark blue paint, (3) painting a thick horizontal stripe at the top of the paper, (4) dipping the brush in water to dilute the paint, (5) painting another stripe just below overlapping slightly, (6) repeating with progressively more water each time until the bottom stripe is very pale. Label each step.",
+      "ground_truth": {
+        "correct_answer": "Step-by-step watercolor gradation technique tutorial for beginners",
+        "key_visual_elements": [
+          "watercolor paint set",
+          "water cup",
+          "thick paper",
+          "brush loading paint",
+          "dark stripe at top",
+          "progressive dilution",
+          "light stripe at bottom",
+          "step labels"
+        ],
+        "key_steps": [
+          "Arrange materials",
+          "Load brush with dark paint",
+          "Paint dark stripe at top",
+          "Dip brush in water to dilute",
+          "Paint lighter stripe below",
+          "Repeat with more water each time",
+          "Achieve smooth gradation from dark to light"
+        ]
+      },
+      "rubric_criteria": "9-10: All steps clearly shown with correct technique, gradual dilution process is visible, final result shows smooth color transition. 7-8: Most steps are demonstrated clearly, with minor omissions or slight inaccuracies in the dilution process, resulting in a mostly smooth color transition. 5-6: Some steps are shown, but there are noticeable gaps or errors in the technique, leading to an uneven or partially smooth color transition. 3-4: Painting shown but steps are unclear or gradation technique is not properly demonstrated. 1-2: Steps are missing or incorrect, with no visible gradation technique, resulting in a final product that lacks any smooth color transition.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Mid-S-UC-3c-031",
+      "subject": "science",
+      "grade_level": "middle",
+      "category": "S-UC",
+      "subcategory": "S-UC-3c",
+      "prompt_text": "Generate a step-by-step tutorial video demonstrating CPR (cardiopulmonary resuscitation) on a training mannequin. Show: (1) checking the scene for safety, (2) tapping the mannequin's shoulder and calling 'Are you okay?', (3) calling emergency services, (4) placing heel of hand on center of chest, (5) performing 30 chest compressions at 2 inches deep and 100-120 per minute, (6) tilting head back to open airway and giving 2 rescue breaths, (7) repeating the 30:2 cycle. Label each step.",
+      "ground_truth": {
+        "correct_answer": "Step-by-step CPR procedure tutorial on training mannequin",
+        "key_visual_elements": [
+          "CPR training mannequin",
+          "scene safety check",
+          "shoulder tap",
+          "phone call to emergency services",
+          "hand placement on chest center",
+          "chest compressions",
+          "head tilt for airway",
+          "rescue breaths",
+          "step labels"
+        ],
+        "key_steps": [
+          "Check scene safety",
+          "Check responsiveness",
+          "Call emergency services",
+          "Position hands on center of chest",
+          "Perform 30 compressions",
+          "Open airway with head tilt",
+          "Give 2 rescue breaths",
+          "Repeat 30:2 cycle"
+        ]
+      },
+      "rubric_criteria": "9-10: CPR procedure follows current guidelines (30:2 ratio, correct depth and rate), all steps shown in correct order on training mannequin. 7-8: Most steps are shown in the correct order with minor errors in depth or rate, but overall understanding of CPR is demonstrated. 5-6: Some steps are missing or out of order, with noticeable errors in compression depth or rate, but basic CPR concepts are present. 3-4: Chest compressions shown but sequence is wrong, ratio is incorrect, or critical safety steps are missing. 1-2: CPR steps are largely incorrect or missing, with little to no understanding of the procedure demonstrated.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-Col-S-UC-3d-032",
+      "subject": "arts",
+      "grade_level": "college",
+      "category": "S-UC",
+      "subcategory": "S-UC-3d",
+      "prompt_text": "Generate a step-by-step tutorial video showing how to fold an origami crane. Show: (1) starting with a square sheet of paper, (2) folding diagonally both ways to create creases, (3) folding into a preliminary base (square base), (4) performing petal folds on front and back to create the bird base, (5) narrowing the lower flaps to form the neck and tail, (6) reverse-folding the neck upward and creating the head with a small reverse fold, (7) pulling the wings apart gently to complete the crane. Label each step.",
+      "ground_truth": {
+        "correct_answer": "Step-by-step origami crane folding tutorial",
+        "key_visual_elements": [
+          "square paper sheet",
+          "diagonal fold creases",
+          "preliminary base",
+          "petal folds",
+          "bird base",
+          "neck and tail shaping",
+          "reverse fold for head",
+          "completed crane with spread wings",
+          "step labels"
+        ],
+        "key_steps": [
+          "Start with square paper",
+          "Create diagonal creases",
+          "Fold preliminary base",
+          "Perform petal folds",
+          "Create bird base",
+          "Shape neck and tail",
+          "Reverse fold for head",
+          "Spread wings to complete"
+        ]
+      },
+      "rubric_criteria": "9-10: All origami folds shown in correct sequence, paper manipulation is clear and followable, final crane shape is accurate and recognizable. 7-8: Most folds are shown in sequence, with minor omissions or slight inaccuracies, but the final crane is mostly recognizable. 5-6: Several key steps are missing or out of order, making it difficult to follow, and the final crane is only partially recognizable. 3-4: Paper folding shown but steps are missing, out of order, or final shape does not resemble a crane. 1-2: Few or no steps are shown correctly, making it impossible to follow, and the final shape is unrecognizable as a crane.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-ELow-S-UC-4a-033",
+      "subject": "science",
+      "grade_level": "elementary_low",
+      "category": "S-UC",
+      "subcategory": "S-UC-4a",
+      "prompt_text": "Generate a narrative educational video telling the story of a water droplet named Splash on its journey through the water cycle. Splash starts in the ocean, gets heated by the sun and evaporates into the sky, joins other droplets to form a cloud (condensation), falls as rain (precipitation), flows into a river (collection), and eventually returns to the ocean. Each stage is narrated as part of Splash's adventure.",
+      "ground_truth": {
+        "correct_answer": "Narrative video of the water cycle told through the journey of a water droplet character",
+        "key_visual_elements": [
+          "water droplet character 'Splash'",
+          "ocean surface",
+          "sun heating",
+          "evaporation rising",
+          "cloud formation",
+          "rain falling",
+          "river flowing",
+          "ocean return",
+          "cycle labels"
+        ],
+        "key_steps": [
+          "Introduce Splash in the ocean",
+          "Sun heats the ocean surface",
+          "Splash evaporates into the sky",
+          "Splash joins others to form a cloud",
+          "Cloud releases rain (Splash falls)",
+          "Splash flows through river",
+          "Splash returns to the ocean"
+        ]
+      },
+      "rubric_criteria": "9-10: Engaging narrative with relatable water droplet character, all water cycle stages scientifically correct, story structure maintains engagement throughout. 7-8: Clear narrative with a mostly engaging character, most water cycle stages are scientifically accurate, and the story is generally engaging. 5-6: Basic narrative with some character development, several water cycle stages are included but may contain minor inaccuracies, and the story is somewhat engaging. 3-4: Water cycle imagery present but narrative is weak or missing stages. 1-2: Narrative is confusing or absent, with significant scientific inaccuracies in the water cycle stages and little to no engagement.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-High-S-UC-4b-034",
+      "subject": "social",
+      "grade_level": "high",
+      "category": "S-UC",
+      "subcategory": "S-UC-4b",
+      "prompt_text": "Generate a narrative educational video about the invention of movable type printing by Johannes Gutenberg in 15th century Mainz, Germany. Tell the story of Gutenberg in his workshop experimenting with individual metal letter blocks, assembling them into a press, applying ink with leather dabbers, and printing the first pages. Show the dramatic moment of the first successful printed page and its impact on spreading knowledge across Europe.",
+      "ground_truth": {
+        "correct_answer": "Narrative video about Gutenberg's invention of movable type printing and its historical impact",
+        "key_visual_elements": [
+          "Gutenberg in workshop",
+          "individual metal letter blocks",
+          "typesetting composing stick",
+          "printing press mechanism",
+          "ink application with leather dabbers",
+          "first printed page",
+          "books spreading across Europe"
+        ],
+        "key_steps": [
+          "Introduce Gutenberg in 15th century Mainz",
+          "Show experimentation with metal type",
+          "Assemble letters into press",
+          "Apply ink to type",
+          "Press paper onto inked type",
+          "Reveal first printed page",
+          "Show impact on knowledge dissemination"
+        ]
+      },
+      "rubric_criteria": "9-10: Historical narrative is engaging and accurate, printing process is correctly depicted, the significance of the invention is conveyed through narrative structure. 7-8: Narrative is mostly accurate and engaging, with minor inaccuracies in the depiction of the printing process; the importance of the invention is somewhat clear. 5-6: Narrative is somewhat engaging but contains noticeable inaccuracies in historical details or the printing process; the significance of the invention is mentioned but not well integrated. 3-4: Historical imagery present but narrative is weak or printing process is inaccurately depicted. 1-2: Narrative lacks coherence and accuracy, with significant errors in depicting the printing process and no clear explanation of the invention's impact.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-EHigh-S-UC-4c-035",
+      "subject": "social",
+      "grade_level": "elementary_high",
+      "category": "S-UC",
+      "subcategory": "S-UC-4c",
+      "prompt_text": "Generate a narrative educational video about plastic pollution told from the perspective of ocean creatures. A sea turtle encounters a floating plastic bag that looks like a jellyfish, a seabird's nest contains colorful plastic fragments mixed with twigs, and a whale surfaces near a patch of floating debris. Each animal narrates how plastic waste affects their habitat, ending with a call to reduce single-use plastics.",
+      "ground_truth": {
+        "correct_answer": "Narrative video about plastic pollution from the perspective of marine animals",
+        "key_visual_elements": [
+          "sea turtle approaching plastic bag",
+          "jellyfish comparison",
+          "seabird nest with plastic fragments",
+          "whale near floating debris",
+          "underwater plastic waste",
+          "call-to-action ending text"
+        ],
+        "key_steps": [
+          "Sea turtle encounters plastic bag",
+          "Show similarity to jellyfish",
+          "Seabird nest with plastic mixed in",
+          "Whale surfaces near debris patch",
+          "Each animal describes the impact",
+          "End with call to reduce plastic use"
+        ]
+      },
+      "rubric_criteria": "9-10: Animal perspectives are emotionally engaging, environmental message is clear and accurate, each scenario is realistic and educational. 7-8: Animal perspectives are engaging with a mostly clear environmental message, scenarios are realistic but may lack some educational depth. 5-6: Animal perspectives are present but lack emotional depth, the environmental message is somewhat clear, scenarios may be simplistic or lack realism. 3-4: Ocean animals and plastic shown but narrative perspective is weak or educational message is unclear. 1-2: Animal perspectives are confusing or absent, environmental message is missing or incorrect, scenarios are unrealistic or misleading.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Col-S-UC-4d-036",
+      "subject": "science",
+      "grade_level": "college",
+      "category": "S-UC",
+      "subcategory": "S-UC-4d",
+      "prompt_text": "Generate a narrative educational video following a viral infection from entry to recovery. Begin with a virus particle attaching to a human cell receptor, injecting its genetic material, hijacking the cell's machinery to replicate, and new virus particles bursting out (lysis). Then show the immune response: macrophages engulfing virus particles, T-cells targeting infected cells, and B-cells producing antibodies that neutralize the virus, leading to recovery.",
+      "ground_truth": {
+        "correct_answer": "Narrative video of viral infection and immune response from infection to recovery",
+        "key_visual_elements": [
+          "virus particle",
+          "cell surface receptors",
+          "viral genetic material injection",
+          "cell machinery hijacking",
+          "new virus particles",
+          "cell lysis",
+          "macrophages",
+          "T-cells",
+          "B-cells producing antibodies",
+          "antibody neutralization"
+        ],
+        "key_steps": [
+          "Virus attaches to cell receptor",
+          "Injects genetic material",
+          "Hijacks cell replication machinery",
+          "New viruses produced and released (lysis)",
+          "Macrophages detect and engulf",
+          "T-cells attack infected cells",
+          "B-cells produce antibodies",
+          "Antibodies neutralize virus",
+          "Recovery achieved"
+        ]
+      },
+      "rubric_criteria": "9-10: Infection and immune response mechanisms are scientifically accurate, narrative structure builds logically from infection to recovery, cellular processes are clearly visualized. 7-8: Most infection and immune response mechanisms are accurate, narrative mostly follows a logical progression, and cellular processes are generally clear. 5-6: Some infection and immune response mechanisms are accurate, narrative has noticeable gaps or lacks clarity, and cellular processes are inconsistently visualized. 3-4: Virus and cell imagery present but mechanisms are scientifically inaccurate or immune response is missing. 1-2: Video lacks scientific accuracy, narrative is disjointed or absent, and cellular processes are not visualized.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-ELow-S-UC-5a-037",
+      "subject": "math",
+      "grade_level": "elementary_low",
+      "category": "S-UC",
+      "subcategory": "S-UC-5a",
+      "prompt_text": "Generate a STEM problem-solving video showing step-by-step multiplication of 35 times 12. Display the problem 35 x 12 at the top. Show the standard algorithm: first multiply 35 x 2 = 70, write 70. Then multiply 35 x 10 = 350, write 350 below shifted one place left. Finally add 70 + 350 = 420. Each step should appear sequentially with the partial products clearly aligned.",
+      "ground_truth": {
+        "correct_answer": "35 x 12 = 420, solved using the standard multiplication algorithm",
+        "key_visual_elements": [
+          "problem 35 x 12 at top",
+          "partial product 70 (35 x 2)",
+          "partial product 350 (35 x 10)",
+          "aligned addition",
+          "final answer 420",
+          "step highlights"
+        ],
+        "key_steps": [
+          "Write 35 x 12",
+          "Multiply 35 x 2 = 70",
+          "Write 70 as first partial product",
+          "Multiply 35 x 1(0) = 350",
+          "Write 350 shifted left",
+          "Add partial products: 70 + 350 = 420"
+        ]
+      },
+      "rubric_criteria": "9-10: Standard multiplication algorithm shown correctly with proper alignment, each step clearly displayed, final answer 420 is correct. 7-8: Algorithm mostly correct with minor misalignment or slight errors in displaying steps, but final answer is correct. 5-6: Steps are shown but contain noticeable errors in arithmetic or alignment, leading to a correct or incorrect final answer. 3-4: Multiplication problem shown but steps contain arithmetic errors or partial products are misaligned. 1-2: Steps are missing or incorrect, with significant errors in arithmetic and alignment, leading to an incorrect final answer.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-Mid-S-UC-5b-038",
+      "subject": "math",
+      "grade_level": "middle",
+      "category": "S-UC",
+      "subcategory": "S-UC-5b",
+      "prompt_text": "Generate a STEM problem-solving video showing step-by-step solution of the quadratic equation x squared minus 4x plus 3 equals 0 by factoring. Display the equation x^2 - 4x + 3 = 0. Show finding two numbers that multiply to +3 and add to -4: those numbers are -1 and -3. Factor as (x - 1)(x - 3) = 0. Set each factor to zero: x - 1 = 0 gives x = 1, and x - 3 = 0 gives x = 3. Verify by substituting both solutions back.",
+      "ground_truth": {
+        "correct_answer": "x = 1 and x = 3, solved by factoring x^2 - 4x + 3 = (x-1)(x-3) = 0",
+        "key_visual_elements": [
+          "equation x^2 - 4x + 3 = 0",
+          "factor pair analysis",
+          "factored form (x-1)(x-3) = 0",
+          "zero product property",
+          "solutions x = 1 and x = 3",
+          "verification substitution"
+        ],
+        "key_steps": [
+          "Display equation x^2 - 4x + 3 = 0",
+          "Find numbers multiplying to 3, adding to -4",
+          "Identify -1 and -3",
+          "Write (x-1)(x-3) = 0",
+          "Apply zero product property",
+          "Solve x = 1 and x = 3",
+          "Verify both solutions"
+        ]
+      },
+      "rubric_criteria": "9-10: Factoring process is mathematically correct, each step is clearly shown, both solutions found and verified, zero product property explicitly applied. 7-8: Factoring process is mostly correct with minor errors, most steps are shown, both solutions are found but verification may be incomplete. 5-6: Factoring process has some errors, key steps are missing or unclear, only one solution is correctly identified or verified. 3-4: Equation shown but factoring process has errors or solutions are incorrect. 1-2: Factoring process is incorrect or missing, steps are not shown, solutions are not found or verified.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-High-S-UC-5c-039",
+      "subject": "math",
+      "grade_level": "high",
+      "category": "S-UC",
+      "subcategory": "S-UC-5c",
+      "prompt_text": "Generate a STEM problem-solving video proving that the interior angles of any triangle sum to 180 degrees. Draw a triangle ABC. Then draw a line through vertex B parallel to side AC. Show that the alternate interior angles formed are equal to angles A and C respectively. Since the three angles at point B (angle A, angle B, and angle C) form a straight line, they must sum to 180 degrees. Label all angles and parallel lines clearly.",
+      "ground_truth": {
+        "correct_answer": "Proof that triangle interior angles sum to 180 degrees using parallel line construction",
+        "key_visual_elements": [
+          "triangle ABC",
+          "parallel line through B",
+          "alternate interior angles marked",
+          "angle labels A, B, C",
+          "straight line = 180 degrees annotation",
+          "parallel line markers"
+        ],
+        "key_steps": [
+          "Draw triangle ABC",
+          "Draw line through B parallel to AC",
+          "Mark alternate interior angle equal to angle A",
+          "Mark alternate interior angle equal to angle C",
+          "Show angles A + B + C along the straight line",
+          "Conclude sum = 180 degrees"
+        ]
+      },
+      "rubric_criteria": "9-10: Geometric proof is mathematically rigorous, parallel line construction is correct, alternate interior angles properly identified, conclusion logically follows. 7-8: Proof is mostly accurate with minor errors in angle identification or labeling, but the overall logic is sound and the conclusion is mostly correct. 5-6: Proof contains several errors in angle relationships or labeling, and the logical flow is unclear, but the basic concept of the proof is attempted. 3-4: Triangle shown but proof is incomplete or angle relationships are incorrect. 1-2: Video lacks a coherent proof, with significant misunderstandings of geometric principles and incorrect or missing angle relationships.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-Col-S-UC-5d-040",
+      "subject": "math",
+      "grade_level": "college",
+      "category": "S-UC",
+      "subcategory": "S-UC-5d",
+      "prompt_text": "Generate a STEM problem-solving video calculating the probability of rolling a sum of 7 with two standard dice. Show all 36 possible outcomes in a 6x6 grid table. Highlight the favorable outcomes: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1) — a total of 6 combinations. Calculate P(sum=7) = 6/36 = 1/6. Visually emphasize the diagonal pattern of favorable outcomes in the grid.",
+      "ground_truth": {
+        "correct_answer": "P(sum=7) = 6/36 = 1/6, with 6 favorable outcomes out of 36 total",
+        "key_visual_elements": [
+          "two dice",
+          "6x6 outcome grid",
+          "highlighted favorable outcomes on diagonal",
+          "6 favorable combinations listed",
+          "probability calculation 6/36 = 1/6"
+        ],
+        "key_steps": [
+          "Show two dice",
+          "Display 6x6 grid of all outcomes",
+          "Highlight outcomes that sum to 7",
+          "List the 6 favorable pairs",
+          "Show diagonal pattern in grid",
+          "Calculate P = 6/36 = 1/6"
+        ]
+      },
+      "rubric_criteria": "9-10: Sample space grid is complete and correct, all 6 favorable outcomes identified, probability calculation is accurate, diagonal pattern is clearly visible. 7-8: Sample space grid is mostly complete with minor errors, most favorable outcomes are identified, probability calculation is mostly accurate, diagonal pattern is visible but not emphasized. 5-6: Sample space grid is partially complete, some favorable outcomes are identified, probability calculation has noticeable errors, diagonal pattern is not clearly shown. 3-4: Dice shown but sample space is incomplete or probability is calculated incorrectly. 1-2: Sample space grid is missing or mostly incorrect, favorable outcomes are not identified, probability calculation is missing or incorrect, no effort to show diagonal pattern.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Mid-S-UC-6a-041",
+      "subject": "science",
+      "grade_level": "middle",
+      "category": "S-UC",
+      "subcategory": "S-UC-6a",
+      "prompt_text": "Generate a science simulation video showing how pendulum period depends on string length. Display three pendulums side by side with different string lengths (short, medium, long) but identical bob masses. Release all three simultaneously and show that the shorter pendulum swings faster (shorter period) while the longer pendulum swings slower (longer period). Include a timer display and a graph plotting period T versus length L, showing the square root relationship T = 2*pi*sqrt(L/g).",
+      "ground_truth": {
+        "correct_answer": "Pendulum period simulation demonstrating T = 2*pi*sqrt(L/g) relationship",
+        "key_visual_elements": [
+          "three pendulums with different lengths",
+          "identical bob masses",
+          "synchronized release",
+          "different swing rates",
+          "timer display",
+          "T vs L graph",
+          "formula T = 2*pi*sqrt(L/g)"
+        ],
+        "key_steps": [
+          "Set up three pendulums of different lengths",
+          "Release simultaneously",
+          "Observe different swing rates",
+          "Shorter = faster, longer = slower",
+          "Display period measurements",
+          "Plot T vs L graph",
+          "Show square root relationship formula"
+        ]
+      },
+      "rubric_criteria": "9-10: Pendulum behavior is physically accurate, period-length relationship correctly demonstrated, graph and formula match the simulation results. 7-8: Pendulum behavior is mostly accurate with minor discrepancies, period-length relationship is mostly clear, and graph and formula are mostly consistent with the simulation. 5-6: Pendulum behavior shows some inaccuracies, period-length relationship is partially demonstrated, and graph or formula have noticeable errors or inconsistencies. 3-4: Pendulums shown but behavior does not correctly demonstrate the period-length relationship. 1-2: Pendulums are poorly represented, and the period-length relationship is not demonstrated; graph and formula are missing or entirely incorrect.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-High-S-UC-6b-042",
+      "subject": "science",
+      "grade_level": "high",
+      "category": "S-UC",
+      "subcategory": "S-UC-6b",
+      "prompt_text": "Generate a science simulation video of an acid-base titration showing the color change of a pH indicator. Start with a flask containing an acidic solution (HCl) that is colorless with phenolphthalein indicator. Simulate NaOH being added dropwise from a burette. Show the solution remaining colorless in acidic conditions, then transitioning through a brief pink flash (near equivalence), and finally turning persistent pink when the base slightly exceeds the acid. Display a real-time pH curve graph alongside showing the sharp pH jump at the equivalence point.",
+      "ground_truth": {
+        "correct_answer": "Acid-base titration simulation with phenolphthalein color change and pH curve",
+        "key_visual_elements": [
+          "flask with colorless HCl solution",
+          "burette with NaOH",
+          "dropwise addition",
+          "phenolphthalein color changes",
+          "brief pink flash near equivalence",
+          "persistent pink at endpoint",
+          "pH curve graph",
+          "sharp pH jump at equivalence point"
+        ],
+        "key_steps": [
+          "Start with acidic solution and indicator",
+          "Add NaOH dropwise",
+          "Solution stays colorless (acidic)",
+          "Brief pink flash near equivalence",
+          "Persistent pink at endpoint",
+          "pH curve shows gradual rise then sharp jump",
+          "Identify equivalence point on curve"
+        ]
+      },
+      "rubric_criteria": "9-10: Color change sequence is chemically accurate, pH curve shows characteristic S-shape with sharp equivalence point jump, titration procedure is correct. 7-8: Color change sequence is mostly accurate with minor errors, pH curve is mostly correct but may lack precision in the equivalence point, titration procedure is mostly correct. 5-6: Color change sequence has noticeable inaccuracies, pH curve is present but lacks clarity or detail, titration procedure has some errors. 3-4: Titration setup shown but color change is wrong or pH curve does not match expected behavior. 1-2: Titration setup is incorrect, color change sequence is absent or completely inaccurate, pH curve is missing or entirely incorrect.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-EHigh-S-UC-6c-043",
+      "subject": "science",
+      "grade_level": "elementary_high",
+      "category": "S-UC",
+      "subcategory": "S-UC-6c",
+      "prompt_text": "Generate a science simulation video showing how a virus infects a human cell. Depict a virus particle approaching a cell, attaching to specific surface receptor proteins (lock-and-key mechanism), the cell membrane engulfing the virus (endocytosis), the virus releasing its RNA inside the cell, the cell's ribosomes reading viral RNA to produce new viral proteins, new virus particles assembling inside the cell, and finally the cell bursting to release hundreds of new viruses.",
+      "ground_truth": {
+        "correct_answer": "Simulation of viral infection mechanism from attachment to cell lysis",
+        "key_visual_elements": [
+          "virus particle with surface proteins",
+          "cell surface receptors",
+          "lock-and-key binding",
+          "endocytosis engulfment",
+          "viral RNA release",
+          "ribosome translation",
+          "new viral protein assembly",
+          "cell lysis releasing new viruses"
+        ],
+        "key_steps": [
+          "Virus approaches cell",
+          "Attaches to receptor (lock-and-key)",
+          "Cell engulfs virus (endocytosis)",
+          "Virus releases RNA",
+          "Ribosomes translate viral RNA",
+          "New viral proteins assemble",
+          "New virus particles form",
+          "Cell bursts releasing viruses"
+        ]
+      },
+      "rubric_criteria": "9-10: Viral infection mechanism is biologically accurate, lock-and-key receptor binding is shown, replication cycle is complete from entry to lysis. 7-8: Infection process is mostly accurate with minor errors, all major steps are depicted but may lack some detail or clarity. 5-6: Basic infection process is shown with several inaccuracies or omissions, some key steps are missing or poorly explained. 3-4: Virus and cell shown but infection mechanism is inaccurate or major steps are missing. 1-2: Video lacks coherence, most steps of the infection process are missing or incorrect, fails to convey educational content effectively.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-ELow-S-UC-6d-044",
+      "subject": "science",
+      "grade_level": "elementary_low",
+      "category": "S-UC",
+      "subcategory": "S-UC-6d",
+      "prompt_text": "Generate a science simulation video showing how plate tectonics causes earthquakes. Display a cross-section of Earth showing the crust divided into tectonic plates floating on the semi-liquid mantle. Animate two plates slowly moving toward each other at a convergent boundary, building up pressure over time. Show the sudden release of energy when the plates slip, sending seismic waves outward from the fault line. Display the resulting ground shaking on the surface with buildings vibrating.",
+      "ground_truth": {
+        "correct_answer": "Plate tectonics simulation showing convergent boundary earthquake mechanism",
+        "key_visual_elements": [
+          "Earth cross-section",
+          "tectonic plates on mantle",
+          "convergent boundary",
+          "pressure buildup arrows",
+          "sudden plate slip",
+          "seismic waves radiating outward",
+          "surface ground shaking",
+          "vibrating buildings"
+        ],
+        "key_steps": [
+          "Show Earth's layered structure",
+          "Display tectonic plates on mantle",
+          "Animate plates moving toward each other",
+          "Show pressure building at boundary",
+          "Sudden slip releases energy",
+          "Seismic waves radiate from fault",
+          "Surface shaking affects buildings"
+        ]
+      },
+      "rubric_criteria": "9-10: Plate tectonics mechanism is geologically accurate, convergent boundary dynamics are clear, seismic wave propagation is realistic, cause-and-effect chain is complete. 7-8: Plate tectonics mechanism is mostly accurate with clear depiction of convergent boundary, but minor inaccuracies in seismic wave representation or cause-and-effect sequence. 5-6: Basic understanding of plate tectonics and convergent boundary is shown, but with noticeable inaccuracies or omissions in the depiction of seismic waves and energy release. 3-4: Earthquake shown but plate tectonics mechanism is absent or geologically inaccurate. 1-2: Video lacks any coherent explanation of plate tectonics or earthquake mechanics, with significant scientific inaccuracies throughout.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-EHigh-S-UC-1-045",
+      "subject": "ela",
+      "grade_level": "elementary_high",
+      "category": "S-UC",
+      "subcategory": "S-UC-1",
+      "prompt_text": "Generate an explanatory animation showing how adjectives and adverbs modify words in sentences. Start with a plain sentence 'The dog ran.' Then animate an adjective being added: 'The big dog ran.' Show the adjective highlighting the noun it modifies with an arrow. Next animate an adverb: 'The big dog ran quickly.' Show the adverb highlighting the verb it modifies. Use color coding — blue for adjectives, orange for adverbs — and display the grammar rules as text labels.",
+      "ground_truth": {
+        "correct_answer": "Explanatory animation of adjective and adverb modification with color-coded grammar rules",
+        "key_visual_elements": [
+          "plain sentence displayed",
+          "adjective added with blue highlighting",
+          "arrow from adjective to noun",
+          "adverb added with orange highlighting",
+          "arrow from adverb to verb",
+          "grammar rule labels"
+        ],
+        "key_steps": [
+          "Display base sentence 'The dog ran.'",
+          "Add adjective 'big' with blue highlight",
+          "Show arrow connecting adjective to noun",
+          "Add adverb 'quickly' with orange highlight",
+          "Show arrow connecting adverb to verb",
+          "Display grammar rules"
+        ]
+      },
+      "rubric_criteria": "9-10: Grammar concepts are correctly demonstrated, color coding is consistent, modification relationships are clearly shown with arrows, sentences are grammatically correct. 7-8: Grammar concepts are mostly correct with minor errors, color coding is mostly consistent, and modification relationships are shown with some clarity. 5-6: Basic grammar concepts are shown but with noticeable errors, color coding is inconsistent, and modification relationships are unclear. 3-4: Sentence modification shown but grammar rules are incorrect or visual cues are inconsistent. 1-2: Grammar concepts are incorrect or missing, color coding is absent or incorrect, and modification relationships are not demonstrated.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-High-S-UC-2-046",
+      "subject": "ela",
+      "grade_level": "high",
+      "category": "S-UC",
+      "subcategory": "S-UC-2",
+      "prompt_text": "Generate an instructor-based lecture video where a high school English teacher analyzes the symbolism in F. Scott Fitzgerald's The Great Gatsby. The instructor stands before a whiteboard, writes 'The Green Light' as a heading, explains that it symbolizes Gatsby's unattainable dream and the broader American Dream, draws a diagram connecting the symbol to key passages, and discusses how the symbol's meaning shifts from hope to disillusionment across the novel.",
+      "ground_truth": {
+        "correct_answer": "Instructor-based lecture analyzing the green light symbolism in The Great Gatsby",
+        "key_visual_elements": [
+          "teacher at whiteboard",
+          "heading 'The Green Light'",
+          "symbol-to-theme diagram",
+          "key passage references",
+          "hope vs disillusionment progression"
+        ],
+        "key_steps": [
+          "Teacher introduces green light symbol",
+          "Explains connection to Gatsby's dream",
+          "Connects to American Dream theme",
+          "Draws diagram linking passages",
+          "Discusses shift from hope to disillusionment"
+        ]
+      },
+      "rubric_criteria": "9-10: Literary analysis is insightful and accurate, symbolism is correctly identified, instructor delivery is engaging, whiteboard content supports the analysis clearly. 7-8: Analysis is mostly accurate with some depth, symbolism is generally well-interpreted, instructor delivery is clear but less engaging, whiteboard content mostly supports the analysis. 5-6: Analysis is basic with limited depth, symbolism is identified but not fully explored, instructor delivery is adequate, whiteboard content is somewhat helpful but lacks clarity. 3-4: Instructor and literary content present but analysis is superficial or symbolism is incorrectly interpreted. 1-2: Analysis is inaccurate or missing, symbolism is misunderstood, instructor delivery is confusing, whiteboard content is irrelevant or absent.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-Mid-S-UC-3-047",
+      "subject": "ela",
+      "grade_level": "middle",
+      "category": "S-UC",
+      "subcategory": "S-UC-3",
+      "prompt_text": "Generate a step-by-step tutorial video on writing a persuasive essay for middle school students. Show: (1) choosing a clear position on the topic 'Should students have homework?', (2) writing a thesis statement that states the position, (3) providing three reasons with supporting evidence, (4) addressing a counterargument and refuting it, (5) writing a conclusion that restates the thesis and calls the reader to action. Label each step with numbered headings.",
+      "ground_truth": {
+        "correct_answer": "Step-by-step persuasive essay writing tutorial with five clearly labeled stages",
+        "key_visual_elements": [
+          "topic and position choice",
+          "thesis statement display",
+          "three reasons with evidence",
+          "counterargument and refutation",
+          "conclusion with call to action",
+          "numbered step headings"
+        ],
+        "key_steps": [
+          "Choose position on homework topic",
+          "Write thesis statement",
+          "Present three supporting reasons",
+          "Address and refute counterargument",
+          "Write conclusion with call to action"
+        ]
+      },
+      "rubric_criteria": "9-10: All five persuasive essay steps demonstrated in correct order, thesis is clear and debatable, counterargument is genuinely addressed, each step is clearly labeled. 7-8: Most steps are demonstrated in order, thesis is mostly clear, counterargument is addressed but may lack depth, steps are labeled but not always prominently. 5-6: Some steps are missing or out of order, thesis is present but lacks clarity, counterargument is mentioned but not effectively refuted, labeling is inconsistent. 3-4: Essay writing shown but key steps are missing or the persuasive structure is incomplete. 1-2: Few or no steps are demonstrated, thesis is unclear or absent, counterargument is ignored, labeling is absent or incorrect.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-ELow-S-UC-4-048",
+      "subject": "ela",
+      "grade_level": "elementary_low",
+      "category": "S-UC",
+      "subcategory": "S-UC-4",
+      "prompt_text": "Generate a narrative educational video telling the story of how the letter 'A' was invented. Start in ancient Egypt where a picture of an ox head was drawn, show the Phoenicians simplifying it into the letter 'aleph,' then the Greeks flipping it upside down to create 'alpha,' and finally the Romans shaping it into the modern letter 'A' we use today. Narrate the journey as an adventure through time.",
+      "ground_truth": {
+        "correct_answer": "Narrative video tracing the historical evolution of the letter A from Egyptian pictograph to modern form",
+        "key_visual_elements": [
+          "Egyptian ox head pictograph",
+          "Phoenician aleph symbol",
+          "Greek alpha letter",
+          "Roman/modern letter A",
+          "timeline progression",
+          "adventure narrative framing"
+        ],
+        "key_steps": [
+          "Show ancient Egyptian ox head drawing",
+          "Transform to Phoenician aleph",
+          "Transform to Greek alpha (flipped)",
+          "Transform to modern Roman A",
+          "Narrate as a time-travel adventure"
+        ]
+      },
+      "rubric_criteria": "9-10: Historical evolution is generally accurate, transformations between letter forms are visually clear, narrative is engaging and age-appropriate. 7-8: Historical evolution is mostly accurate with minor errors, transformations are mostly clear, narrative is somewhat engaging and suitable for young learners. 5-6: Some historical details are correct, but there are noticeable inaccuracies, transformations are unclear, narrative lacks engagement but is understandable. 3-4: Letters shown but historical progression is inaccurate or narrative is not engaging for young learners. 1-2: Historical evolution is largely incorrect, transformations are confusing or missing, narrative fails to engage or educate the audience.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-Mid-S-UC-5-049",
+      "subject": "ela",
+      "grade_level": "middle",
+      "category": "S-UC",
+      "subcategory": "S-UC-5",
+      "prompt_text": "Generate a text analysis demonstration video where a poem (Robert Frost's 'The Road Not Taken') is displayed on screen. Show the step-by-step analysis: (1) read the poem aloud, (2) identify the central metaphor (diverging roads = life choices), (3) highlight the key line 'I took the one less traveled by' and explain its significance, (4) discuss the tone shift in the final stanza from reflection to assertion, (5) present two common interpretations — celebrating individualism vs. ironic regret about the illusion of choice.",
+      "ground_truth": {
+        "correct_answer": "Text analysis demonstration of 'The Road Not Taken' with metaphor identification, key line analysis, tone discussion, and multiple interpretations",
+        "key_visual_elements": [
+          "poem text displayed",
+          "highlighted key metaphor",
+          "key line emphasis",
+          "tone shift markers",
+          "two interpretation labels",
+          "analytical annotations"
+        ],
+        "key_steps": [
+          "Display and read the poem",
+          "Identify central metaphor of diverging roads",
+          "Highlight and explain key line",
+          "Discuss tone shift in final stanza",
+          "Present two interpretations"
+        ]
+      },
+      "rubric_criteria": "9-10: Analysis is literary and insightful, both interpretations are fairly presented, poem text is accurate, analytical steps are methodical and educational. 7-8: Analysis is clear and mostly insightful, both interpretations are mentioned but one may be less developed, poem text is mostly accurate, steps are logical and mostly educational. 5-6: Analysis is basic and somewhat insightful, both interpretations are mentioned but lack depth, poem text has minor inaccuracies, steps are somewhat logical but may lack educational depth. 3-4: Poem displayed but analysis is shallow or only one interpretation is presented, poem text may have inaccuracies, steps are disorganized and lack educational value. 1-2: Analysis is minimal or incorrect, interpretations are missing or incorrect, poem text is inaccurate or missing, steps are confusing and lack educational purpose.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-Col-S-UC-6-050",
+      "subject": "ela",
+      "grade_level": "college",
+      "category": "S-UC",
+      "subcategory": "S-UC-6",
+      "prompt_text": "Generate an interactive reading comprehension simulation for a college-level passage. Display a paragraph from a scholarly article about the impact of the printing press on literacy rates. Present comprehension questions at three levels: (1) literal — 'What year was the printing press invented?', (2) inferential — 'Why did literacy rates increase after the printing press?', (3) evaluative — 'How does the author's argument compare to alternative explanations?' Show correct and incorrect answer choices with explanations for each.",
+      "ground_truth": {
+        "correct_answer": "Interactive reading comprehension simulation with three question levels (literal, inferential, evaluative) and answer explanations",
+        "key_visual_elements": [
+          "scholarly passage displayed",
+          "literal comprehension question",
+          "inferential comprehension question",
+          "evaluative comprehension question",
+          "answer choices with correct/incorrect labels",
+          "explanations for each answer"
+        ],
+        "key_steps": [
+          "Display scholarly passage about printing press",
+          "Present literal question with answer choices",
+          "Show correct answer and explanation",
+          "Present inferential question with answer choices",
+          "Show correct answer and explanation",
+          "Present evaluative question with answer choices",
+          "Show correct answer and explanation"
+        ]
+      },
+      "rubric_criteria": "9-10: All three comprehension levels are represented with appropriate difficulty, passage is scholarly and accurate, answer explanations are clear and educational. 7-8: Comprehension levels are mostly represented with slight difficulty imbalance, passage is relevant but may lack depth, explanations are generally clear but could be more detailed. 5-6: Some comprehension levels are present but not well-balanced, passage is somewhat scholarly but may contain minor inaccuracies, explanations are present but lack depth. 3-4: Reading passage shown with questions but levels are not differentiated or explanations are missing. 1-2: Passage is irrelevant or incorrect, questions are poorly constructed or missing, no explanations provided.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-Mid-S-UC-3-051",
+      "subject": "social",
+      "grade_level": "middle",
+      "category": "S-UC",
+      "subcategory": "S-UC-3",
+      "prompt_text": "Generate a step-by-step tutorial video on reading and analyzing primary historical sources for middle school social studies. Show: (1) selecting a primary source document — a facsimile of a letter written by a Civil War soldier, (2) identifying the author, date, and intended audience, (3) reading the document and highlighting key passages that reveal the author's perspective, (4) asking contextual questions — 'What was happening during this time period? Why might the author feel this way?', (5) comparing the primary source account with a secondary source textbook summary to identify differences in tone and detail. Label each step with numbered headings.",
+      "ground_truth": {
+        "correct_answer": "Step-by-step tutorial on reading and analyzing primary historical sources with five clearly labeled stages",
+        "key_visual_elements": [
+          "Civil War soldier's letter facsimile",
+          "author, date, and audience identification labels",
+          "highlighted key passages",
+          "contextual questions displayed on screen",
+          "secondary source textbook comparison",
+          "numbered step headings"
+        ],
+        "key_steps": [
+          "Select and display primary source document",
+          "Identify author, date, and audience",
+          "Read and highlight key passages",
+          "Ask contextual questions about time period",
+          "Compare primary source with secondary source",
+          "Label each step with numbered headings"
+        ]
+      },
+      "rubric_criteria": "9-10: All five analysis steps are demonstrated in correct order, primary source is age-appropriate and historically accurate, contextual questions are thoughtful, comparison with secondary source reveals meaningful differences. 7-8: Most analysis steps are demonstrated with minor omissions, primary source is mostly appropriate and accurate, contextual questions are generally insightful, comparison with secondary source is present but lacks depth. 5-6: Some analysis steps are demonstrated but in incorrect order, primary source is somewhat appropriate, contextual questions are basic, comparison with secondary source is superficial. 3-4: Primary source document shown with some analysis but key steps are missing or the comparison with secondary source is absent. 1-2: Few or none of the analysis steps are demonstrated, primary source is inappropriate or inaccurate, contextual questions are missing, no comparison with secondary source.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-EHigh-S-UC-1-052",
+      "subject": "arts",
+      "grade_level": "elementary_high",
+      "category": "S-UC",
+      "subcategory": "S-UC-1",
+      "prompt_text": "Generate an explanatory animation showing how musical notes and rests work on a staff. Start by drawing a five-line staff and placing a treble clef at the beginning. Introduce whole notes, half notes, quarter notes, and eighth notes one at a time, showing each note's shape and explaining how many beats it receives in 4/4 time. Then introduce the corresponding rests — whole rest, half rest, quarter rest, eighth rest — placing each below or on the staff with a label showing its duration. Conclude by playing a simple four-measure melody where the notes and rests appear on the staff in time with the music.",
+      "ground_truth": {
+        "correct_answer": "Explanatory animation of musical notes and rests on a staff with beat values and a simple melody demonstration",
+        "key_visual_elements": [
+          "five-line staff with treble clef",
+          "whole note, half note, quarter note, eighth note",
+          "beat value labels for each note",
+          "whole rest, half rest, quarter rest, eighth rest",
+          "rest duration labels",
+          "four-measure melody on staff"
+        ],
+        "key_steps": [
+          "Draw five-line staff with treble clef",
+          "Introduce note types with beat values",
+          "Introduce rest types with durations",
+          "Show corresponding note and rest pairs",
+          "Play simple four-measure melody",
+          "Display notes and rests in time with music"
+        ]
+      },
+      "rubric_criteria": "9-10: Staff notation is musically accurate, note and rest shapes are correct, beat values in 4/4 time are properly explained, melody demonstration synchronizes notation with sound. 7-8: Staff and notes are mostly accurate, with minor errors in note or rest shapes; beat values are explained but may lack clarity, and melody demonstration is mostly synchronized. 5-6: Staff and notes are presented with some inaccuracies; beat values are mentioned but not clearly explained, and melody demonstration lacks synchronization. 3-4: Musical staff and notes shown but beat values are incorrect or rests are omitted. 1-2: Staff is incomplete or incorrect, notes and rests are inaccurately depicted, beat values are not explained, and there is no melody demonstration.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-Mid-S-UC-4-053",
+      "subject": "arts",
+      "grade_level": "middle",
+      "category": "S-UC",
+      "subcategory": "S-UC-4",
+      "prompt_text": "Generate a narrative educational video telling the story of how Ludwig van Beethoven composed his 9th Symphony while profoundly deaf. Begin with young Beethoven as a talented musician in Bonn, show the onset of his hearing loss in his late twenties and his despair documented in the Heiligenstadt Testament, then depict his determination to continue composing using conversation books and feeling vibrations through the piano. Climax with the premiere of the 9th Symphony in Vienna in 1824, where Beethoven had to be turned around by a soloist to see the audience's thunderous applause he could not hear. Narrate the journey as an inspiring story of perseverance.",
+      "ground_truth": {
+        "correct_answer": "Narrative video telling the story of Beethoven composing his 9th Symphony while deaf, from early talent through hearing loss to triumphant premiere",
+        "key_visual_elements": [
+          "young Beethoven as musician in Bonn",
+          "onset of hearing loss depiction",
+          "Heiligenstadt Testament reference",
+          "conversation books and piano vibrations",
+          "1824 Vienna premiere scene",
+          "Beethoven turned around to see applause",
+          "inspiring narrative tone"
+        ],
+        "key_steps": [
+          "Introduce young Beethoven's musical talent",
+          "Show onset of hearing loss",
+          "Reference the Heiligenstadt Testament",
+          "Depict adaptive composing methods",
+          "Show the 9th Symphony premiere in Vienna",
+          "Climax with audience applause scene",
+          "Conclude with message of perseverance"
+        ]
+      },
+      "rubric_criteria": "9-10: Historical narrative is accurate and compelling, key biographical events are correctly sequenced, the premiere scene is emotionally resonant, the story conveys perseverance effectively. 7-8: Narrative is mostly accurate with minor errors, events are mostly in order, the premiere scene is engaging, and the theme of perseverance is clear. 5-6: Some historical inaccuracies are present, events are partially out of sequence, the premiere scene lacks emotional impact, and perseverance is not consistently highlighted. 3-4: Beethoven-related content present but historical details are inaccurate or the narrative lacks emotional depth. 1-2: Narrative is confusing with significant historical inaccuracies, events are poorly sequenced, the premiere scene is ineffective, and the theme of perseverance is absent.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-High-S-UC-2-054",
+      "subject": "arts",
+      "grade_level": "high",
+      "category": "S-UC",
+      "subcategory": "S-UC-2",
+      "prompt_text": "Generate an instructor-based lecture video where a high school art teacher explains the principles of visual composition. The instructor stands before a display showing example photographs and paintings. Cover the following principles with visual examples: (1) rule of thirds — overlay a 3x3 grid on a landscape photograph and show how key elements align with grid intersections, (2) leading lines — trace converging road lines in a photograph that guide the viewer's eye to a focal point, (3) balance — compare a symmetrically balanced painting with an asymmetrically balanced one using visual weight indicators. The instructor labels each principle and explains why it creates effective compositions.",
+      "ground_truth": {
+        "correct_answer": "Instructor-based lecture on visual composition principles: rule of thirds, leading lines, and balance with photographic and painting examples",
+        "key_visual_elements": [
+          "instructor at display with examples",
+          "3x3 grid overlay on landscape photograph",
+          "key elements at grid intersections",
+          "converging leading lines in photograph",
+          "focal point identification",
+          "symmetrical vs asymmetrical balance comparison",
+          "visual weight indicators",
+          "principle labels"
+        ],
+        "key_steps": [
+          "Instructor introduces visual composition",
+          "Demonstrate rule of thirds with grid overlay",
+          "Show key elements at grid intersections",
+          "Demonstrate leading lines with converging road",
+          "Identify focal point guided by lines",
+          "Compare symmetrical and asymmetrical balance",
+          "Label each principle and explain effectiveness"
+        ]
+      },
+      "rubric_criteria": "9-10: All three composition principles are accurately explained with clear visual examples, grid overlay and leading lines are correctly demonstrated, balance comparison is insightful, instructor delivery is engaging. 7-8: Most principles are explained accurately with good visual examples, grid overlay and leading lines are mostly correct, balance comparison is present but lacks depth, instructor delivery is mostly engaging. 5-6: Some principles are explained with basic visual examples, grid overlay and leading lines are partially correct, balance comparison is minimal, instructor delivery is somewhat engaging. 3-4: Composition-related imagery shown but principles are incorrectly explained or visual examples do not clearly illustrate the concepts. 1-2: Principles are poorly explained with little to no visual examples, grid overlay and leading lines are incorrect or missing, balance comparison is absent, instructor delivery is disengaging.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-EHigh-S-VIU-R1-045",
+      "subject": "science",
+      "grade_level": "elementary_high",
+      "category": "S-VIU",
+      "subcategory": "S-VIU-R1",
+      "prompt_text": "What is the 4th planet from the Sun?",
+      "ground_truth": {
+        "correct_answer": "Mars",
+        "key_visual_elements": [
+          "solar system with planets in order",
+          "4th planet highlighted"
+        ],
+        "key_steps": [
+          "Identify planet order from the Sun",
+          "Count to the 4th planet"
+        ]
+      },
+      "bloom_questions": [
+        {
+          "bloom_level": "remember",
+          "question_text": "What is the 4th planet from the Sun?",
+          "expected_answer": "Mars",
+          "baseline_condition": "text_only",
+          "video_condition": "with_reference_video"
+        }
+      ],
+      "reference_video_id": "EVB-Sci-EHigh-S-PF-V3-003",
+      "rubric_criteria": "Compare VLM accuracy rate with video vs. text-only baseline. Positive delta indicates video information utility.",
+      "scoring_method": "vlm_comparison",
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": false
+        },
+        "eval_method": "vlm_comparison",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-EHigh-S-VIU-R2-046",
+      "subject": "social",
+      "grade_level": "elementary_high",
+      "category": "S-VIU",
+      "subcategory": "S-VIU-R2",
+      "prompt_text": "What is the name of the technique used to read and interpret a world map by identifying continents, oceans, and the compass rose?",
+      "ground_truth": {
+        "correct_answer": "Map reading (using a compass rose, legend, and spatial orientation)",
+        "key_visual_elements": [
+          "world map with labeled continents",
+          "compass rose",
+          "map legend"
+        ],
+        "key_steps": [
+          "Identify the compass rose on the map",
+          "Locate and name continents and oceans"
+        ]
+      },
+      "bloom_questions": [
+        {
+          "bloom_level": "remember",
+          "question_text": "What is the name of the technique used to read and interpret a world map by identifying continents, oceans, and the compass rose?",
+          "expected_answer": "Map reading (using a compass rose, legend, and spatial orientation)",
+          "baseline_condition": "text_only",
+          "video_condition": "with_reference_video"
+        }
+      ],
+      "reference_video_id": "EVB-Soc-EHigh-S-PF-D3-020",
+      "rubric_criteria": "Compare VLM accuracy rate with video vs. text-only baseline. Positive delta indicates video information utility.",
+      "scoring_method": "vlm_comparison",
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": false
+        },
+        "eval_method": "vlm_comparison",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-Mid-S-VIU-U1-047",
+      "subject": "ela",
+      "grade_level": "middle",
+      "category": "S-VIU",
+      "subcategory": "S-VIU-U1",
+      "prompt_text": "In a persuasive essay, what is the purpose of a counterargument paragraph?",
+      "ground_truth": {
+        "correct_answer": "A counterargument paragraph acknowledges the opposing viewpoint and then refutes it, strengthening the writer's own argument",
+        "key_visual_elements": [
+          "essay structure with counterargument section",
+          "opposing viewpoint presented",
+          "refutation with evidence"
+        ],
+        "key_steps": [
+          "Identify the counterargument in the essay",
+          "Understand its role in strengthening the main argument"
+        ]
+      },
+      "bloom_questions": [
+        {
+          "bloom_level": "understand",
+          "question_text": "In a persuasive essay, what is the purpose of a counterargument paragraph?",
+          "expected_answer": "A counterargument paragraph acknowledges the opposing viewpoint and then refutes it, strengthening the writer's own argument",
+          "baseline_condition": "text_only",
+          "video_condition": "with_reference_video"
+        }
+      ],
+      "reference_video_id": "EVB-ELA-Mid-S-UC-3-047",
+      "rubric_criteria": "Compare VLM accuracy rate with video vs. text-only baseline. Positive delta indicates video provides conceptual understanding beyond text.",
+      "scoring_method": "vlm_comparison",
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": false
+        },
+        "eval_method": "vlm_comparison",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-EHigh-S-VIU-U2-048",
+      "subject": "arts",
+      "grade_level": "elementary_high",
+      "category": "S-VIU",
+      "subcategory": "S-VIU-U2",
+      "prompt_text": "In watercolor painting, what happens to the color intensity when you add more water to the paint on a wet brush?",
+      "ground_truth": {
+        "correct_answer": "The color becomes lighter and more transparent (the intensity decreases)",
+        "key_visual_elements": [
+          "brush with concentrated paint",
+          "adding water to brush",
+          "gradient from dark to light",
+          "transparency increasing"
+        ],
+        "key_steps": [
+          "Observe concentrated watercolor on brush",
+          "Add water and observe color change",
+          "Understand water dilutes pigment intensity"
+        ]
+      },
+      "bloom_questions": [
+        {
+          "bloom_level": "understand",
+          "question_text": "In watercolor painting, what happens to the color intensity when you add more water to the paint on a wet brush?",
+          "expected_answer": "The color becomes lighter and more transparent (the intensity decreases)",
+          "baseline_condition": "text_only",
+          "video_condition": "with_reference_video"
+        }
+      ],
+      "reference_video_id": "EVB-Art-EHigh-S-PF-D3-015",
+      "rubric_criteria": "Compare VLM accuracy rate with video vs. text-only baseline. Positive delta indicates video aids conceptual understanding of art techniques.",
+      "scoring_method": "vlm_comparison",
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": false
+        },
+        "eval_method": "vlm_comparison",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-Mid-S-VIU-T1-049",
+      "subject": "math",
+      "grade_level": "middle",
+      "category": "S-VIU",
+      "subcategory": "S-VIU-T1",
+      "prompt_text": "After watching a video that demonstrates solving 2x + 6 = 14 step by step, solve the following equation: 3x + 9 = 21. What is the value of x?",
+      "ground_truth": {
+        "correct_answer": "x = 4",
+        "key_visual_elements": [
+          "equation 2x + 6 = 14 being solved",
+          "step: subtract 6 from both sides",
+          "step: divide by 2",
+          "transfer to 3x + 9 = 21"
+        ],
+        "key_steps": [
+          "Watch 2x + 6 = 14 solution",
+          "Recognize same pattern: subtract constant, then divide",
+          "Apply: 3x + 9 - 9 = 21 - 9 gives 3x = 12",
+          "Divide: x = 12/3 = 4"
+        ]
+      },
+      "bloom_questions": [
+        {
+          "bloom_level": "transfer",
+          "question_text": "After watching the solution to 2x + 6 = 14, solve: 3x + 9 = 21. What is the value of x?",
+          "expected_answer": "x = 4",
+          "baseline_condition": "text_only",
+          "video_condition": "with_reference_video"
+        }
+      ],
+      "reference_video_id": "EVB-Math-Mid-S-PF-D2-014",
+      "rubric_criteria": "Compare VLM accuracy on transfer problem with video demonstration vs. text-only. Positive delta indicates video aids knowledge transfer to novel problems.",
+      "scoring_method": "vlm_comparison",
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": false
+        },
+        "eval_method": "vlm_comparison",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-High-S-VIU-T2-050",
+      "subject": "social",
+      "grade_level": "high",
+      "category": "S-VIU",
+      "subcategory": "S-VIU-T2",
+      "prompt_text": "After watching a video about how Gutenberg's movable type printing press transformed European society, explain how a similar technological innovation today (e.g., social media) might transform information access in developing countries.",
+      "ground_truth": {
+        "correct_answer": "Just as movable type democratized knowledge by making books affordable and widespread, social media can democratize information access in developing countries by bypassing traditional media gatekeepers and enabling direct information sharing",
+        "key_visual_elements": [
+          "movable type printing press",
+          "books becoming widely available",
+          "modern technology comparison",
+          "information access transformation"
+        ],
+        "key_steps": [
+          "Understand how printing press transformed information access",
+          "Identify the parallel mechanism in modern technology",
+          "Apply the historical pattern to a new context"
+        ]
+      },
+      "bloom_questions": [
+        {
+          "bloom_level": "transfer",
+          "question_text": "After watching the video about Gutenberg's printing press, explain how a similar technological innovation today might transform information access in developing countries.",
+          "expected_answer": "Just as movable type democratized knowledge by making books affordable, social media can democratize information in developing countries by bypassing traditional gatekeepers",
+          "baseline_condition": "text_only",
+          "video_condition": "with_reference_video"
+        }
+      ],
+      "reference_video_id": "EVB-Soc-High-S-UC-4b-034",
+      "rubric_criteria": "Compare VLM accuracy on transfer question with video vs. text-only. Positive delta indicates video aids historical-to-modern knowledge transfer.",
+      "scoring_method": "vlm_comparison",
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": false
+        },
+        "eval_method": "vlm_comparison",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-High-S-VIU-E1-051",
+      "subject": "ela",
+      "grade_level": "high",
+      "category": "S-VIU",
+      "subcategory": "S-VIU-E1",
+      "prompt_text": "After watching a video about unreliable narrators, evaluate whether the narrator in the following passage is reliable or unreliable: 'I am the most honest person you will ever meet. Nobody lies less than I do. Everything I tell you is completely true, and anyone who says otherwise is jealous.'",
+      "ground_truth": {
+        "correct_answer": "The narrator is unreliable — the excessive self-praise, absolute claims ('most honest', 'nobody', 'everything'), and dismissal of all critics as 'jealous' are classic signals of an unreliable narrator",
+        "key_visual_elements": [
+          "unreliable narrator characteristics",
+          "textual red flags highlighted",
+          "comparison of reliable vs unreliable narration"
+        ],
+        "key_steps": [
+          "Recall characteristics of unreliable narrators from the video",
+          "Identify red flags in the passage (excessive claims, absolutes)",
+          "Evaluate and conclude the narrator is unreliable"
+        ]
+      },
+      "bloom_questions": [
+        {
+          "bloom_level": "evaluate",
+          "question_text": "Based on the video about unreliable narrators, evaluate whether the narrator in the given passage is reliable or unreliable and explain why.",
+          "expected_answer": "The narrator is unreliable — excessive self-praise, absolute claims, and dismissal of critics are classic unreliable narrator signals",
+          "baseline_condition": "text_only",
+          "video_condition": "with_reference_video"
+        }
+      ],
+      "reference_video_id": "EVB-ELA-High-S-PF-V-021",
+      "rubric_criteria": "Compare VLM accuracy on literary evaluation question with video vs. text-only. Positive delta indicates video aids critical evaluation of narrative reliability.",
+      "scoring_method": "vlm_comparison",
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": false
+        },
+        "eval_method": "vlm_comparison",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Mid-S-VIU-E2-052",
+      "subject": "science",
+      "grade_level": "middle",
+      "category": "S-VIU",
+      "subcategory": "S-VIU-E2",
+      "prompt_text": "When an acid reacts with a base (neutralization reaction), what are the two main products?",
+      "ground_truth": {
+        "correct_answer": "Water and salt",
+        "key_visual_elements": [
+          "acid solution (e.g., HCl)",
+          "base solution (e.g., NaOH)",
+          "reaction animation",
+          "water molecule (H2O) formed",
+          "salt crystal (NaCl) formed"
+        ],
+        "key_steps": [
+          "Identify acid and base reactants",
+          "Observe neutralization reaction",
+          "Identify water as one product",
+          "Identify salt as the other product"
+        ]
+      },
+      "bloom_questions": [
+        {
+          "bloom_level": "evaluate",
+          "question_text": "When an acid reacts with a base (neutralization reaction), what are the two main products?",
+          "expected_answer": "Water and salt",
+          "baseline_condition": "text_only",
+          "video_condition": "with_reference_video"
+        }
+      ],
+      "reference_video_id": "EVB-Sci-High-S-UC-6b-042",
+      "rubric_criteria": "Compare VLM accuracy on evaluation question about neutralization products with video vs. text-only. Positive delta indicates video aids evaluation of chemical reaction outcomes.",
+      "scoring_method": "vlm_comparison",
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": false
+        },
+        "eval_method": "vlm_comparison",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-EHigh-S-PF-D-093",
+      "subject": "arts",
+      "grade_level": "elementary_high",
+      "category": "S-PF",
+      "subcategory": "S-PF-D",
+      "prompt_text": "Generate a video demonstrating the proper technique for a forward roll (somersault) in gymnastics. Show the step-by-step process: (1) squat position with hands on the mat, (2) tuck the chin to chest, (3) push off with legs and roll forward along the spine, (4) land in squat position. Include close-up views of hand placement and head position for safety.",
+      "ground_truth": {
+        "correct_answer": "Proper forward roll technique with correct body mechanics and safety positions",
+        "key_visual_elements": [
+          "squat start position",
+          "hands flat on mat",
+          "chin tucked to chest",
+          "rolling along curved spine",
+          "landing in squat"
+        ]
+      },
+      "rubric_criteria": "9-10: All four phases shown clearly with correct body mechanics, close-ups of hand placement and chin tuck for safety, smooth and natural movement. 7-8: Most phases correct with minor inaccuracies in body position, safety elements mostly present. 5-6: Basic forward roll shown but missing some phases or safety details, some body mechanics incorrect. 3-4: Attempt at forward roll but significant errors in technique, missing safety elements. 1-2: No recognizable forward roll or completely incorrect movement.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-Mid-S-PF-V-094",
+      "subject": "arts",
+      "grade_level": "middle",
+      "category": "S-PF",
+      "subcategory": "S-PF-V",
+      "prompt_text": "Generate a video visualizing the major muscle groups activated during a squat exercise. Show an anatomical overlay on a person performing a squat: highlight the quadriceps (front thigh), hamstrings (back thigh), gluteus maximus (buttocks), and core muscles. Use color-coded highlighting to show which muscles activate during the downward and upward phases.",
+      "ground_truth": {
+        "correct_answer": "Anatomical visualization of muscle activation during squat: quadriceps, hamstrings, glutes, and core with color-coded phases",
+        "key_visual_elements": [
+          "person performing squat",
+          "anatomical overlay",
+          "quadriceps highlighted",
+          "hamstrings highlighted",
+          "glutes highlighted",
+          "core muscles"
+        ]
+      },
+      "rubric_criteria": "9-10: Clear anatomical overlay with all four muscle groups correctly identified and color-coded, accurate activation timing during downward/upward phases. 7-8: Most muscle groups shown correctly with some color coding, minor inaccuracies in activation timing. 5-6: Some muscles identified but overlay is unclear or some groups missing, limited phase distinction. 3-4: Attempt at muscle visualization but mostly inaccurate muscle locations or missing key groups. 1-2: No recognizable anatomical overlay or completely wrong muscle identification.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-ELow-S-UC-1-095",
+      "subject": "arts",
+      "grade_level": "elementary_low",
+      "category": "S-UC",
+      "subcategory": "S-UC-1",
+      "prompt_text": "Generate an explanatory animation teaching young children the basic rules of soccer: two teams try to kick the ball into the other team's goal, players cannot touch the ball with their hands (except the goalkeeper), and the team with more goals wins. Use simple, colorful characters and a kid-friendly soccer field.",
+      "ground_truth": {
+        "correct_answer": "Simple animated explanation of basic soccer rules suitable for young children",
+        "key_visual_elements": [
+          "colorful animated characters",
+          "kid-friendly soccer field",
+          "ball being kicked into goal",
+          "goalkeeper using hands",
+          "scoreboard"
+        ]
+      },
+      "rubric_criteria": "9-10: All three basic rules clearly explained with age-appropriate animation, colorful characters, engaging and easy to follow for young children. 7-8: Most rules covered with appealing animation, minor clarity issues but generally appropriate for young learners. 5-6: Some rules presented but animation is not fully age-appropriate or some rules unclear. 3-4: Attempt at soccer rules but confusing for young children, missing key rules or overly complex. 1-2: No recognizable soccer rules or completely inappropriate for the age group.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-Col-S-UC-5-096",
+      "subject": "arts",
+      "grade_level": "college",
+      "category": "S-UC",
+      "subcategory": "S-UC-5",
+      "prompt_text": "Generate a STEM problem-solving demonstration video showing how to calculate the launch angle for maximum distance in shot put using projectile motion equations. Start with the problem setup (mass, initial velocity), show the equation h = v0*sin(theta)*t - 0.5*g*t^2, derive the optimal angle considering release height, and arrive at the answer that the optimal angle is slightly less than 45 degrees when releasing from above ground level.",
+      "ground_truth": {
+        "correct_answer": "Optimal shot put angle is slightly less than 45 degrees when release height is above ground, derived from projectile motion equations",
+        "key_visual_elements": [
+          "shot put athlete",
+          "projectile trajectory",
+          "equation display",
+          "angle diagram",
+          "release height factor"
+        ]
+      },
+      "rubric_criteria": "9-10: Complete derivation with correct equations, clear visualization of projectile path, accurate conclusion about optimal angle less than 45 degrees due to release height, all steps logically connected. 7-8: Mostly correct derivation with minor gaps, projectile visualization present, correct final answer. 5-6: Basic projectile concepts shown but incomplete derivation, some equations present but logical connection weak. 3-4: Attempt at physics content but significant errors in equations or wrong conclusion. 1-2: No recognizable physics content or completely incorrect analysis.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-High-S-PF-V-097",
+      "subject": "informatics",
+      "grade_level": "high",
+      "category": "S-PF",
+      "subcategory": "S-PF-V",
+      "prompt_text": "Generate a video visualizing how a stack data structure works using a real-world analogy of a stack of plates. Show push operations (adding plates on top), pop operations (removing the top plate), and demonstrate LIFO (Last In, First Out) behavior. Include labels showing the top pointer and stack operations with corresponding code snippets.",
+      "ground_truth": {
+        "correct_answer": "Stack data structure visualization with push/pop operations demonstrating LIFO behavior",
+        "key_visual_elements": [
+          "stack of plates analogy",
+          "push animation",
+          "pop animation",
+          "top pointer",
+          "LIFO demonstration",
+          "code snippets"
+        ]
+      },
+      "rubric_criteria": "9-10: Stack operations clearly visualized with plate analogy, push/pop correctly demonstrated, LIFO explicitly shown, code snippets properly integrated, top pointer visible. 7-8: Most operations shown correctly with good analogy, minor issues with code integration or pointer visualization. 5-6: Basic stack concept present but analogy unclear or operations partially demonstrated. 3-4: Attempt at stack visualization but significant conceptual errors. 1-2: No recognizable stack data structure or completely incorrect behavior shown.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-Mid-S-PF-D-098",
+      "subject": "informatics",
+      "grade_level": "middle",
+      "category": "S-PF",
+      "subcategory": "S-PF-D",
+      "prompt_text": "Generate a video demonstrating how to write a simple program that asks the user for their name and age, then prints a greeting message. Show the step-by-step coding process: (1) declare variables, (2) get user input, (3) store in variables, (4) print formatted output. Use a visual code editor with syntax highlighting and show the program running with sample input/output.",
+      "ground_truth": {
+        "correct_answer": "Step-by-step coding demonstration of a simple input/output program with variables",
+        "key_visual_elements": [
+          "code editor with syntax highlighting",
+          "variable declaration",
+          "input prompt",
+          "output display",
+          "running program with sample data"
+        ]
+      },
+      "rubric_criteria": "9-10: Complete coding process shown step by step with clear syntax, program runs with visible input/output, each step labeled and explained. 7-8: Most coding steps shown correctly, program execution visible but some steps unclear. 5-6: Basic coding shown but steps not well separated or some missing, limited execution demonstration. 3-4: Attempt at coding demonstration but confusing or incomplete. 1-2: No recognizable coding process or completely incorrect.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-EHigh-S-PF-C-099",
+      "subject": "informatics",
+      "grade_level": "elementary_high",
+      "category": "S-PF",
+      "subcategory": "S-PF-C",
+      "prompt_text": "Generate a video showing how algorithms are used in everyday life. Present three real-world examples: (1) a recipe as an algorithm for cooking (step-by-step instructions), (2) GPS navigation as an algorithm for finding the shortest route, (3) a search engine as an algorithm for finding information. Connect each example to the concept of step-by-step problem solving.",
+      "ground_truth": {
+        "correct_answer": "Three real-world algorithm examples: cooking recipe, GPS navigation, search engine — connecting to computational thinking",
+        "key_visual_elements": [
+          "recipe steps",
+          "GPS route calculation",
+          "search engine results",
+          "algorithm concept connection"
+        ]
+      },
+      "rubric_criteria": "9-10: All three real-world examples clearly presented with strong connection to algorithm concept, age-appropriate and engaging visuals. 7-8: Most examples shown with good connection to algorithms, minor clarity issues. 5-6: Some examples present but connection to algorithm concept is weak. 3-4: One example shown with limited connection to computing. 1-2: No recognizable real-world algorithm connection.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-ELow-S-PF-M-100",
+      "subject": "informatics",
+      "grade_level": "elementary_low",
+      "category": "S-PF",
+      "subcategory": "S-PF-M",
+      "prompt_text": "Generate a video designed to motivate young children to learn coding. Show an animated character who uses simple coding blocks (like Scratch) to create fun things: making a cat dance, drawing colorful patterns, and building a simple game. End with the message that anyone can learn to code and create amazing things.",
+      "ground_truth": {
+        "correct_answer": "Motivational video showing fun coding activities with block-based programming for young children",
+        "key_visual_elements": [
+          "animated character",
+          "block-based coding interface",
+          "dancing cat animation",
+          "colorful patterns",
+          "simple game",
+          "encouraging message"
+        ]
+      },
+      "rubric_criteria": "9-10: Highly engaging and motivational, shows diverse coding outcomes with block-based programming, age-appropriate, ends with empowering message. 7-8: Engaging with some coding examples, mostly age-appropriate, positive message present. 5-6: Some motivational elements but coding examples unclear or not age-appropriate. 3-4: Limited motivation, coding shown but not accessible for young children. 1-2: Not motivational or completely inappropriate for the age group.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-Col-S-PF-V-101",
+      "subject": "informatics",
+      "grade_level": "college",
+      "category": "S-PF",
+      "subcategory": "S-PF-V",
+      "prompt_text": "Generate a video visualizing how a neural network learns to classify handwritten digits. Show the network architecture (input layer of 784 pixels, hidden layers, output layer of 10 digits), forward propagation with activations lighting up, backpropagation with error signals flowing backward, and weight updates. Show the network improving its accuracy over training epochs.",
+      "ground_truth": {
+        "correct_answer": "Neural network learning visualization: architecture, forward propagation, backpropagation, and training progress",
+        "key_visual_elements": [
+          "network architecture diagram",
+          "input layer (pixels)",
+          "hidden layers with activations",
+          "output layer (0-9)",
+          "forward propagation flow",
+          "backpropagation arrows",
+          "training progress"
+        ]
+      },
+      "rubric_criteria": "9-10: Complete neural network visualization with correct architecture, forward/backward propagation clearly animated, weight updates shown, training improvement visible. 7-8: Network architecture and propagation mostly correct, some phases unclear but overall concept conveyed. 5-6: Basic neural network shown but propagation or learning process unclear. 3-4: Attempt at neural network but significant conceptual errors. 1-2: No recognizable neural network or completely incorrect.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-ELow-S-UC-1-102",
+      "subject": "informatics",
+      "grade_level": "elementary_low",
+      "category": "S-UC",
+      "subcategory": "S-UC-1",
+      "prompt_text": "Generate an explanatory animation for young children showing what an algorithm is. Use the analogy of getting ready for school: (1) wake up, (2) brush teeth, (3) eat breakfast, (4) put on clothes, (5) grab backpack, (6) go to school. Show that changing the order matters (you can't grab your backpack before putting on clothes!) and that an algorithm is just a set of steps in the right order.",
+      "ground_truth": {
+        "correct_answer": "Age-appropriate explanation of algorithms using morning routine analogy with emphasis on step order",
+        "key_visual_elements": [
+          "animated child character",
+          "numbered steps",
+          "morning routine sequence",
+          "wrong order example",
+          "algorithm definition"
+        ]
+      },
+      "rubric_criteria": "9-10: Delightful animation clearly explaining algorithms through morning routine, order importance demonstrated with counter-example, age-appropriate and engaging. 7-8: Good analogy with most steps, order importance somewhat shown, mostly age-appropriate. 5-6: Basic routine shown but algorithm concept not clearly connected, limited engagement. 3-4: Morning routine shown but no clear connection to algorithms. 1-2: No recognizable algorithm concept or inappropriate for young children.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-EHigh-S-UC-3-103",
+      "subject": "informatics",
+      "grade_level": "elementary_high",
+      "category": "S-UC",
+      "subcategory": "S-UC-3",
+      "prompt_text": "Generate a step-by-step tutorial video showing how to create a simple animation in Scratch: (1) open Scratch and choose a sprite, (2) add a 'when green flag clicked' block, (3) add a 'repeat 10' loop, (4) inside the loop add 'move 10 steps' and 'turn 36 degrees', (5) click the green flag to run — the sprite draws a circle pattern. Show each block being dragged and connected.",
+      "ground_truth": {
+        "correct_answer": "Step-by-step Scratch tutorial creating a circle animation with loop blocks",
+        "key_visual_elements": [
+          "Scratch interface",
+          "sprite selection",
+          "block palette",
+          "dragging blocks",
+          "repeat loop",
+          "move and turn blocks",
+          "running animation"
+        ]
+      },
+      "rubric_criteria": "9-10: Complete Scratch tutorial with all 5 steps clearly shown, blocks visibly dragged and connected, final animation runs correctly. 7-8: Most steps shown with Scratch-like interface, some blocks visible, final result shown. 5-6: Basic block programming shown but steps not clearly separated or interface unclear. 3-4: Attempt at showing coding but confusing or incomplete. 1-2: No recognizable block programming tutorial.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-Mid-S-UC-4-104",
+      "subject": "informatics",
+      "grade_level": "middle",
+      "category": "S-UC",
+      "subcategory": "S-UC-4",
+      "prompt_text": "Generate a narrative educational video telling the story of how the internet was created. Begin with ARPANET in the 1960s (US military network connecting 4 universities), show the invention of TCP/IP by Vint Cerf and Bob Kahn in the 1970s, the creation of the World Wide Web by Tim Berners-Lee in 1989, and end with the modern internet connecting billions of devices worldwide.",
+      "ground_truth": {
+        "correct_answer": "History of the internet: ARPANET (1960s) → TCP/IP (1970s) → WWW (1989) → modern internet",
+        "key_visual_elements": [
+          "ARPANET map with 4 nodes",
+          "Vint Cerf and Bob Kahn",
+          "Tim Berners-Lee",
+          "timeline progression",
+          "modern global network"
+        ]
+      },
+      "rubric_criteria": "9-10: Compelling narrative covering all four eras with accurate dates and key figures, engaging storytelling, clear timeline progression. 7-8: Most eras covered with mostly correct details, good narrative flow with minor inaccuracies. 5-6: Some internet history present but incomplete or inaccurate in places, weak narrative structure. 3-4: Limited history with significant errors or missing major milestones. 1-2: No recognizable internet history or completely incorrect.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-High-S-UC-5-105",
+      "subject": "informatics",
+      "grade_level": "high",
+      "category": "S-UC",
+      "subcategory": "S-UC-5",
+      "prompt_text": "Generate a STEM problem-solving demonstration video showing how to trace through a simple recursive function. Given the function fibonacci(n): if n<=1 return n, else return fibonacci(n-1) + fibonacci(n-2). Trace the call for fibonacci(5), showing the recursive call tree branching out, each leaf returning a value, and values combining back up to produce the final answer of 5.",
+      "ground_truth": {
+        "correct_answer": "Fibonacci recursive trace: fib(5)=5, showing complete call tree with values combining from leaves to root",
+        "key_visual_elements": [
+          "function code",
+          "call tree diagram",
+          "branching recursive calls",
+          "leaf values (0s and 1s)",
+          "values combining upward",
+          "final answer 5"
+        ]
+      },
+      "rubric_criteria": "9-10: Complete call tree for fibonacci(5) with correct branching, all leaf values correct, combination back to root clearly shown, final answer 5 highlighted. 7-8: Mostly correct call tree with minor errors in some branches, final answer correct. 5-6: Basic recursion concept shown but call tree incomplete or some branches incorrect. 3-4: Attempt at recursion trace but tree structure significantly wrong. 1-2: No recognizable recursion trace or completely incorrect.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-Col-S-UC-6-106",
+      "subject": "informatics",
+      "grade_level": "college",
+      "category": "S-UC",
+      "subcategory": "S-UC-6",
+      "prompt_text": "Generate a simulation video showing how data packets travel across the internet. Simulate sending an email: show the message being split into packets at the sender, each packet taking potentially different routes through routers (visualized as nodes in a network graph), packets arriving out of order at the destination, and being reassembled into the original message. Label TCP/IP layers involved.",
+      "ground_truth": {
+        "correct_answer": "Network packet routing simulation showing packet splitting, routing, out-of-order arrival, and reassembly with TCP/IP labels",
+        "key_visual_elements": [
+          "email message",
+          "packet splitting",
+          "network graph with routers",
+          "different packet routes",
+          "out-of-order arrival",
+          "packet reassembly",
+          "TCP/IP layer labels"
+        ]
+      },
+      "rubric_criteria": "9-10: Complete packet journey simulation with correct splitting, multiple routing paths, out-of-order arrival, reassembly, and TCP/IP layer labels. 7-8: Most packet journey shown correctly, some routing visualization, reassembly present with minor issues. 5-6: Basic network concept shown but packet journey incomplete or TCP/IP labels missing. 3-4: Some network elements but significant conceptual errors in packet routing. 1-2: No recognizable packet routing simulation.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-Mid-S-UC-1-107",
+      "subject": "informatics",
+      "grade_level": "middle",
+      "category": "S-UC",
+      "subcategory": "S-UC-1",
+      "prompt_text": "Generate an explanatory animation showing how a search engine works in three steps: (1) Crawling — spider bots visit web pages and follow links to discover new pages, (2) Indexing — the content of each page is analyzed and stored in a giant database organized by keywords, (3) Ranking — when a user searches, the engine finds matching pages in the index and ranks them by relevance. Use simple visuals with a spider character for the crawler.",
+      "ground_truth": {
+        "correct_answer": "Search engine explained in 3 steps: crawling (spider bots), indexing (keyword database), ranking (relevance sorting)",
+        "key_visual_elements": [
+          "spider bot character",
+          "web pages with links",
+          "index database",
+          "keyword matching",
+          "search results ranking",
+          "user search query"
+        ]
+      },
+      "rubric_criteria": "9-10: All three steps clearly animated with engaging spider character, accurate representation of crawling/indexing/ranking, age-appropriate and informative. 7-8: Most steps shown correctly with good visuals, minor inaccuracies in one step. 5-6: Basic search engine concept present but steps not clearly separated or some missing. 3-4: Only one step shown or significant conceptual errors. 1-2: No recognizable search engine explanation.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-High-S-VIU-U2-108",
+      "subject": "informatics",
+      "grade_level": "high",
+      "category": "S-VIU",
+      "subcategory": "S-VIU-U2",
+      "prompt_text": "After watching a video about how a CPU executes instructions through the fetch-decode-execute cycle, answer the following: If a CPU has a clock speed of 3 GHz, approximately how many fetch-decode-execute cycles can it perform per second? Explain what happens in each phase of the cycle.",
+      "ground_truth": {
+        "correct_answer": "3 GHz = approximately 3 billion cycles per second. Fetch: retrieve instruction from memory. Decode: interpret the instruction. Execute: perform the operation.",
+        "key_visual_elements": [
+          "CPU diagram",
+          "fetch-decode-execute cycle arrows",
+          "memory interaction",
+          "clock speed visualization"
+        ]
+      },
+      "scoring_method": "vlm_comparison",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "vlm_comparison",
+        "expected_duration_sec": 8
+      },
+      "bloom_questions": [
+        {
+          "bloom_level": "understand",
+          "question_text": "Approximately how many fetch-decode-execute cycles can a 3 GHz CPU perform per second?",
+          "expected_answer": "Approximately 3 billion cycles per second.",
+          "baseline_condition": "text_only",
+          "video_condition": "with_reference_video"
+        },
+        {
+          "bloom_level": "understand",
+          "question_text": "Briefly describe what happens in each of the fetch, decode, and execute phases.",
+          "expected_answer": "Fetch retrieves the next instruction from memory; decode interprets the instruction and identifies operands; execute performs the indicated operation in the ALU or related unit.",
+          "baseline_condition": "text_only",
+          "video_condition": "with_reference_video"
+        }
+      ],
+      "rubric_criteria": "Compare VLM accuracy with video vs. text-only baseline; positive delta indicates video information utility."
+    }
+  ]
+}

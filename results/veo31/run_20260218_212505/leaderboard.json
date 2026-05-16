@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-02-18T22:24:52.801524",
+  "leaderboard": [
+    {
+      "rank": 1,
+      "model_id": "veo31",
+      "model_name": "Veo 3.1",
+      "final_score": 0.0,
+      "safety_gate_passed": false,
+      "knowledge_score": 0.40906,
+      "skills_score": 0.407684,
+      "attitude_score": 0.38711,
+      "items_flagged": 34,
+      "icc_2_1": 0.542968
+    }
+  ]
+}

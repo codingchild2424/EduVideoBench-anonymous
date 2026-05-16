@@ -1,0 +1,3125 @@
+{
+  "version": "v1",
+  "dimension": "Knowledge",
+  "description": "EduVBench v1 Knowledge dimension: 52 K-CK + 20 K-PK = 72 prompts",
+  "total_items": 82,
+  "prompts": [
+    {
+      "id": "EVB-Sci-ELow-K-CK-F1-001",
+      "subject": "science",
+      "grade_level": "elementary_low",
+      "category": "K-CK",
+      "subcategory": "K-CK-F1",
+      "prompt_text": "Generate an educational video that clearly writes and displays the chemical formula for water, H₂O, showing the subscript notation and labeling each element (hydrogen and oxygen).",
+      "ground_truth": {
+        "correct_answer": "H₂O with subscript 2, representing two hydrogen atoms and one oxygen atom",
+        "key_visual_elements": [
+          "H₂O formula",
+          "subscript 2",
+          "hydrogen label",
+          "oxygen label"
+        ],
+        "key_steps": [
+          "Display the letter H",
+          "Add subscript 2",
+          "Display the letter O",
+          "Label elements"
+        ]
+      },
+      "rubric_criteria": "The video must display the correct chemical formula H₂O with proper subscript notation. The subscript 2 must appear smaller and lower than the main characters.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Writing H2O without subscript",
+        "Writing HO₂ instead of H₂O",
+        "Omitting the subscript entirely"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-ELow-K-CK-F2-002",
+      "subject": "science",
+      "grade_level": "elementary_low",
+      "category": "K-CK",
+      "subcategory": "K-CK-F2",
+      "prompt_text": "Generate an educational video showing the three states of matter — solid, liquid, and gas — using water as the example, with ice, liquid water, and steam displayed in that order.",
+      "ground_truth": {
+        "correct_answer": "Three states: solid (ice), liquid (water), gas (steam/water vapor)",
+        "key_visual_elements": [
+          "ice cube or frozen form",
+          "liquid water",
+          "steam or vapor",
+          "labels for each state"
+        ],
+        "key_steps": [
+          "Show solid ice",
+          "Show liquid water",
+          "Show gaseous steam",
+          "Label each state"
+        ]
+      },
+      "rubric_criteria": "The video must accurately depict all three states of matter using water. Each state must be visually distinguishable and correctly ordered: solid, liquid, gas.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Showing only two states",
+        "Mislabeling gas as liquid",
+        "Incorrect order of states"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-ELow-K-CK-C5-003",
+      "subject": "math",
+      "grade_level": "elementary_low",
+      "category": "K-CK",
+      "subcategory": "K-CK-C5",
+      "prompt_text": "Generate an educational video showing two line segments side by side — one 5 cm and one 8 cm — and visually mark the longer segment with a highlight or arrow.",
+      "ground_truth": {
+        "correct_answer": "The 8 cm segment is the longer one",
+        "key_visual_elements": [
+          "5 cm line segment",
+          "8 cm line segment",
+          "highlight or arrow on 8 cm segment"
+        ],
+        "key_steps": [
+          "Draw first segment (5 cm)",
+          "Draw second segment (8 cm)",
+          "Compare visually",
+          "Mark the longer one"
+        ]
+      },
+      "rubric_criteria": "The video must show two segments of clearly different lengths and correctly identify the longer one. The 8 cm segment must be visibly longer than the 5 cm segment.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Marking the shorter segment",
+        "Drawing both segments the same length",
+        "No marking on either segment"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-ELow-K-CK-P3-004",
+      "subject": "math",
+      "grade_level": "elementary_low",
+      "category": "K-CK",
+      "subcategory": "K-CK-P3",
+      "prompt_text": "Generate an educational video solving the addition problem 24 + 38 step by step using column addition, showing carrying over to the tens place, with the final answer 62.",
+      "ground_truth": {
+        "correct_answer": "62",
+        "key_visual_elements": [
+          "column format with 24 and 38",
+          "carry digit 1 above tens column",
+          "sum 62"
+        ],
+        "key_steps": [
+          "Write 24 and 38 in column form",
+          "Add ones: 4+8=12, write 2 carry 1",
+          "Add tens: 2+3+1=6",
+          "Final answer 62"
+        ]
+      },
+      "rubric_criteria": "The video must show the complete column addition process with correct carrying. Each step must be visible and the final answer must be 62.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Forgetting to carry the 1",
+        "Writing 52 instead of 62",
+        "Skipping the step-by-step process"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-EHigh-K-CK-F2-005",
+      "subject": "social",
+      "grade_level": "elementary_high",
+      "category": "K-CK",
+      "subcategory": "K-CK-F2",
+      "prompt_text": "Generate an educational video showing the seven continents of the world on a map, labeling each one: North America, South America, Europe, Africa, Asia, Australia, and Antarctica.",
+      "ground_truth": {
+        "correct_answer": "Seven continents: North America, South America, Europe, Africa, Asia, Australia, Antarctica",
+        "key_visual_elements": [
+          "world map",
+          "seven distinct continents",
+          "labels for each continent"
+        ],
+        "key_steps": [
+          "Display world map",
+          "Highlight each continent",
+          "Label all seven continents"
+        ]
+      },
+      "rubric_criteria": "The video must display a world map with all seven continents clearly visible and correctly labeled. Each continent must be in its correct geographic position.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Missing one or more continents",
+        "Swapping continent labels",
+        "Placing a continent in the wrong position"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-EHigh-K-CK-C1-006",
+      "subject": "social",
+      "grade_level": "elementary_high",
+      "category": "K-CK",
+      "subcategory": "K-CK-C1",
+      "prompt_text": "Generate an educational video classifying the three branches of the United States government: Legislative (Congress), Executive (President), and Judicial (Supreme Court), with a brief visual for each branch.",
+      "ground_truth": {
+        "correct_answer": "Three branches: Legislative (Congress), Executive (President), Judicial (Supreme Court)",
+        "key_visual_elements": [
+          "three-branch diagram",
+          "Capitol building for Legislative",
+          "White House for Executive",
+          "Supreme Court building for Judicial"
+        ],
+        "key_steps": [
+          "Introduce three branches",
+          "Show Legislative branch",
+          "Show Executive branch",
+          "Show Judicial branch"
+        ]
+      },
+      "rubric_criteria": "The video must correctly identify and visually represent all three branches of the US government with appropriate symbols or images for each branch.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Missing one branch",
+        "Swapping branch functions",
+        "Incorrectly associating buildings with branches"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-EHigh-K-CK-F3-007",
+      "subject": "arts",
+      "grade_level": "elementary_high",
+      "category": "K-CK",
+      "subcategory": "K-CK-F3",
+      "prompt_text": "Generate an educational video showing the structure of a musical staff: five horizontal lines, a treble clef at the beginning, and the notes E, G, B, D, F on the lines from bottom to top.",
+      "ground_truth": {
+        "correct_answer": "Five-line staff with treble clef; line notes from bottom to top: E, G, B, D, F",
+        "key_visual_elements": [
+          "five horizontal lines",
+          "treble clef",
+          "notes on lines",
+          "letter labels E G B D F"
+        ],
+        "key_steps": [
+          "Draw five lines",
+          "Place treble clef",
+          "Place notes on each line",
+          "Label E G B D F"
+        ]
+      },
+      "rubric_criteria": "The video must show a correctly drawn musical staff with five lines, a treble clef, and notes placed on each line in the correct order (E, G, B, D, F from bottom to top).",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Drawing four lines instead of five",
+        "Wrong note order",
+        "Missing treble clef"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-EHigh-K-CK-F1-008",
+      "subject": "arts",
+      "grade_level": "elementary_high",
+      "category": "K-CK",
+      "subcategory": "K-CK-F1",
+      "prompt_text": "Generate an educational video displaying the primary colors in painting (red, yellow, blue) and then mixing them in pairs to show the secondary colors: red+yellow=orange, red+blue=purple, yellow+blue=green.",
+      "ground_truth": {
+        "correct_answer": "Primary: red, yellow, blue; Secondary: orange, purple, green",
+        "key_visual_elements": [
+          "three primary color swatches",
+          "mixing animation",
+          "three secondary color results"
+        ],
+        "key_steps": [
+          "Show red, yellow, blue",
+          "Mix red+yellow to get orange",
+          "Mix red+blue to get purple",
+          "Mix yellow+blue to get green"
+        ]
+      },
+      "rubric_criteria": "The video must correctly show all three primary colors and demonstrate each mixing pair producing the correct secondary color.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Wrong secondary color from a mix",
+        "Using RGB primaries instead of paint primaries",
+        "Missing one mixing pair"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Mid-K-CK-F3-009",
+      "subject": "science",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-F3",
+      "prompt_text": "Generate an educational video showing the internal structure of an animal cell, labeling the nucleus, cell membrane, mitochondria, endoplasmic reticulum, and ribosomes.",
+      "ground_truth": {
+        "correct_answer": "Animal cell with labeled nucleus, cell membrane, mitochondria, endoplasmic reticulum, and ribosomes",
+        "key_visual_elements": [
+          "cell outline (no cell wall)",
+          "nucleus in center",
+          "mitochondria",
+          "endoplasmic reticulum",
+          "ribosomes"
+        ],
+        "key_steps": [
+          "Draw cell membrane",
+          "Show nucleus",
+          "Add mitochondria",
+          "Add ER and ribosomes",
+          "Label all organelles"
+        ]
+      },
+      "rubric_criteria": "The video must show a recognizable animal cell (no cell wall) with at least five organelles correctly placed and labeled.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Including a cell wall (plant cell feature)",
+        "Mislabeling organelles",
+        "Missing nucleus"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Mid-K-CK-C4-010",
+      "subject": "science",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-C4",
+      "prompt_text": "Generate an educational video demonstrating that a heavy ball (10 kg) and a light ball (1 kg) dropped simultaneously from the same height in a vacuum will hit the ground at the same time, illustrating Galileo's free fall principle.",
+      "ground_truth": {
+        "correct_answer": "Both balls hit the ground at the same time regardless of mass (in a vacuum)",
+        "key_visual_elements": [
+          "heavy ball labeled 10 kg",
+          "light ball labeled 1 kg",
+          "simultaneous drop",
+          "simultaneous landing"
+        ],
+        "key_steps": [
+          "Show two balls at same height",
+          "Label masses",
+          "Release simultaneously",
+          "Both land at the same time"
+        ]
+      },
+      "rubric_criteria": "The video must show two objects of different masses falling in a vacuum and landing simultaneously. The key physics concept — that gravitational acceleration is independent of mass — must be visually demonstrated.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Heavy ball landing first",
+        "Light ball landing first",
+        "Not showing simultaneous release"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-Mid-K-CK-C2-011",
+      "subject": "math",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-C2",
+      "prompt_text": "Generate an educational video plotting the graph of y = x² on a coordinate plane and visually demonstrating that the parabola is symmetric about the y-axis by highlighting mirror points such as (2, 4) and (-2, 4).",
+      "ground_truth": {
+        "correct_answer": "y = x² is a parabola symmetric about the y-axis",
+        "key_visual_elements": [
+          "coordinate axes",
+          "parabola y=x²",
+          "points (2,4) and (-2,4)",
+          "symmetry line on y-axis"
+        ],
+        "key_steps": [
+          "Draw coordinate plane",
+          "Plot y=x² curve",
+          "Mark symmetric points",
+          "Draw or indicate y-axis as axis of symmetry"
+        ]
+      },
+      "rubric_criteria": "The video must display a correct y=x² parabola on a coordinate plane and clearly demonstrate y-axis symmetry using at least one pair of mirror points.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Parabola opening downward",
+        "Asymmetric curve",
+        "No indication of symmetry axis"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-Mid-K-CK-C3-012",
+      "subject": "math",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-C3",
+      "prompt_text": "Generate an educational video presenting the analogy: square is to cube as circle is to ___, and reveal the answer as sphere. Show a 2D square becoming a 3D cube, then a 2D circle becoming a 3D sphere.",
+      "ground_truth": {
+        "correct_answer": "Sphere",
+        "key_visual_elements": [
+          "square shape",
+          "cube shape",
+          "circle shape",
+          "sphere shape",
+          "analogy arrows"
+        ],
+        "key_steps": [
+          "Show square",
+          "Transform to cube",
+          "Show circle",
+          "Transform to sphere",
+          "Display analogy relationship"
+        ]
+      },
+      "rubric_criteria": "The video must clearly present the 2D-to-3D analogy pattern and correctly identify sphere as the answer. Both transformations (square to cube, circle to sphere) must be shown.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Answering cylinder instead of sphere",
+        "Not showing the transformation",
+        "Incorrect 3D shapes"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-Mid-K-CK-P2-013",
+      "subject": "social",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-P2",
+      "prompt_text": "Generate an educational video demonstrating how to read a topographic map: identify contour lines, determine elevation values, find steep vs. gentle slopes by reading contour line spacing, and locate a hilltop.",
+      "ground_truth": {
+        "correct_answer": "Topographic map reading: contour lines show elevation; closely spaced lines = steep slope; widely spaced = gentle slope; concentric circles = hilltop",
+        "key_visual_elements": [
+          "topographic map",
+          "contour lines with elevation labels",
+          "steep slope area",
+          "gentle slope area",
+          "hilltop"
+        ],
+        "key_steps": [
+          "Show topographic map",
+          "Identify contour lines",
+          "Read elevation values",
+          "Compare line spacing for steepness",
+          "Locate hilltop"
+        ]
+      },
+      "rubric_criteria": "The video must correctly demonstrate topographic map reading skills including contour line interpretation, slope steepness determination, and hilltop identification.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Reversed slope interpretation",
+        "Missing elevation labels",
+        "Incorrect hilltop identification"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-Mid-K-CK-M1-014",
+      "subject": "social",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-M1",
+      "prompt_text": "Generate an educational video exploring the interdisciplinary relationship between geography and economics: show how a country's access to natural resources (oil, minerals) influences its GDP and trade patterns, using a world map overlay with resource and economic data.",
+      "ground_truth": {
+        "correct_answer": "Countries with abundant natural resources often develop resource-based economies; geographic resource distribution shapes global trade patterns",
+        "key_visual_elements": [
+          "world map",
+          "resource deposit markers",
+          "GDP comparison chart",
+          "trade route arrows"
+        ],
+        "key_steps": [
+          "Show world map with resources",
+          "Highlight resource-rich countries",
+          "Display GDP data",
+          "Draw trade connections"
+        ]
+      },
+      "rubric_criteria": "The video must demonstrate the interdisciplinary connection between geography and economics by visually linking resource locations to economic outcomes.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "No connection drawn between resources and economics",
+        "Incorrect resource locations",
+        "Missing trade pattern visualization"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-High-K-CK-C1-015",
+      "subject": "science",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-C1",
+      "prompt_text": "Generate an educational video classifying the five major vertebrate classes — fish, amphibians, reptiles, birds, and mammals — showing a representative animal for each class and listing one key characteristic (e.g., fish: gills, mammals: mammary glands).",
+      "ground_truth": {
+        "correct_answer": "Five vertebrate classes: Fish (gills), Amphibians (moist skin/metamorphosis), Reptiles (scales/dry skin), Birds (feathers), Mammals (mammary glands/hair)",
+        "key_visual_elements": [
+          "five animal representatives",
+          "class labels",
+          "key characteristic for each"
+        ],
+        "key_steps": [
+          "Show fish with gills label",
+          "Show amphibian with characteristic",
+          "Show reptile with scales",
+          "Show bird with feathers",
+          "Show mammal with key trait"
+        ]
+      },
+      "rubric_criteria": "The video must correctly classify all five vertebrate classes with appropriate representative animals and at least one accurate distinguishing characteristic for each.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Missing one class",
+        "Wrong characteristic assigned",
+        "Confusing invertebrates with vertebrates"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-High-K-CK-P5-016",
+      "subject": "science",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-P5",
+      "prompt_text": "Generate an educational video demonstrating the step-by-step procedure of an acid-base titration: filling the burette with NaOH solution, adding phenolphthalein indicator to HCl in the flask, slowly titrating until the solution turns pink at the equivalence point.",
+      "ground_truth": {
+        "correct_answer": "Titration procedure: fill burette with NaOH, add indicator to HCl, titrate drop by drop until persistent pink color appears at equivalence point",
+        "key_visual_elements": [
+          "burette with NaOH",
+          "flask with HCl",
+          "phenolphthalein indicator",
+          "color change to pink",
+          "equivalence point"
+        ],
+        "key_steps": [
+          "Fill burette with NaOH",
+          "Place HCl in flask",
+          "Add phenolphthalein",
+          "Titrate slowly",
+          "Observe color change at equivalence point"
+        ]
+      },
+      "rubric_criteria": "The video must show the correct sequence of titration steps with proper lab equipment and a clear color change at the equivalence point.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Acid in burette instead of base",
+        "Wrong indicator color change",
+        "Skipping the indicator step"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-High-K-CK-P3-017",
+      "subject": "math",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-P3",
+      "prompt_text": "Generate an educational video solving the linear equation 2x + 6 = 14 step by step: subtract 6 from both sides to get 2x = 8, then divide both sides by 2 to get x = 4.",
+      "ground_truth": {
+        "correct_answer": "x = 4",
+        "key_visual_elements": [
+          "equation 2x + 6 = 14",
+          "subtraction step",
+          "equation 2x = 8",
+          "division step",
+          "answer x = 4"
+        ],
+        "key_steps": [
+          "Write 2x + 6 = 14",
+          "Subtract 6 from both sides: 2x = 8",
+          "Divide both sides by 2: x = 4"
+        ]
+      },
+      "rubric_criteria": "The video must show each algebraic step clearly with correct operations applied to both sides of the equation, arriving at x = 4.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Getting x = 10 by adding instead of subtracting",
+        "Only operating on one side",
+        "Skipping intermediate steps"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-High-K-CK-M2-018",
+      "subject": "math",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-M2",
+      "prompt_text": "Generate an educational video demonstrating strategy selection for solving x² - 5x + 6 = 0: show that factoring is the most efficient method, factor into (x-2)(x-3) = 0, and find solutions x = 2 and x = 3.",
+      "ground_truth": {
+        "correct_answer": "x = 2 and x = 3 (by factoring)",
+        "key_visual_elements": [
+          "original equation",
+          "factored form (x-2)(x-3)=0",
+          "solutions x=2, x=3",
+          "strategy comparison note"
+        ],
+        "key_steps": [
+          "Show x²-5x+6=0",
+          "Identify factoring as best strategy",
+          "Factor to (x-2)(x-3)=0",
+          "Set each factor to zero",
+          "Solutions: x=2, x=3"
+        ]
+      },
+      "rubric_criteria": "The video must show the selection of factoring as the optimal strategy and correctly factor the quadratic to find both solutions.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Wrong factors",
+        "Only finding one solution",
+        "Using quadratic formula when factoring is simpler"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-High-K-CK-C2-019",
+      "subject": "arts",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-C2",
+      "prompt_text": "Generate an educational video demonstrating bilateral symmetry in visual art: draw a butterfly with identical wing patterns on both sides of a vertical axis of symmetry, highlighting the mirror relationship.",
+      "ground_truth": {
+        "correct_answer": "Bilateral symmetry with identical left and right halves reflected across a vertical axis",
+        "key_visual_elements": [
+          "butterfly outline",
+          "vertical axis of symmetry",
+          "identical left wing pattern",
+          "identical right wing pattern"
+        ],
+        "key_steps": [
+          "Draw vertical axis",
+          "Draw left wing with pattern",
+          "Mirror the pattern on right wing",
+          "Highlight symmetry"
+        ]
+      },
+      "rubric_criteria": "The video must demonstrate bilateral symmetry through a visual artwork that is clearly symmetric about a vertical axis, with matching details on both sides.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Asymmetric wing patterns",
+        "No visible axis of symmetry",
+        "Radial symmetry instead of bilateral"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-High-K-CK-M3-020",
+      "subject": "arts",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-M3",
+      "prompt_text": "Generate an educational video showing a common error in one-point perspective drawing — converging lines that do not meet at a single vanishing point — then correct it by redrawing all lines converging to one vanishing point on the horizon line.",
+      "ground_truth": {
+        "correct_answer": "In one-point perspective, all receding parallel lines must converge at a single vanishing point on the horizon line",
+        "key_visual_elements": [
+          "incorrect drawing with scattered convergence",
+          "horizon line",
+          "single vanishing point",
+          "corrected drawing"
+        ],
+        "key_steps": [
+          "Show incorrect perspective drawing",
+          "Identify the error",
+          "Draw horizon line with vanishing point",
+          "Redraw with correct convergence"
+        ]
+      },
+      "rubric_criteria": "The video must clearly show the error (lines not meeting at one point) and the correction (all lines converging to a single vanishing point on the horizon).",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Not clearly showing the error",
+        "Corrected version still having multiple vanishing points",
+        "Missing horizon line"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Col-K-CK-P4-021",
+      "subject": "science",
+      "grade_level": "college",
+      "category": "K-CK",
+      "subcategory": "K-CK-P4",
+      "prompt_text": "Generate an educational video computing the indefinite integral of x² step by step: apply the power rule to get x³/3 + C, showing the formula ∫xⁿ dx = xⁿ⁺¹/(n+1) + C with n = 2.",
+      "ground_truth": {
+        "correct_answer": "∫x² dx = x³/3 + C",
+        "key_visual_elements": [
+          "integral symbol ∫x² dx",
+          "power rule formula",
+          "substitution n=2",
+          "result x³/3 + C"
+        ],
+        "key_steps": [
+          "Write ∫x² dx",
+          "State power rule: ∫xⁿ dx = xⁿ⁺¹/(n+1) + C",
+          "Substitute n=2",
+          "Compute x³/3 + C"
+        ]
+      },
+      "rubric_criteria": "The video must correctly apply the power rule of integration to compute ∫x² dx = x³/3 + C, showing the general formula and the specific substitution.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Forgetting the constant C",
+        "Computing x³/2 instead of x³/3",
+        "Using differentiation instead of integration"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Col-K-CK-F2-022",
+      "subject": "science",
+      "grade_level": "college",
+      "category": "K-CK",
+      "subcategory": "K-CK-F2",
+      "prompt_text": "Generate an educational video showing the 8 planets of the solar system in order from the Sun: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, with each planet labeled and shown at a relatively correct scale.",
+      "ground_truth": {
+        "correct_answer": "Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune (in order from the Sun)",
+        "key_visual_elements": [
+          "Sun",
+          "eight planets in order",
+          "labels for each planet",
+          "relative size differences"
+        ],
+        "key_steps": [
+          "Show the Sun",
+          "Display planets in order from closest to farthest",
+          "Label each planet",
+          "Indicate relative sizes"
+        ]
+      },
+      "rubric_criteria": "The video must show all 8 planets in correct order from the Sun, with each planet labeled. Gas giants should appear noticeably larger than terrestrial planets.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Wrong order of planets",
+        "Including Pluto as a planet",
+        "Missing a planet",
+        "Incorrect relative sizes"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-Col-K-CK-P1-023",
+      "subject": "math",
+      "grade_level": "college",
+      "category": "K-CK",
+      "subcategory": "K-CK-P1",
+      "prompt_text": "Generate an educational video showing a simple maze and solving it using the right-hand rule (wall follower algorithm): starting from the entrance, always keeping the right hand on the wall until reaching the exit, tracing the complete path.",
+      "ground_truth": {
+        "correct_answer": "Right-hand rule: always follow the right wall from entrance to exit",
+        "key_visual_elements": [
+          "maze with entrance and exit",
+          "path traced in color",
+          "right-hand-on-wall indication",
+          "complete solution path"
+        ],
+        "key_steps": [
+          "Show maze with entrance",
+          "Begin at entrance with right hand on wall",
+          "Trace path following right wall",
+          "Reach exit"
+        ]
+      },
+      "rubric_criteria": "The video must display a solvable maze and demonstrate the right-hand rule pathfinding algorithm with a clearly traced path from entrance to exit.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Path goes through walls",
+        "Algorithm not consistently following right wall",
+        "Maze has no solution"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-Col-K-CK-P2-024",
+      "subject": "social",
+      "grade_level": "college",
+      "category": "K-CK",
+      "subcategory": "K-CK-P2",
+      "prompt_text": "Generate an educational video demonstrating how to use a statistical software interface (e.g., SPSS) to run a t-test: enter data into two columns, select Analyze > Compare Means > Independent Samples T-Test, and interpret the p-value output.",
+      "ground_truth": {
+        "correct_answer": "Steps: enter data, navigate to Analyze > Compare Means > Independent Samples T-Test, run test, interpret p-value for significance",
+        "key_visual_elements": [
+          "data entry screen",
+          "menu navigation",
+          "test configuration dialog",
+          "results output with p-value"
+        ],
+        "key_steps": [
+          "Enter data in two columns",
+          "Navigate to Analyze menu",
+          "Select Independent Samples T-Test",
+          "Configure and run",
+          "Read p-value from output"
+        ]
+      },
+      "rubric_criteria": "The video must show the complete workflow of running a t-test in statistical software, from data entry through menu navigation to output interpretation.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Wrong test selected",
+        "Skipping data entry step",
+        "Not showing output interpretation"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-Col-K-CK-F1-025",
+      "subject": "arts",
+      "grade_level": "college",
+      "category": "K-CK",
+      "subcategory": "K-CK-F1",
+      "prompt_text": "Generate an educational video displaying the circle of fifths in music theory, showing all 12 major keys arranged clockwise (C, G, D, A, E, B, F#/Gb, Db, Ab, Eb, Bb, F) with their key signatures.",
+      "ground_truth": {
+        "correct_answer": "Circle of fifths: 12 major keys arranged clockwise in fifths starting from C at the top",
+        "key_visual_elements": [
+          "circular diagram",
+          "12 key names around the circle",
+          "key signatures notation",
+          "clockwise fifth intervals"
+        ],
+        "key_steps": [
+          "Draw circle",
+          "Place C at top",
+          "Arrange remaining keys clockwise in fifths",
+          "Add key signatures"
+        ]
+      },
+      "rubric_criteria": "The video must display a correctly arranged circle of fifths with all 12 major keys in the proper clockwise order and associated key signatures.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Wrong key order",
+        "Missing enharmonic equivalents",
+        "Counter-clockwise arrangement for sharps"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-Col-K-CK-C3-026",
+      "subject": "arts",
+      "grade_level": "college",
+      "category": "K-CK",
+      "subcategory": "K-CK-C3",
+      "prompt_text": "Generate an educational video presenting the analogy in art history: Impressionism is to light/color as Cubism is to ___, and reveal the answer as geometric form/multiple perspectives. Show an Impressionist painting example alongside a Cubist painting example.",
+      "ground_truth": {
+        "correct_answer": "Cubism focuses on geometric form and multiple perspectives, analogous to how Impressionism focuses on light and color",
+        "key_visual_elements": [
+          "Impressionist style example",
+          "Cubist style example",
+          "analogy text",
+          "key characteristic labels"
+        ],
+        "key_steps": [
+          "Show Impressionist example",
+          "Label: focus on light/color",
+          "Show Cubist example",
+          "Label: focus on geometric form/multiple perspectives"
+        ]
+      },
+      "rubric_criteria": "The video must correctly present the analogy between art movements and their defining characteristics, with visual examples that clearly represent each style.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Wrong art movement characteristics",
+        "Swapped examples",
+        "Missing visual examples"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-High-K-CK-C4-027",
+      "subject": "social",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-C4",
+      "prompt_text": "Generate an educational video demonstrating the law of supply and demand: when the price of a product increases, quantity demanded decreases and quantity supplied increases, showing the equilibrium point where the supply and demand curves intersect.",
+      "ground_truth": {
+        "correct_answer": "Supply curve slopes upward, demand curve slopes downward; they intersect at the equilibrium price and quantity",
+        "key_visual_elements": [
+          "price axis (vertical)",
+          "quantity axis (horizontal)",
+          "upward-sloping supply curve",
+          "downward-sloping demand curve",
+          "equilibrium point"
+        ],
+        "key_steps": [
+          "Draw axes",
+          "Plot demand curve (downward)",
+          "Plot supply curve (upward)",
+          "Mark intersection as equilibrium"
+        ]
+      },
+      "rubric_criteria": "The video must show correctly sloped supply and demand curves on labeled axes with a clearly marked equilibrium point.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Supply curve sloping downward",
+        "Demand curve sloping upward",
+        "No equilibrium point marked"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Soc-ELow-K-CK-M3-028",
+      "subject": "social",
+      "grade_level": "elementary_low",
+      "category": "K-CK",
+      "subcategory": "K-CK-M3",
+      "prompt_text": "Generate an educational video showing a common math error: a student writes 3 + 4 x 2 = 14. The video should explain that according to the order of operations, multiplication comes before addition, so the correct answer is 3 + 8 = 11.",
+      "ground_truth": {
+        "correct_answer": "11 (not 14), because multiplication is performed before addition",
+        "key_visual_elements": [
+          "incorrect solution 3+4x2=14",
+          "order of operations reminder",
+          "correct step: 4x2=8",
+          "correct answer: 3+8=11"
+        ],
+        "key_steps": [
+          "Show incorrect answer 14",
+          "Explain order of operations",
+          "Compute 4x2=8 first",
+          "Then 3+8=11"
+        ]
+      },
+      "rubric_criteria": "The video must clearly show the error (computing left-to-right), explain the order of operations rule, and demonstrate the correct calculation yielding 11.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Confirming 14 as correct",
+        "Not explaining order of operations",
+        "Getting a different wrong answer"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-EHigh-K-CK-R1-029",
+      "subject": "math",
+      "grade_level": "elementary_high",
+      "category": "K-CK",
+      "subcategory": "K-CK-R1",
+      "prompt_text": "Generate an educational video showing the eleven distinct nets of a cube laid flat, then animating one net folding up into a complete cube, demonstrating spatial reasoning about 3D shapes from 2D patterns.",
+      "ground_truth": {
+        "correct_answer": "A cube has 11 distinct nets; the video shows one net folding into a cube to demonstrate the 2D-to-3D relationship",
+        "key_visual_elements": [
+          "flat cube net (cross-shaped or other valid pattern)",
+          "six connected squares",
+          "folding animation",
+          "completed cube"
+        ],
+        "key_steps": [
+          "Display a flat cube net",
+          "Label six square faces",
+          "Animate folding edges",
+          "Show completed 3D cube"
+        ]
+      },
+      "rubric_criteria": "9-10: The video clearly and accurately presents all eleven distinct cube nets, with each net shown as a flat pattern of six connected squares. The folding animation is smooth and effectively demonstrates the transformation from 2D to 3D, enhancing spatial reasoning. 7-8: The video presents most of the eleven cube nets accurately, with clear flat patterns of six connected squares. The folding animation is mostly smooth and demonstrates the 2D to 3D transformation adequately. 5-6: The video shows some cube nets, but may miss a few or show incorrect configurations. The folding animation is present but may lack clarity or smoothness, somewhat hindering the demonstration of spatial reasoning. 3-4: The video shows few cube nets, with possible inaccuracies in the configurations. The folding animation is rough or unclear, making it difficult to understand the 2D to 3D transformation. 1-2: The video fails to accurately present cube nets or lacks a coherent folding animation, severely limiting the educational value in demonstrating spatial reasoning.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Invalid net that cannot fold into a cube",
+        "Only five squares shown",
+        "Folding animation not matching the net layout"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-EHigh-K-CK-R1-030",
+      "subject": "math",
+      "grade_level": "elementary_high",
+      "category": "K-CK",
+      "subcategory": "K-CK-R1",
+      "prompt_text": "Generate an educational video showing a horizontal plane slicing through a cube at different angles: a horizontal cut producing a square cross-section, and a diagonal cut producing a rectangular cross-section, labeling each result.",
+      "ground_truth": {
+        "correct_answer": "Horizontal cut through cube yields a square; diagonal cuts can yield rectangles, triangles, or hexagons depending on angle",
+        "key_visual_elements": [
+          "3D cube",
+          "horizontal cutting plane",
+          "square cross-section",
+          "diagonal cutting plane",
+          "rectangular cross-section"
+        ],
+        "key_steps": [
+          "Show 3D cube",
+          "Slice horizontally",
+          "Reveal square cross-section",
+          "Slice diagonally",
+          "Reveal rectangular cross-section"
+        ]
+      },
+      "rubric_criteria": "9-10: The video accurately and clearly demonstrates the cutting planes intersecting the cube, with precise labeling and explanation of each resulting cross-sectional shape, including squares and rectangles. 7-8: The video shows the cutting planes intersecting the cube and labels the resulting shapes, but lacks detailed explanation or has minor inaccuracies in shape representation. 5-6: The video attempts to show cutting planes and resulting shapes, but contains noticeable inaccuracies in shape representation or labeling, and explanations are minimal. 3-4: The video poorly demonstrates the cutting planes, with incorrect or unclear representation of cross-sectional shapes and inadequate labeling. 1-2: The video fails to demonstrate cutting planes and resulting shapes effectively, with significant errors in representation and no clear labeling or explanation.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Wrong cross-section shape",
+        "Cut plane not visible",
+        "Cross-section not matching the cut angle"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-EHigh-K-CK-R2-031",
+      "subject": "science",
+      "grade_level": "elementary_high",
+      "category": "K-CK",
+      "subcategory": "K-CK-R2",
+      "prompt_text": "Generate an educational video showing a block on an inclined plane with friction: display the forces acting on the block (gravity, normal force, friction force) and show how increasing the angle eventually causes the block to start sliding when gravity component exceeds static friction.",
+      "ground_truth": {
+        "correct_answer": "Block slides when the component of gravity along the incline exceeds the maximum static friction force",
+        "key_visual_elements": [
+          "inclined plane",
+          "block",
+          "gravity vector",
+          "normal force vector",
+          "friction force vector",
+          "angle label"
+        ],
+        "key_steps": [
+          "Show block on incline",
+          "Draw force vectors",
+          "Increase angle",
+          "Show sliding begins when gravity component > friction"
+        ]
+      },
+      "rubric_criteria": "9-10: The video accurately depicts all three force vectors (gravity, normal force, friction) with clear labels and demonstrates the relationship between incline angle and sliding onset in a comprehensible manner for elementary students. 7-8: The video includes all necessary force vectors and shows the relationship between angle and sliding, but may lack clarity in labeling or explanation, making it slightly challenging for some students to fully grasp. 5-6: The video presents the force vectors but may omit labels or have inaccuracies in demonstrating the relationship between angle and sliding, leading to potential confusion. 3-4: The video shows some force vectors but fails to accurately depict the relationship between incline angle and sliding, with significant errors or omissions that hinder understanding. 1-2: The video lacks essential force vectors and does not demonstrate the relationship between incline angle and sliding, making it ineffective as an educational tool.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Missing friction force",
+        "Wrong direction of normal force",
+        "Block sliding at too shallow an angle"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Mid-K-CK-R2-032",
+      "subject": "science",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-R2",
+      "prompt_text": "Generate an educational video showing projectile motion: a ball launched at 45 degrees follows a parabolic trajectory, with horizontal velocity remaining constant while vertical velocity changes due to gravity, landing at the same height it was launched from.",
+      "ground_truth": {
+        "correct_answer": "Projectile follows a parabolic path; horizontal velocity is constant, vertical velocity changes due to gravity; 45 degrees gives maximum range for same launch height",
+        "key_visual_elements": [
+          "launch at 45 degrees",
+          "parabolic trajectory",
+          "horizontal velocity arrows (constant)",
+          "vertical velocity arrows (changing)",
+          "landing point"
+        ],
+        "key_steps": [
+          "Launch ball at 45 degrees",
+          "Show parabolic path",
+          "Display constant horizontal velocity",
+          "Display changing vertical velocity",
+          "Ball lands at same height"
+        ]
+      },
+      "rubric_criteria": "9-10: The video accurately depicts a parabolic trajectory with clear, consistent horizontal velocity arrows and changing vertical velocity arrows, effectively explaining the physics of projectile motion at a middle school level. 7-8: The video shows a mostly accurate parabolic trajectory with minor inaccuracies in velocity component representations, providing a good explanation of projectile motion concepts. 5-6: The video presents a basic parabolic trajectory with some errors in velocity component depictions, offering a limited explanation of the physics involved. 3-4: The video shows a flawed parabolic trajectory with incorrect or missing velocity component representations, leading to a confusing explanation of projectile motion. 1-2: The video fails to accurately depict a parabolic trajectory or velocity components, providing an incorrect and misleading explanation of projectile motion principles.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Linear trajectory instead of parabolic",
+        "Horizontal velocity changing",
+        "Asymmetric trajectory for same-height launch/land"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-High-K-CK-R3-033",
+      "subject": "science",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-R3",
+      "prompt_text": "Generate an educational video explaining the greenhouse effect mechanism: sunlight passes through the atmosphere, heats the Earth's surface, the surface emits infrared radiation, and greenhouse gases (CO₂, CH₄, H₂O) trap some of this radiation, warming the atmosphere.",
+      "ground_truth": {
+        "correct_answer": "Greenhouse gases trap outgoing infrared radiation, causing atmospheric warming; incoming solar radiation passes through but outgoing IR is partially absorbed and re-emitted",
+        "key_visual_elements": [
+          "Sun",
+          "incoming solar radiation arrows",
+          "Earth surface",
+          "outgoing infrared arrows",
+          "greenhouse gas layer",
+          "trapped radiation"
+        ],
+        "key_steps": [
+          "Show sunlight entering atmosphere",
+          "Surface absorbs and heats up",
+          "Surface emits infrared",
+          "Greenhouse gases trap IR",
+          "Temperature increases"
+        ]
+      },
+      "rubric_criteria": "9-10: The video accurately and clearly depicts the greenhouse effect mechanism, with precise energy flow directions and a detailed explanation of how greenhouse gases trap infrared radiation, using key visuals effectively. 7-8: The video mostly accurately depicts the greenhouse effect mechanism, with minor inaccuracies in energy flow directions or greenhouse gas roles, and uses key visuals effectively but with slight omissions. 5-6: The video provides a basic depiction of the greenhouse effect mechanism, with some inaccuracies in energy flow directions or greenhouse gas roles, and uses key visuals but lacks clarity or detail. 3-4: The video depicts the greenhouse effect mechanism with significant inaccuracies in energy flow directions or greenhouse gas roles, and uses key visuals ineffectively or inconsistently. 1-2: The video fails to accurately depict the greenhouse effect mechanism, with incorrect energy flow directions and a misunderstanding of greenhouse gas roles, and lacks coherent use of key visuals.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Greenhouse gases blocking incoming sunlight instead of outgoing IR",
+        "Missing infrared re-emission",
+        "No distinction between solar and infrared radiation"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-ELow-K-CK-R3-034",
+      "subject": "science",
+      "grade_level": "elementary_low",
+      "category": "K-CK",
+      "subcategory": "K-CK-R3",
+      "prompt_text": "Generate an educational video showing a simple food chain (grass, rabbit, fox) and demonstrating what happens when the rabbit population is removed: the fox population declines due to lack of food and the grass overgrows without herbivores.",
+      "ground_truth": {
+        "correct_answer": "Removing rabbits causes fox decline (no food) and grass overgrowth (no herbivores), demonstrating trophic cascade",
+        "key_visual_elements": [
+          "grass (producer)",
+          "rabbit (primary consumer)",
+          "fox (secondary consumer)",
+          "arrows showing energy flow",
+          "disruption visualization"
+        ],
+        "key_steps": [
+          "Show food chain: grass -> rabbit -> fox",
+          "Remove rabbit",
+          "Show fox declining",
+          "Show grass overgrowth"
+        ]
+      },
+      "rubric_criteria": "9-10: The video clearly and accurately depicts the food chain with detailed visuals and effectively demonstrates the cascading effects of removing rabbits, showing both the decline in foxes and overgrowth of grass. 7-8: The video accurately shows the food chain and demonstrates the effects of removing rabbits, but the explanation of the cascading effects is somewhat simplified or lacks detail. 5-6: The video presents the food chain but only partially explains the effects of removing rabbits, with some inaccuracies or missing elements in the depiction of changes in fox and grass populations. 3-4: The video shows the food chain but fails to clearly demonstrate the effects of removing rabbits, with significant inaccuracies or omissions in explaining changes in the ecosystem. 1-2: The video does not accurately depict the food chain or the effects of removing rabbits, lacking clarity and educational value in demonstrating the ecosystem changes.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Fox population unaffected",
+        "Grass also declining",
+        "Wrong direction of energy flow arrows"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-High-K-CK-R4-035",
+      "subject": "math",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-R4",
+      "prompt_text": "Generate an educational video solving the quadratic equation x² - 7x + 12 = 0 by factoring: find two numbers that multiply to 12 and add to -7 (which are -3 and -4), factor as (x-3)(x-4) = 0, yielding x = 3 and x = 4.",
+      "ground_truth": {
+        "correct_answer": "x = 3 and x = 4",
+        "key_visual_elements": [
+          "equation x²-7x+12=0",
+          "factor pairs of 12",
+          "selection of -3 and -4",
+          "factored form (x-3)(x-4)=0",
+          "solutions"
+        ],
+        "key_steps": [
+          "Write equation",
+          "List factor pairs of 12",
+          "Identify -3 and -4 (sum = -7)",
+          "Write (x-3)(x-4)=0",
+          "Solve: x=3, x=4"
+        ]
+      },
+      "rubric_criteria": "9-10: The video thoroughly explains the complete factoring process, clearly demonstrating logical reasoning for choosing the correct factor pair, and accurately arrives at both solutions with engaging visuals that reinforce understanding. 7-8: The video explains the factoring process and reasoning for the factor pair choice, arriving at both solutions, but may lack some clarity or depth in explanation or visual support. 5-6: The video presents the factoring process and solutions but with minimal explanation or reasoning, and visuals are present but not particularly helpful in understanding the process. 3-4: The video attempts to show the factoring process but is confusing or incomplete, with unclear reasoning and visuals that do not effectively support the explanation. 1-2: The video fails to demonstrate the factoring process or reasoning, leading to incorrect or missing solutions, with visuals that are irrelevant or absent.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Wrong factor pair",
+        "Only one solution found",
+        "Incorrect factored form"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Math-Col-K-CK-R4-036",
+      "subject": "math",
+      "grade_level": "college",
+      "category": "K-CK",
+      "subcategory": "K-CK-R4",
+      "prompt_text": "Generate an educational video proving that the sum of interior angles of any triangle equals 180 degrees: draw a triangle, extend one side, draw a line parallel to the opposite side through the far vertex, and use alternate interior angles to show the three angles form a straight line.",
+      "ground_truth": {
+        "correct_answer": "Sum of interior angles of a triangle = 180 degrees, proven using parallel line and alternate interior angles",
+        "key_visual_elements": [
+          "triangle with labeled angles A, B, C",
+          "extended base line",
+          "parallel line through opposite vertex",
+          "alternate interior angle marks",
+          "straight line = 180 degrees"
+        ],
+        "key_steps": [
+          "Draw triangle ABC",
+          "Extend base BC",
+          "Draw line through A parallel to BC",
+          "Identify alternate interior angles",
+          "Show A + B + C = 180 degrees"
+        ]
+      },
+      "rubric_criteria": "9-10: The video presents a clear and precise geometric proof, using parallel lines and alternate interior angles, with each step logically and coherently following from the previous one. Key visuals are effectively used to enhance understanding, and the explanation is thorough and easy to follow. 7-8: The video provides a mostly clear geometric proof, with minor gaps in logic or explanation. Key visuals are used appropriately, but some steps may require additional clarification for full understanding. 5-6: The video presents a basic geometric proof but lacks clarity in some steps, leading to potential confusion. Key visuals are present but may not fully support the explanation, and some logical connections are weak. 3-4: The video attempts to present a geometric proof but contains significant logical errors or omissions. Key visuals are poorly integrated, and the explanation is difficult to follow, leading to misunderstanding of the proof. 1-2: The video fails to present a coherent geometric proof, with major errors in logic and missing key visuals. The explanation is disjointed and does not effectively convey the concept of the sum of interior angles of a triangle being 180 degrees.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Circular reasoning",
+        "Missing parallel line construction",
+        "Incorrect angle relationships"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Col-K-CK-R5-037",
+      "subject": "science",
+      "grade_level": "college",
+      "category": "K-CK",
+      "subcategory": "K-CK-R5",
+      "prompt_text": "Generate an educational video demonstrating projectile motion as an interdisciplinary physics-and-math problem: derive the trajectory equation y = x tan(theta) - gx²/(2v₀²cos²(theta)) by combining horizontal (x = v₀cos(theta)t) and vertical (y = v₀sin(theta)t - gt²/2) equations.",
+      "ground_truth": {
+        "correct_answer": "y = x tan(theta) - gx²/(2v₀²cos²(theta)), derived by eliminating t from parametric equations",
+        "key_visual_elements": [
+          "horizontal equation",
+          "vertical equation",
+          "elimination of t",
+          "final trajectory equation",
+          "parabolic graph"
+        ],
+        "key_steps": [
+          "Write x = v₀cos(theta)t",
+          "Write y = v₀sin(theta)t - gt²/2",
+          "Solve first for t",
+          "Substitute into second",
+          "Simplify to trajectory equation"
+        ]
+      },
+      "rubric_criteria": "9-10: The video expertly demonstrates the derivation of the trajectory equation, with each algebraic step clearly displayed and explained, effectively integrating physics and math concepts. Key visuals are used to enhance understanding, including clear depictions of the horizontal and vertical equations, elimination of t, and the final parabolic graph. 7-8: The video accurately demonstrates the derivation of the trajectory equation, with most algebraic steps clearly displayed and explained. Key visuals are present but may lack some clarity or integration with the explanation. 5-6: The video provides a basic demonstration of the trajectory equation derivation, but some algebraic steps are unclear or inadequately explained. Key visuals are present but may not effectively support the explanation. 3-4: The video attempts to demonstrate the derivation of the trajectory equation, but many algebraic steps are missing or poorly explained. Key visuals are minimal or confusing, hindering comprehension. 1-2: The video fails to demonstrate the derivation of the trajectory equation, with most algebraic steps missing or incorrect. Key visuals are absent or irrelevant, offering no educational value.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Missing gravity term",
+        "Sign error in derivation",
+        "Skipping the elimination step"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-High-K-CK-R5-038",
+      "subject": "science",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-R5",
+      "prompt_text": "Generate an educational video explaining how biochemistry connects biology and chemistry: show the structure of ATP (adenosine triphosphate), illustrate how breaking the phosphate bond releases energy, and connect this to cellular respiration in mitochondria.",
+      "ground_truth": {
+        "correct_answer": "ATP stores energy in phosphate bonds; hydrolysis of ATP to ADP + Pi releases energy used for cellular processes; this connects chemical bonding (chemistry) to cellular function (biology)",
+        "key_visual_elements": [
+          "ATP molecular structure",
+          "three phosphate groups",
+          "bond-breaking animation",
+          "energy release",
+          "mitochondria"
+        ],
+        "key_steps": [
+          "Show ATP structure",
+          "Highlight phosphate bonds",
+          "Animate bond breaking (ATP -> ADP + Pi)",
+          "Show energy release",
+          "Connect to mitochondria"
+        ]
+      },
+      "rubric_criteria": "9-10: The video accurately and clearly illustrates the ATP structure, effectively demonstrates the hydrolysis reaction with a focus on energy release, and seamlessly connects these concepts to cellular respiration, providing a comprehensive understanding of the biochemistry involved. 7-8: The video accurately presents the ATP structure and the hydrolysis reaction, with a clear connection to cellular respiration, though some details may be less emphasized or slightly unclear. 5-6: The video shows the ATP structure and attempts to demonstrate the hydrolysis reaction, but the connection to cellular respiration is weak or lacks clarity, leading to a partial understanding of the biochemistry. 3-4: The video inaccurately or incompletely shows the ATP structure and hydrolysis reaction, with minimal connection to cellular respiration, resulting in a fragmented understanding. 1-2: The video fails to accurately depict the ATP structure, hydrolysis reaction, and does not connect these to cellular respiration, providing little to no educational value.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "ATP structure incorrect",
+        "Energy absorbed instead of released",
+        "No interdisciplinary connection made"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Mid-K-CK-R6-039",
+      "subject": "science",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-R6",
+      "prompt_text": "Generate an educational video showing the correct step-by-step procedure for using a compound light microscope: (1) place slide on stage, (2) start with lowest objective lens, (3) adjust coarse focus, (4) switch to higher magnification, (5) use fine focus for clarity.",
+      "ground_truth": {
+        "correct_answer": "Microscope procedure: place slide, start at low power, coarse focus, increase magnification, fine focus",
+        "key_visual_elements": [
+          "microscope",
+          "slide placement",
+          "objective lens turret",
+          "coarse focus knob",
+          "fine focus knob",
+          "magnified image"
+        ],
+        "key_steps": [
+          "Place slide on stage",
+          "Select lowest objective",
+          "Use coarse focus",
+          "Rotate to higher magnification",
+          "Use fine focus"
+        ]
+      },
+      "rubric_criteria": "9-10: The video clearly and accurately demonstrates all five procedural steps in the correct order, with all microscope parts labeled and used correctly, enhancing understanding with detailed explanations. 7-8: The video demonstrates all five steps mostly in the correct order, with most microscope parts labeled and used correctly, providing some explanations to aid understanding. 5-6: The video shows most of the procedural steps, though some may be out of order, with some microscope parts labeled and used correctly, but lacks sufficient explanation. 3-4: The video shows some procedural steps, but many are out of order or incorrectly demonstrated, with few microscope parts labeled, leading to confusion. 1-2: The video fails to demonstrate the procedural steps correctly, with incorrect or missing labels on microscope parts, resulting in a lack of educational value.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Starting with high magnification",
+        "Skipping coarse focus",
+        "Using coarse focus on high magnification"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Sci-Col-K-CK-R6-040",
+      "subject": "science",
+      "grade_level": "college",
+      "category": "K-CK",
+      "subcategory": "K-CK-R6",
+      "prompt_text": "Generate an educational video demonstrating the scientific method applied to experiment design: formulate a hypothesis about plant growth under different light conditions, design a controlled experiment with independent variable (light color), dependent variable (growth height), and controlled variables (water, soil, temperature).",
+      "ground_truth": {
+        "correct_answer": "Scientific method: hypothesis -> controlled experiment with independent variable (light color), dependent variable (plant height), and controlled variables (water, soil, temp)",
+        "key_visual_elements": [
+          "hypothesis statement",
+          "experimental setup diagram",
+          "variable labels",
+          "control group",
+          "experimental groups"
+        ],
+        "key_steps": [
+          "State hypothesis",
+          "Identify variables",
+          "Set up control group",
+          "Set up experimental groups with different light colors",
+          "Measure plant height as outcome"
+        ]
+      },
+      "rubric_criteria": "9-10: The video excellently demonstrates experiment design principles, clearly identifying and labeling all variable types with detailed explanations, and includes a well-defined control group. 7-8: The video effectively demonstrates experiment design principles, identifying and labeling most variable types with some explanation, and includes a control group. 5-6: The video adequately demonstrates experiment design principles, identifying and labeling some variable types with minimal explanation, and includes a basic control group. 3-4: The video poorly demonstrates experiment design principles, with unclear identification and labeling of variable types and an incomplete or poorly defined control group. 1-2: The video fails to demonstrate experiment design principles, with incorrect or missing identification and labeling of variable types and no control group.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "No control group",
+        "Confusing independent and dependent variables",
+        "Multiple uncontrolled variables"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-ELow-K-CK-F-041",
+      "subject": "ela",
+      "grade_level": "elementary_low",
+      "category": "K-CK",
+      "subcategory": "K-CK-F",
+      "prompt_text": "Generate an educational video that displays the uppercase and lowercase forms of all 26 English alphabet letters in order (Aa, Bb, Cc, ... Zz), with each letter pair appearing sequentially and clearly labeled.",
+      "ground_truth": {
+        "correct_answer": "All 26 English alphabet letters displayed in uppercase-lowercase pairs in correct sequential order from A to Z",
+        "key_visual_elements": [
+          "uppercase letter",
+          "lowercase letter",
+          "sequential A-Z order",
+          "clear letter labels"
+        ],
+        "key_steps": [
+          "Display Aa",
+          "Continue through Bb, Cc, etc.",
+          "Reach Zz",
+          "Maintain correct alphabetical order throughout"
+        ]
+      },
+      "rubric_criteria": "The video must display all 26 letter pairs in correct alphabetical order with both uppercase and lowercase forms clearly distinguishable.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Letters out of alphabetical order",
+        "Missing uppercase or lowercase form",
+        "Skipping letters"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-ELow-K-CK-C-042",
+      "subject": "ela",
+      "grade_level": "elementary_low",
+      "category": "K-CK",
+      "subcategory": "K-CK-C",
+      "prompt_text": "Generate an educational video explaining the three basic parts of a story for young learners: beginning (introduces characters and setting), middle (a problem or event happens), and end (the problem is solved). Use a simple example story about a lost puppy to illustrate each part.",
+      "ground_truth": {
+        "correct_answer": "Three parts of a story: beginning (characters/setting), middle (problem/event), end (resolution), illustrated with a lost puppy example",
+        "key_visual_elements": [
+          "beginning label with characters and setting",
+          "middle label with problem event",
+          "end label with resolution",
+          "lost puppy story illustrations"
+        ],
+        "key_steps": [
+          "Introduce the concept of story parts",
+          "Show beginning: puppy with its owner at home",
+          "Show middle: puppy gets lost",
+          "Show end: puppy is found and reunited"
+        ]
+      },
+      "rubric_criteria": "The video must clearly present the three-part story structure (beginning, middle, end) with a concrete example that correctly demonstrates each part.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Missing one of the three story parts",
+        "Parts presented out of order",
+        "Example story does not match the labeled parts"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-EHigh-K-CK-F-043",
+      "subject": "ela",
+      "grade_level": "elementary_high",
+      "category": "K-CK",
+      "subcategory": "K-CK-F",
+      "prompt_text": "Generate an educational video displaying the eight parts of speech in English — noun, pronoun, verb, adjective, adverb, preposition, conjunction, interjection — with a definition and one example word for each, presented in a clear list format.",
+      "ground_truth": {
+        "correct_answer": "Eight parts of speech: noun, pronoun, verb, adjective, adverb, preposition, conjunction, interjection, each with a correct definition and example",
+        "key_visual_elements": [
+          "eight parts of speech listed",
+          "definition for each",
+          "example word for each",
+          "clear formatting"
+        ],
+        "key_steps": [
+          "Display noun with definition and example",
+          "Display pronoun with definition and example",
+          "Continue through all eight parts of speech",
+          "Present in organized list format"
+        ]
+      },
+      "rubric_criteria": "The video must correctly list all eight parts of speech with accurate definitions and appropriate example words for each.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Missing a part of speech",
+        "Incorrect definition",
+        "Example word does not match the part of speech"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-EHigh-K-CK-P-044",
+      "subject": "ela",
+      "grade_level": "elementary_high",
+      "category": "K-CK",
+      "subcategory": "K-CK-P",
+      "prompt_text": "Generate an educational video demonstrating how to write a basic paragraph using the hamburger model: a topic sentence (top bun), three supporting detail sentences (the fillings), and a concluding sentence (bottom bun). Show each layer being assembled step by step with an example paragraph about a favorite animal.",
+      "ground_truth": {
+        "correct_answer": "Hamburger paragraph model: topic sentence, three supporting details, concluding sentence, demonstrated with an example paragraph",
+        "key_visual_elements": [
+          "hamburger diagram with labeled layers",
+          "top bun = topic sentence",
+          "three fillings = supporting details",
+          "bottom bun = concluding sentence",
+          "completed example paragraph"
+        ],
+        "key_steps": [
+          "Introduce the hamburger model",
+          "Write a topic sentence (top bun)",
+          "Add three supporting detail sentences (fillings)",
+          "Write a concluding sentence (bottom bun)",
+          "Show the completed paragraph"
+        ]
+      },
+      "rubric_criteria": "The video must show the hamburger paragraph model with correct labeling of each component and a complete example paragraph that follows the structure.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Missing the concluding sentence",
+        "Only one or two supporting details instead of three",
+        "Hamburger layers not matched to paragraph parts"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-Mid-K-CK-C-045",
+      "subject": "ela",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-C",
+      "prompt_text": "Generate an educational video explaining five common figurative language devices: simile (using 'like' or 'as'), metaphor (direct comparison without 'like/as'), personification (giving human traits to non-human things), hyperbole (exaggeration), and onomatopoeia (words that imitate sounds). Provide one clear example sentence for each device.",
+      "ground_truth": {
+        "correct_answer": "Five figurative language devices: simile, metaphor, personification, hyperbole, onomatopoeia, each with a correct example sentence",
+        "key_visual_elements": [
+          "device name labels",
+          "definition for each device",
+          "example sentence for each",
+          "visual illustrations of examples"
+        ],
+        "key_steps": [
+          "Define and illustrate simile",
+          "Define and illustrate metaphor",
+          "Define and illustrate personification",
+          "Define and illustrate hyperbole",
+          "Define and illustrate onomatopoeia"
+        ]
+      },
+      "rubric_criteria": "The video must correctly define all five figurative language devices and provide accurate, clearly distinguished example sentences for each.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Confusing simile and metaphor",
+        "Example sentence does not match the device",
+        "Missing one of the five devices"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-Mid-K-CK-P-046",
+      "subject": "ela",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-P",
+      "prompt_text": "Generate an educational video showing the five-paragraph essay structure: (1) introduction with a hook and thesis statement, (2) body paragraph 1 with a topic sentence and evidence, (3) body paragraph 2 with a topic sentence and evidence, (4) body paragraph 3 with a topic sentence and evidence, (5) conclusion that restates the thesis and provides a closing thought. Label each section clearly with a visual outline.",
+      "ground_truth": {
+        "correct_answer": "Five-paragraph essay structure: introduction (hook + thesis), three body paragraphs (topic sentence + evidence each), conclusion (restate thesis + closing thought)",
+        "key_visual_elements": [
+          "essay outline diagram with five sections",
+          "introduction with hook and thesis labels",
+          "three body paragraphs with topic sentence labels",
+          "conclusion with restatement and closing",
+          "section numbers and labels"
+        ],
+        "key_steps": [
+          "Show introduction structure (hook, thesis)",
+          "Show body paragraph 1 structure",
+          "Show body paragraph 2 structure",
+          "Show body paragraph 3 structure",
+          "Show conclusion structure"
+        ]
+      },
+      "rubric_criteria": "The video must present a complete five-paragraph essay structure with all components correctly labeled and arranged in proper order.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Missing the thesis statement in introduction",
+        "Fewer than three body paragraphs",
+        "Conclusion does not restate the thesis"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-High-K-CK-F-047",
+      "subject": "ela",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-F",
+      "prompt_text": "Generate an educational video displaying the three classical rhetorical appeals defined by Aristotle: ethos (credibility/character of the speaker), pathos (emotional appeal to the audience), and logos (logical reasoning and evidence). Show each appeal with its Greek term, definition, and one example from a famous speech.",
+      "ground_truth": {
+        "correct_answer": "Three rhetorical appeals: ethos (credibility), pathos (emotion), logos (logic), each with definition and speech example",
+        "key_visual_elements": [
+          "ethos label with definition",
+          "pathos label with definition",
+          "logos label with definition",
+          "speech excerpt examples",
+          "Aristotle reference"
+        ],
+        "key_steps": [
+          "Introduce Aristotle's rhetorical triangle",
+          "Define and exemplify ethos",
+          "Define and exemplify pathos",
+          "Define and exemplify logos"
+        ]
+      },
+      "rubric_criteria": "The video must correctly present all three rhetorical appeals with accurate definitions and appropriate examples from recognizable speeches or texts.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Confusing ethos with pathos",
+        "Missing one of the three appeals",
+        "Example does not match the appeal type"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-High-K-CK-R-048",
+      "subject": "ela",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-R",
+      "prompt_text": "Generate an educational video analyzing the use of dramatic irony in Shakespeare's Romeo and Juliet: show the scene where Romeo believes Juliet is dead and drinks poison, while the audience knows she is merely asleep from the friar's potion. Explain how dramatic irony creates tension by giving the audience knowledge the character lacks.",
+      "ground_truth": {
+        "correct_answer": "Dramatic irony occurs when the audience knows something a character does not; in Romeo and Juliet, the audience knows Juliet is asleep while Romeo believes she is dead",
+        "key_visual_elements": [
+          "Romeo and Juliet scene depiction",
+          "dramatic irony definition text",
+          "audience knowledge vs character knowledge diagram",
+          "tension-building explanation"
+        ],
+        "key_steps": [
+          "Define dramatic irony",
+          "Set up the scene context",
+          "Show Romeo's mistaken belief",
+          "Show the audience's superior knowledge",
+          "Explain how this creates dramatic tension"
+        ]
+      },
+      "rubric_criteria": "9-10: The video expertly defines dramatic irony and applies it precisely to the Romeo and Juliet scene, vividly illustrating the knowledge gap between audience and character, and effectively explaining how this gap builds tension. 7-8: The video accurately defines dramatic irony and applies it to the Romeo and Juliet scene, showing the audience-character knowledge gap, with a good explanation of how it creates tension. 5-6: The video provides a basic definition of dramatic irony and a general application to the Romeo and Juliet scene, with some mention of the audience-character knowledge gap and tension. 3-4: The video attempts to define dramatic irony but struggles to apply it to the Romeo and Juliet scene, with minimal reference to the audience-character knowledge gap or tension. 1-2: The video fails to define dramatic irony or apply it to the Romeo and Juliet scene, lacking any discussion of the audience-character knowledge gap or tension.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Confusing dramatic irony with situational irony",
+        "Incorrect plot details from the play",
+        "Failing to explain the audience vs character knowledge gap"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-Col-K-CK-C-049",
+      "subject": "ela",
+      "grade_level": "college",
+      "category": "K-CK",
+      "subcategory": "K-CK-C",
+      "prompt_text": "Generate an educational video presenting four major schools of literary theory: Formalism (focus on text structure and literary devices), Marxist criticism (focus on class, power, and economic structures in texts), Feminist criticism (focus on gender representation and patriarchal structures), and Post-colonialism (focus on colonial power dynamics and cultural identity). Define each school and illustrate with a brief example of how each would analyze the same text.",
+      "ground_truth": {
+        "correct_answer": "Four literary theory schools: Formalism, Marxist criticism, Feminist criticism, Post-colonialism, each defined and applied to the same text as an example",
+        "key_visual_elements": [
+          "four theory labels with definitions",
+          "example text reference",
+          "different analytical lenses applied",
+          "comparison of interpretations"
+        ],
+        "key_steps": [
+          "Define Formalism and show its analytical focus",
+          "Define Marxist criticism and show its analytical focus",
+          "Define Feminist criticism and show its analytical focus",
+          "Define Post-colonialism and show its analytical focus",
+          "Compare how each reads the same text differently"
+        ]
+      },
+      "rubric_criteria": "9-10: The video accurately defines all four literary theory schools and expertly demonstrates distinct analytical approaches by applying each to the same text, offering clear and insightful comparisons of interpretations. 7-8: The video defines all four literary theory schools and effectively demonstrates analytical approaches for most, applying them to the same text with some insightful comparisons. 5-6: The video provides basic definitions of the literary theory schools and attempts to apply them to the same text, but lacks depth in analysis and comparison. 3-4: The video provides incomplete or unclear definitions of the literary theory schools and struggles to apply them to the same text, with minimal comparison. 1-2: The video fails to define the literary theory schools accurately and does not apply them to a text, lacking any meaningful analysis or comparison.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Conflating two different schools of criticism",
+        "Missing a major theory school",
+        "Applying the wrong analytical lens to the example"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-ELA-Col-K-CK-P-050",
+      "subject": "ela",
+      "grade_level": "college",
+      "category": "K-CK",
+      "subcategory": "K-CK-P",
+      "prompt_text": "Generate an educational video demonstrating the steps of a scholarly literary research process: (1) formulate a research question about a literary text, (2) conduct a literature review of existing scholarship, (3) develop a thesis grounded in a theoretical framework, (4) perform close reading and textual analysis to gather evidence, (5) structure the argument in MLA-formatted academic essay form with proper in-text citations and a Works Cited page.",
+      "ground_truth": {
+        "correct_answer": "Scholarly literary research process: research question, literature review, thesis with theoretical framework, close reading/textual analysis, MLA-formatted essay with citations",
+        "key_visual_elements": [
+          "research question formulation",
+          "literature review sources",
+          "thesis statement with theory label",
+          "close reading annotations",
+          "MLA format example with Works Cited"
+        ],
+        "key_steps": [
+          "Formulate a research question",
+          "Review existing scholarship",
+          "Develop a thesis with theoretical grounding",
+          "Perform close reading for evidence",
+          "Write MLA-formatted essay with citations"
+        ]
+      },
+      "rubric_criteria": "The video must show all five steps of the scholarly research process in correct order with accurate MLA formatting conventions demonstrated.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Skipping the literature review step",
+        "Incorrect MLA citation format",
+        "No theoretical framework mentioned"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-ELow-K-CK-F-051",
+      "subject": "arts",
+      "grade_level": "elementary_low",
+      "category": "K-CK",
+      "subcategory": "K-CK-F",
+      "prompt_text": "Generate an educational video that teaches basic color mixing using primary and secondary colors. Show the three primary colors — red, blue, and yellow — as paint blobs or circles. Then animate mixing them in pairs: red + blue = purple, blue + yellow = green, and red + yellow = orange. Each result should appear as a new color blob with a clear label naming the secondary color produced.",
+      "ground_truth": {
+        "correct_answer": "Primary colors (red, blue, yellow) mix to form secondary colors: red+blue=purple, blue+yellow=green, red+yellow=orange",
+        "key_visual_elements": [
+          "red, blue, and yellow primary color blobs",
+          "mixing animation for each pair",
+          "purple result from red+blue",
+          "green result from blue+yellow",
+          "orange result from red+yellow",
+          "labels for each secondary color"
+        ],
+        "key_steps": [
+          "Display three primary colors with labels",
+          "Mix red and blue to show purple",
+          "Mix blue and yellow to show green",
+          "Mix red and yellow to show orange",
+          "Label each secondary color"
+        ]
+      },
+      "rubric_criteria": "The video must correctly display all three primary colors and demonstrate all three mixing combinations yielding the correct secondary colors with clear labels.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Showing red + blue = green instead of purple",
+        "Omitting one of the three mixing combinations",
+        "Using incorrect primary colors (e.g., including green as a primary)"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-Mid-K-CK-C-052",
+      "subject": "arts",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-C",
+      "prompt_text": "Generate an educational video that introduces the seven elements of art: line, shape, form, color, value, space, and texture. Display each element one at a time with its name as a text label and a clear visual example — a drawn line, a flat geometric shape, a 3D form with shading, a color wheel segment, a grayscale value gradient, a composition showing positive and negative space, and a close-up surface showing texture.",
+      "ground_truth": {
+        "correct_answer": "Seven elements of art: line, shape, form, color, value, space, texture — each with a visual example",
+        "key_visual_elements": [
+          "line example (straight or curved drawn line)",
+          "shape example (flat geometric shape)",
+          "form example (3D object with shading)",
+          "color example (color wheel segment)",
+          "value example (grayscale gradient)",
+          "space example (positive and negative space)",
+          "texture example (surface close-up)",
+          "text labels for each element"
+        ],
+        "key_steps": [
+          "Display 'line' with drawn line example",
+          "Display 'shape' with flat geometric example",
+          "Display 'form' with 3D shaded example",
+          "Display 'color' with color wheel segment",
+          "Display 'value' with grayscale gradient",
+          "Display 'space' with positive/negative space composition",
+          "Display 'texture' with surface close-up"
+        ]
+      },
+      "rubric_criteria": "The video must present all seven elements of art in sequence, each with a correct visual example and a clear text label. No element may be omitted or visually misrepresented.",
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Omitting one or more of the seven elements",
+        "Confusing shape (2D) with form (3D)",
+        "Showing value without a grayscale gradient"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-ELow-K-PK-CTML-SG-041",
+      "subject": "none",
+      "grade_level": "elementary_low",
+      "category": "K-PK",
+      "subcategory": "K-PK-CTML-SG",
+      "prompt_text": "Generate an educational video for young children about the life cycle of a butterfly (egg, caterpillar, chrysalis, butterfly). Use visual signaling cues — red arrows pointing to each stage, bold text labels for stage names, and a highlighted circular diagram connecting the stages.",
+      "ground_truth": {
+        "correct_answer": "Effective signaling uses arrows, bold text, and highlighting to direct learner attention to key information",
+        "key_visual_elements": [
+          "red arrows between stages",
+          "bold stage labels",
+          "highlighted circular life cycle diagram",
+          "four distinct stages"
+        ],
+        "key_steps": [
+          "Show egg with arrow and label",
+          "Show caterpillar with arrow and label",
+          "Show chrysalis with arrow and label",
+          "Show butterfly with arrow and label",
+          "Complete the cycle"
+        ]
+      },
+      "rubric_criteria": "9-10: The video expertly uses red arrows, bold text, and highlighting to clearly direct attention to each stage of the butterfly life cycle, significantly reducing extraneous processing and enhancing comprehension. 7-8: The video effectively employs signaling cues like arrows and bold text to guide attention, though some elements could be more pronounced to further minimize extraneous processing. 5-6: The video uses signaling cues, but their application is inconsistent, occasionally failing to direct attention effectively, leading to moderate extraneous processing. 3-4: The video includes minimal signaling cues, with arrows and text often unclear, resulting in increased extraneous processing and confusion about the life cycle stages. 1-2: The video lacks effective signaling cues, with no clear arrows or bold text, causing high extraneous processing and misunderstanding of the butterfly life cycle.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "No visual cues directing attention",
+        "Cluttered signals that distract",
+        "Inconsistent signaling style"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-ELow-K-PK-CTML-SC-042",
+      "subject": "none",
+      "grade_level": "elementary_low",
+      "category": "K-PK",
+      "subcategory": "K-PK-CTML-SC",
+      "prompt_text": "Generate an educational video for young children about parts of a plant (roots, stem, leaves, flower). Place each text label directly next to the corresponding plant part rather than in a separate legend, demonstrating the spatial contiguity principle.",
+      "ground_truth": {
+        "correct_answer": "Spatial contiguity: labels placed adjacent to the corresponding visual elements reduce split-attention effect",
+        "key_visual_elements": [
+          "plant diagram",
+          "roots label next to roots",
+          "stem label next to stem",
+          "leaves label next to leaves",
+          "flower label next to flower"
+        ],
+        "key_steps": [
+          "Show plant illustration",
+          "Place root label adjacent to roots",
+          "Place stem label adjacent to stem",
+          "Place leaf label adjacent to leaves",
+          "Place flower label adjacent to flower"
+        ]
+      },
+      "rubric_criteria": "9-10: Text labels are consistently placed directly next to their corresponding plant parts, demonstrating excellent spatial contiguity and effectively minimizing split-attention. 7-8: Most text labels are placed near their corresponding plant parts, with minor instances of separation that slightly affect the spatial contiguity. 5-6: Some text labels are placed near their corresponding plant parts, but there are noticeable gaps that disrupt the spatial contiguity and may cause some split-attention. 3-4: Text labels are often placed far from their corresponding plant parts, leading to significant spatial separation and increased split-attention. 1-2: Text labels are consistently placed far from their corresponding plant parts, showing a lack of spatial contiguity and causing high split-attention.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Labels placed far from corresponding parts",
+        "All labels grouped in a separate legend",
+        "Labels overlapping wrong parts"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-ELow-K-PK-CTML-CO-043",
+      "subject": "none",
+      "grade_level": "elementary_low",
+      "category": "K-PK",
+      "subcategory": "K-PK-CTML-CO",
+      "prompt_text": "Generate a focused educational video for young children explaining how rain forms: warm air rises, cools, water vapor condenses into droplets, droplets form clouds, and heavy droplets fall as rain. Include only essential visuals — no decorative backgrounds, cartoon characters, or background music.",
+      "ground_truth": {
+        "correct_answer": "Coherence principle: exclude extraneous material (decorations, unrelated music, tangential content) to reduce cognitive load",
+        "key_visual_elements": [
+          "warm air rising",
+          "cooling at altitude",
+          "condensation into droplets",
+          "cloud formation",
+          "rain falling"
+        ],
+        "key_steps": [
+          "Show warm air rising",
+          "Air cools at altitude",
+          "Water vapor condenses",
+          "Cloud forms",
+          "Rain falls"
+        ]
+      },
+      "rubric_criteria": "9-10: The video is highly coherent, with all visuals and audio directly supporting the explanation of rain formation, and no extraneous material present. 7-8: The video is mostly coherent, with minor instances of unnecessary visuals or audio, but they do not significantly detract from the educational content. 5-6: The video has some coherence, but includes several extraneous elements that occasionally distract from the explanation of rain formation. 3-4: The video lacks coherence, with frequent use of irrelevant visuals or audio that often distract from the educational content. 1-2: The video is incoherent, filled with extraneous material that overwhelms the educational content, making it difficult to understand the rain formation process.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Decorative cartoon characters unrelated to topic",
+        "Background music that distracts",
+        "Tangential facts about weather"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-ELow-K-PK-CL-V1-044",
+      "subject": "none",
+      "grade_level": "elementary_low",
+      "category": "K-PK",
+      "subcategory": "K-PK-CL-V1",
+      "prompt_text": "Generate a simple educational video for young children showing basic shapes: circle, square, and triangle. Use minimal visual complexity — plain colored shapes on a white background with clear outlines and no overlapping or cluttered elements.",
+      "ground_truth": {
+        "correct_answer": "Low visual complexity: simple shapes, plain background, clear outlines, no clutter",
+        "key_visual_elements": [
+          "circle",
+          "square",
+          "triangle",
+          "white background",
+          "clear outlines"
+        ],
+        "key_steps": [
+          "Show circle on plain background",
+          "Show square on plain background",
+          "Show triangle on plain background"
+        ]
+      },
+      "rubric_criteria": "Measure visual complexity: Count distinct visual elements per frame, assess background simplicity, evaluate whether visual clutter is minimized for the target age group.",
+      "scoring_method": "auto_metric",
+      "error_examples": [
+        "Overly complex background patterns",
+        "Too many shapes at once",
+        "Overlapping elements causing confusion"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "auto_metric",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-EHigh-K-PK-CTML-TC-045",
+      "subject": "none",
+      "grade_level": "elementary_high",
+      "category": "K-PK",
+      "subcategory": "K-PK-CTML-TC",
+      "prompt_text": "Generate an educational video explaining the water cycle for upper elementary students. Apply the temporal contiguity principle: when showing evaporation, display the animation of water rising AND the narration text 'Water evaporates from the surface' simultaneously, not sequentially.",
+      "ground_truth": {
+        "correct_answer": "Temporal contiguity: corresponding narration/text and animation should appear at the same time, not sequentially",
+        "key_visual_elements": [
+          "evaporation animation with simultaneous text",
+          "condensation animation with simultaneous text",
+          "precipitation animation with simultaneous text"
+        ],
+        "key_steps": [
+          "Show evaporation with text simultaneously",
+          "Show condensation with text simultaneously",
+          "Show precipitation with text simultaneously"
+        ]
+      },
+      "rubric_criteria": "9-10: The video consistently demonstrates excellent temporal contiguity, with all key visuals and corresponding narration/text appearing simultaneously, ensuring clarity and enhancing understanding of the water cycle. 7-8: The video mostly adheres to temporal contiguity principles, with minor lapses where visuals and narration/text are slightly out of sync, but overall comprehension is maintained. 5-6: The video shows some effort to apply temporal contiguity, but there are noticeable instances where visuals and narration/text do not align, which may cause some confusion. 3-4: The video rarely follows temporal contiguity principles, with frequent mismatches between visuals and narration/text, leading to significant comprehension challenges. 1-2: The video fails to apply temporal contiguity, with visuals and narration/text consistently presented out of sync, severely hindering educational value and understanding of the water cycle.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Text appearing several seconds after the animation",
+        "All text shown first, then all visuals",
+        "Animation completing before text appears"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-EHigh-K-PK-CTML-SE-046",
+      "subject": "none",
+      "grade_level": "elementary_high",
+      "category": "K-PK",
+      "subcategory": "K-PK-CTML-SE",
+      "prompt_text": "Generate an educational video about the digestive system for upper elementary students. Apply the segmenting principle: break the content into three clear segments — (1) mouth and esophagus, (2) stomach, (3) intestines — with a brief pause or visual transition between each segment.",
+      "ground_truth": {
+        "correct_answer": "Segmenting principle: complex content should be broken into learner-paced or clearly delineated segments with pauses between them",
+        "key_visual_elements": [
+          "segment 1: mouth and esophagus",
+          "transition marker",
+          "segment 2: stomach",
+          "transition marker",
+          "segment 3: intestines"
+        ],
+        "key_steps": [
+          "Present mouth and esophagus segment",
+          "Pause or transition",
+          "Present stomach segment",
+          "Pause or transition",
+          "Present intestines segment"
+        ]
+      },
+      "rubric_criteria": "9-10: The video excellently divides the content into three distinct segments with clear, effective pauses or transitions, allowing ample processing time for each part. 7-8: The video divides the content into three segments with mostly clear transitions, providing adequate processing time, though some transitions may be slightly abrupt. 5-6: The video attempts to segment the content but lacks clarity in transitions, with inconsistent pacing that may hinder processing time. 3-4: The video segments are poorly defined, with few or unclear transitions, making it difficult for students to process the information effectively. 1-2: The video fails to divide the content into segments, with no discernible pauses or transitions, resulting in overwhelming and confusing delivery.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "All content presented in one continuous rush",
+        "No pauses between segments",
+        "Segments too long or too short"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-EHigh-K-PK-CL-V2-047",
+      "subject": "none",
+      "grade_level": "elementary_high",
+      "category": "K-PK",
+      "subcategory": "K-PK-CL-V2",
+      "prompt_text": "Generate an educational video about photosynthesis for upper elementary students. Keep on-screen text minimal: use no more than 8 words per text element, with a maximum of 2 text elements visible at any time, to maintain low text density.",
+      "ground_truth": {
+        "correct_answer": "Low text density: maximum 8 words per text element, no more than 2 simultaneous text elements on screen",
+        "key_visual_elements": [
+          "short text labels",
+          "plant diagram",
+          "sunlight arrow",
+          "CO₂ and O₂ labels",
+          "minimal text per frame"
+        ],
+        "key_steps": [
+          "Show plant with brief label",
+          "Add sunlight with short description",
+          "Show CO₂ entering with label",
+          "Show O₂ exiting with label"
+        ]
+      },
+      "rubric_criteria": "Measure text density: Count words per text element and number of simultaneous text elements per frame. Optimal is 8 words or fewer per element, maximum 2 elements visible at once.",
+      "scoring_method": "auto_metric",
+      "error_examples": [
+        "Long sentences on screen",
+        "Multiple paragraphs visible at once",
+        "Text-heavy slides with no visuals"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "auto_metric",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-EHigh-K-PK-VD-TN-048",
+      "subject": "none",
+      "grade_level": "elementary_high",
+      "category": "K-PK",
+      "subcategory": "K-PK-VD-TN",
+      "prompt_text": "Generate an educational video about the rock cycle (igneous, sedimentary, metamorphic) for upper elementary students. Use smooth, natural transitions between stages — dissolve or fade transitions rather than abrupt jump cuts — to maintain visual continuity.",
+      "ground_truth": {
+        "correct_answer": "Natural transitions (dissolves, fades) between scenes maintain visual continuity and reduce cognitive disruption",
+        "key_visual_elements": [
+          "igneous rock scene",
+          "smooth transition",
+          "sedimentary rock scene",
+          "smooth transition",
+          "metamorphic rock scene"
+        ],
+        "key_steps": [
+          "Show igneous rock formation",
+          "Smooth dissolve transition",
+          "Show sedimentary process",
+          "Smooth dissolve transition",
+          "Show metamorphic transformation"
+        ]
+      },
+      "rubric_criteria": "9-10: Transitions are exceptionally smooth, using dissolves or fades that seamlessly connect scenes and maintain thematic continuity throughout the video. 7-8: Transitions are mostly smooth, with occasional minor disruptions, but generally maintain thematic continuity and visual flow. 5-6: Transitions are somewhat inconsistent, with noticeable disruptions that occasionally break thematic continuity, affecting the overall flow. 3-4: Transitions are often abrupt, with frequent jump cuts that disrupt thematic continuity and confuse the viewer. 1-2: Transitions are highly disruptive, with constant abrupt changes that severely break thematic continuity and hinder understanding.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Abrupt jump cuts between scenes",
+        "Jarring visual transitions",
+        "No visual connection between segments"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-Mid-K-PK-CTML-MO-049",
+      "subject": "none",
+      "grade_level": "middle",
+      "category": "K-PK",
+      "subcategory": "K-PK-CTML-MO",
+      "prompt_text": "Generate an educational video explaining Newton's three laws of motion for middle school students. Apply the modality principle: present explanations as spoken narration (audio) alongside animations rather than as on-screen text alongside animations, to leverage dual-channel processing.",
+      "ground_truth": {
+        "correct_answer": "Modality principle: present words as narration (audio) rather than on-screen text when accompanying visual animations to reduce visual channel overload",
+        "key_visual_elements": [
+          "First law animation (object in motion)",
+          "Second law animation (F=ma)",
+          "Third law animation (action-reaction)",
+          "narration indicator rather than text blocks"
+        ],
+        "key_steps": [
+          "Animate first law with narration",
+          "Animate second law with narration",
+          "Animate third law with narration"
+        ]
+      },
+      "rubric_criteria": "9-10: The video expertly applies the modality principle by providing clear and engaging audio narration that complements the animations, effectively leveraging dual-channel processing without overloading the visual channel. 7-8: The video mostly adheres to the modality principle, with audio narration generally accompanying animations, though there may be minor instances of unnecessary on-screen text. 5-6: The video inconsistently applies the modality principle, with some reliance on on-screen text that occasionally distracts from the animations, partially utilizing dual-channel processing. 3-4: The video poorly applies the modality principle, frequently using on-screen text instead of audio narration, leading to visual channel overload and reduced educational effectiveness. 1-2: The video fails to apply the modality principle, relying heavily on on-screen text with little to no audio narration, resulting in significant visual channel overload and ineffective communication of Newton's laws.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Long text blocks on screen during animation",
+        "No audio narration, text only",
+        "Both narration and identical on-screen text (redundancy)"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-Mid-K-PK-CL-V3-050",
+      "subject": "none",
+      "grade_level": "middle",
+      "category": "K-PK",
+      "subcategory": "K-PK-CL-V3",
+      "prompt_text": "Generate an educational video about the layers of the Earth (crust, mantle, outer core, inner core) for middle school students. Limit scene changes to no more than 4 total across the video — one per Earth layer — to maintain cognitive stability and reduce extraneous processing.",
+      "ground_truth": {
+        "correct_answer": "Limiting scene changes to one per major concept reduces cognitive load from extraneous processing of visual transitions",
+        "key_visual_elements": [
+          "Earth cross-section",
+          "crust layer",
+          "mantle layer",
+          "outer core layer",
+          "inner core layer",
+          "minimal scene changes"
+        ],
+        "key_steps": [
+          "Show crust (scene 1)",
+          "Transition to mantle (scene 2)",
+          "Transition to outer core (scene 3)",
+          "Transition to inner core (scene 4)"
+        ]
+      },
+      "rubric_criteria": "Measure scene changes: Count total number of significant visual scene transitions. Optimal is 4 or fewer for this content. Excessive scene changes increase extraneous cognitive load.",
+      "scoring_method": "auto_metric",
+      "error_examples": [
+        "Rapid scene changes every 1-2 seconds",
+        "More than 8 scene transitions",
+        "Distracting camera movements between layers"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "auto_metric",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-Mid-K-PK-VD-PA-051",
+      "subject": "none",
+      "grade_level": "middle",
+      "category": "K-PK",
+      "subcategory": "K-PK-VD-PA",
+      "prompt_text": "Generate an educational video about the phases of the Moon (new moon, waxing crescent, first quarter, waxing gibbous, full moon, waning gibbous, third quarter, waning crescent) for middle school students. Maintain a steady, moderate pace — approximately 1 phase every 1 second — neither too fast nor too slow.",
+      "ground_truth": {
+        "correct_answer": "Moderate pacing allows sufficient processing time per concept without causing boredom; approximately 1 phase per second for 8 phases",
+        "key_visual_elements": [
+          "eight moon phases in sequence",
+          "labels for each phase",
+          "consistent timing between phases"
+        ],
+        "key_steps": [
+          "Show new moon (1 sec)",
+          "Show waxing crescent (1 sec)",
+          "Continue through all 8 phases at steady pace"
+        ]
+      },
+      "rubric_criteria": "9-10: The video maintains a perfect pace, displaying each moon phase for exactly one second, allowing students to process each concept without feeling rushed or bored. 7-8: The video generally maintains a good pace, with minor variations in timing that do not significantly impact comprehension. 5-6: The video has noticeable inconsistencies in pacing, with some phases displayed too quickly or slowly, causing slight confusion. 3-4: The video's pacing is often inconsistent, with several phases shown too quickly or slowly, leading to difficulty in understanding the sequence. 1-2: The video fails to maintain an appropriate pace, with phases either rushed or dragging, severely hindering comprehension of the moon phases.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "All 8 phases in 2 seconds (too fast)",
+        "30 seconds per phase (too slow)",
+        "Inconsistent timing between phases"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-Mid-K-PK-VD-RD-052",
+      "subject": "none",
+      "grade_level": "middle",
+      "category": "K-PK",
+      "subcategory": "K-PK-VD-RD",
+      "prompt_text": "Generate an educational video about the periodic table for middle school students. All text (element symbols, group labels, period numbers) must be rendered at high resolution and remain clearly readable at standard viewing size — minimum 16pt equivalent font with high contrast against the background.",
+      "ground_truth": {
+        "correct_answer": "High resolution and readability: text must be large enough to read, high contrast, no blurring or pixelation",
+        "key_visual_elements": [
+          "periodic table",
+          "clear element symbols",
+          "readable group/period numbers",
+          "high contrast text"
+        ],
+        "key_steps": [
+          "Display periodic table",
+          "Show clearly readable element symbols",
+          "Ensure all text is legible"
+        ]
+      },
+      "rubric_criteria": "Measure resolution and readability: Is all text clearly legible without squinting? Are element symbols and labels rendered with high contrast and no aliasing artifacts? Rate on 1-10 scale.",
+      "scoring_method": "auto_metric",
+      "error_examples": [
+        "Blurry or pixelated text",
+        "Low contrast text (light gray on white)",
+        "Font too small to read",
+        "Text overlapping other elements"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "auto_metric",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-High-K-PK-CL-A1-053",
+      "subject": "none",
+      "grade_level": "high",
+      "category": "K-PK",
+      "subcategory": "K-PK-CL-A1",
+      "prompt_text": "Generate an educational video explaining the process of cellular respiration (glycolysis, Krebs cycle, electron transport chain) for high school students. If narration is included, maintain a moderate speech rate of approximately 150 words per minute — fast enough to maintain engagement but slow enough for comprehension.",
+      "ground_truth": {
+        "correct_answer": "Moderate speech rate (~150 wpm) balances engagement and comprehension for high school content",
+        "key_visual_elements": [
+          "glycolysis diagram",
+          "Krebs cycle diagram",
+          "electron transport chain diagram",
+          "narration pacing indicator"
+        ],
+        "key_steps": [
+          "Explain glycolysis at moderate pace",
+          "Explain Krebs cycle at moderate pace",
+          "Explain electron transport chain at moderate pace"
+        ]
+      },
+      "rubric_criteria": "Measure speech rate: If audio narration is present, calculate words per minute. Optimal range is 130-170 wpm for educational content at this level. Too fast or too slow indicates poor pacing.",
+      "scoring_method": "auto_metric",
+      "error_examples": [
+        "Speech too fast (>200 wpm)",
+        "Speech too slow (<100 wpm)",
+        "Inconsistent speech rate throughout"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "auto_metric",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-High-K-PK-CL-X1-054",
+      "subject": "none",
+      "grade_level": "high",
+      "category": "K-PK",
+      "subcategory": "K-PK-CL-X1",
+      "prompt_text": "Generate an educational video about DNA replication for high school students. Avoid redundancy: do NOT display on-screen text that is identical to the narration. Instead, use complementary visuals (DNA helicase animation, replication fork diagram) while narration provides the verbal explanation.",
+      "ground_truth": {
+        "correct_answer": "Redundancy principle: avoid presenting identical information in both text and narration; use visuals to complement narration instead",
+        "key_visual_elements": [
+          "DNA double helix",
+          "helicase unwinding",
+          "replication fork",
+          "new strand synthesis",
+          "complementary visuals (not text copies of narration)"
+        ],
+        "key_steps": [
+          "Show DNA helix with narration",
+          "Animate helicase with narration",
+          "Show replication fork with narration",
+          "Animate new strand synthesis"
+        ]
+      },
+      "rubric_criteria": "Measure redundancy: Does on-screen text duplicate the narration word-for-word? Optimal design uses visuals (not text) to accompany narration. Count instances of redundant text-narration overlap.",
+      "scoring_method": "auto_metric",
+      "error_examples": [
+        "On-screen text identical to narration",
+        "Bullet points that repeat narration verbatim",
+        "Subtitles of narration shown alongside animations"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "auto_metric",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-High-K-PK-VD-TI-055",
+      "subject": "none",
+      "grade_level": "high",
+      "category": "K-PK",
+      "subcategory": "K-PK-VD-TI",
+      "prompt_text": "Generate an educational video showing the process of mitosis (prophase, metaphase, anaphase, telophase) for high school students. Maintain temporal consistency: the cell should look the same between consecutive frames, with chromosomes changing position smoothly rather than appearing or disappearing abruptly.",
+      "ground_truth": {
+        "correct_answer": "Temporal consistency: objects should maintain visual identity between frames with smooth, continuous changes rather than abrupt appearance/disappearance",
+        "key_visual_elements": [
+          "cell membrane consistent throughout",
+          "chromosomes with smooth position changes",
+          "spindle fibers appearing gradually",
+          "no flickering or abrupt changes"
+        ],
+        "key_steps": [
+          "Show prophase with chromosomes condensing smoothly",
+          "Transition smoothly to metaphase alignment",
+          "Smooth chromosome separation in anaphase",
+          "Gradual cell division in telophase"
+        ]
+      },
+      "rubric_criteria": "9-10: Visual elements maintain excellent temporal consistency, with smooth and continuous changes between frames; there are no flickering, morphing artifacts, or abrupt changes. 7-8: Visual elements show good temporal consistency, with mostly smooth changes and very few minor flickering or abrupt transitions. 5-6: Temporal consistency is average, with some noticeable flickering or abrupt changes, but overall understanding is not significantly hindered. 3-4: Temporal consistency is poor, with frequent flickering, morphing artifacts, or abrupt changes that disrupt understanding. 1-2: Temporal consistency is unacceptable, with constant flickering, morphing artifacts, or abrupt changes that severely impede comprehension.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Chromosomes flickering in and out",
+        "Cell shape changing abruptly between frames",
+        "Objects teleporting rather than moving smoothly"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-High-K-PK-VD-LA-056",
+      "subject": "none",
+      "grade_level": "high",
+      "category": "K-PK",
+      "subcategory": "K-PK-VD-LA",
+      "prompt_text": "Generate an educational video about the electromagnetic spectrum (radio waves, microwaves, infrared, visible light, ultraviolet, X-rays, gamma rays) for high school students. Use a clean, well-organized layout: the spectrum should be displayed horizontally with clear spacing between categories, labels above, and wavelength/frequency values below.",
+      "ground_truth": {
+        "correct_answer": "Clean layout with horizontal spectrum, clear spacing, consistent label positioning, and organized information hierarchy",
+        "key_visual_elements": [
+          "horizontal spectrum bar",
+          "seven labeled regions",
+          "wavelength values below",
+          "frequency values",
+          "consistent spacing and alignment"
+        ],
+        "key_steps": [
+          "Display horizontal spectrum",
+          "Label each region above",
+          "Add wavelength/frequency below",
+          "Maintain clear spacing throughout"
+        ]
+      },
+      "rubric_criteria": "9-10: The video features an exceptionally clean and well-organized layout with a horizontal spectrum, precise spacing, and consistent alignment of labels and values, creating a clear and effective information hierarchy. 7-8: The video presents a clean layout with mostly consistent spacing and alignment; the information hierarchy is generally clear, though minor improvements could enhance clarity. 5-6: The layout is somewhat organized, but inconsistencies in spacing and alignment occasionally disrupt the information hierarchy, making it less effective. 3-4: The layout is cluttered with poor spacing and alignment, leading to a confusing information hierarchy that hinders understanding. 1-2: The video lacks organization, with chaotic spacing and misaligned elements, resulting in an unclear and ineffective presentation of information.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Labels overlapping",
+        "Inconsistent spacing between regions",
+        "Cluttered or disorganized layout",
+        "Text misaligned"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-Col-K-PK-CL-X2-057",
+      "subject": "none",
+      "grade_level": "college",
+      "category": "K-PK",
+      "subcategory": "K-PK-CL-X2",
+      "prompt_text": "Generate an educational video about enzyme kinetics (Michaelis-Menten model) for college students. Minimize concurrent elements: when explaining the Vmax concept, show only the saturation curve and Vmax line — do not simultaneously display the Km derivation, the Lineweaver-Burk plot, and inhibition diagrams.",
+      "ground_truth": {
+        "correct_answer": "Minimize concurrent elements: present one concept at a time rather than showing multiple diagrams simultaneously to reduce cognitive overload",
+        "key_visual_elements": [
+          "Michaelis-Menten curve (shown alone)",
+          "Vmax asymptote (added separately)",
+          "Km point (shown when relevant)",
+          "sequential rather than simultaneous presentation"
+        ],
+        "key_steps": [
+          "Show substrate concentration vs. reaction rate curve",
+          "Add Vmax line separately",
+          "Later show Km on the curve",
+          "Present Lineweaver-Burk only after basic curve is understood"
+        ]
+      },
+      "rubric_criteria": "Measure concurrent elements: Count the number of distinct informational elements displayed simultaneously at any frame. Optimal is 3 or fewer concurrent elements per frame for complex content.",
+      "scoring_method": "auto_metric",
+      "error_examples": [
+        "Multiple graphs shown simultaneously",
+        "Equations, diagrams, and text all on screen at once",
+        "More than 5 concurrent informational elements"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "auto_metric",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-Col-K-PK-VD-AVS-058",
+      "subject": "none",
+      "grade_level": "college",
+      "category": "K-PK",
+      "subcategory": "K-PK-VD-AVS",
+      "prompt_text": "Generate an educational video about action potential propagation along a neuron for college students. Ensure audio-visual synchrony: when the narration says 'sodium channels open,' the animation should show sodium channels opening at exactly that moment, not before or after.",
+      "ground_truth": {
+        "correct_answer": "Audio-visual synchrony: narration events must align temporally with corresponding visual events within 200ms",
+        "key_visual_elements": [
+          "neuron diagram",
+          "sodium channels opening animation synced with narration",
+          "potassium channels closing animation synced",
+          "action potential wave synchronized"
+        ],
+        "key_steps": [
+          "Narrate 'resting potential' while showing resting state",
+          "Narrate 'sodium channels open' while animating channel opening",
+          "Narrate 'depolarization' while showing voltage change",
+          "Narrate 'repolarization' while showing recovery"
+        ]
+      },
+      "rubric_criteria": "9-10: The video demonstrates exceptional audio-visual synchrony, with all narrated events aligning precisely with visual animations within 100ms, enhancing educational clarity. 7-8: The video shows strong audio-visual synchrony, with most narrated events aligning with visual animations within 150ms, maintaining overall educational effectiveness. 5-6: The video achieves moderate audio-visual synchrony, with several narrated events aligning with visual animations within 200ms, but some misalignments slightly hinder understanding. 3-4: The video has poor audio-visual synchrony, with many narrated events misaligned by more than 200ms, causing confusion and reducing educational value. 1-2: The video lacks audio-visual synchrony, with most narrated events significantly misaligned with visual animations, severely impairing educational effectiveness.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Visual events occurring 1+ seconds before narration",
+        "Narration describing events not yet shown",
+        "Complete mismatch between audio and visual content"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-Col-K-PK-VD-DA-059",
+      "subject": "none",
+      "grade_level": "college",
+      "category": "K-PK",
+      "subcategory": "K-PK-VD-DA",
+      "prompt_text": "Generate an educational video explaining the Hardy-Weinberg equilibrium principle (p² + 2pq + q² = 1) for college genetics students. The video should be approximately 8 seconds long — sufficient to introduce the concept and formula but not so long as to include unnecessary detail.",
+      "ground_truth": {
+        "correct_answer": "Appropriate duration: 8 seconds is sufficient to present a single concept (Hardy-Weinberg formula and its meaning) without padding",
+        "key_visual_elements": [
+          "Hardy-Weinberg equation",
+          "p and q definitions",
+          "genotype frequency diagram",
+          "concise presentation"
+        ],
+        "key_steps": [
+          "Define p and q as allele frequencies",
+          "Present p² + 2pq + q² = 1",
+          "Show genotype frequency interpretation",
+          "Conclude within 8 seconds"
+        ]
+      },
+      "rubric_criteria": "Evaluate duration appropriateness: Is the video length appropriate for the content complexity? Does it cover the essential concept without unnecessary padding or abrupt truncation? Measure actual vs. expected duration.",
+      "scoring_method": "auto_metric",
+      "error_examples": [
+        "Video far too short to convey the concept",
+        "Excessive padding to fill time",
+        "Content crammed into too little time"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "auto_metric",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-None-Col-K-PK-VD-TR-060",
+      "subject": "none",
+      "grade_level": "college",
+      "category": "K-PK",
+      "subcategory": "K-PK-VD-TR",
+      "prompt_text": "Generate an educational video about the Navier-Stokes equations for college fluid dynamics students. All mathematical text must be rendered clearly: the partial differential equation symbols (partial derivatives, nabla operator, Greek letters like rho and mu) must be sharp, correctly formatted, and free of rendering artifacts.",
+      "ground_truth": {
+        "correct_answer": "Clean text rendering: mathematical symbols, Greek letters, and special notation must be sharp, correctly formatted, and artifact-free",
+        "key_visual_elements": [
+          "Navier-Stokes equation",
+          "partial derivative symbols",
+          "nabla operator",
+          "Greek letters (rho, mu)",
+          "clean rendering"
+        ],
+        "key_steps": [
+          "Display Navier-Stokes equation",
+          "Show clearly rendered partial derivatives",
+          "Display Greek letters without artifacts",
+          "Ensure all mathematical notation is readable"
+        ]
+      },
+      "rubric_criteria": "9-10: Mathematical symbols, Greek letters, and special notation are exceptionally clear, sharp, and free of any rendering artifacts, making complex equations easily understandable. 7-8: Mathematical symbols and Greek letters are mostly clear and correctly formatted, with minor artifacts that do not significantly hinder understanding. 5-6: Mathematical symbols and Greek letters are generally recognizable, but some rendering issues may cause occasional confusion or misinterpretation. 3-4: Mathematical symbols and Greek letters are often unclear or improperly formatted, with frequent artifacts that disrupt comprehension. 1-2: Mathematical symbols and Greek letters are poorly rendered, with significant artifacts and formatting errors that make the equations difficult to understand.",
+      "scoring_method": "rubric_10pt",
+      "error_examples": [
+        "Blurry or pixelated mathematical symbols",
+        "Greek letters rendered as boxes or question marks",
+        "Subscripts and superscripts misaligned",
+        "Partial derivative symbol garbled"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": false,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-Mid-K-CK-F-093",
+      "subject": "arts",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-F",
+      "prompt_text": "Generate an educational video showing the dimensions and markings of a standard basketball court: the court is 28 meters long and 15 meters wide, with a center circle, three-point line (6.75m from the basket), free throw line (4.6m from the backboard), and the key (painted area). Label each marking clearly.",
+      "ground_truth": {
+        "correct_answer": "Basketball court: 28m x 15m, center circle, three-point line at 6.75m, free throw line at 4.6m, key/painted area",
+        "key_visual_elements": [
+          "rectangular court 28x15m",
+          "center circle",
+          "three-point arc",
+          "free throw line",
+          "key/painted area",
+          "two baskets"
+        ]
+      },
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Wrong dimensions",
+        "Missing three-point line",
+        "Incorrect free throw distance"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Art-High-K-CK-P-094",
+      "subject": "arts",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-P",
+      "prompt_text": "Generate an educational video demonstrating the correct sequence of a proper warm-up routine before exercise: (1) light cardio such as jogging in place for 2 minutes, (2) dynamic stretching including arm circles, leg swings, and torso twists, (3) sport-specific movements. Show each phase clearly labeled with timing.",
+      "ground_truth": {
+        "correct_answer": "Warm-up sequence: (1) light cardio 2 min, (2) dynamic stretching (arm circles, leg swings, torso twists), (3) sport-specific movements",
+        "key_visual_elements": [
+          "jogging in place",
+          "arm circles",
+          "leg swings",
+          "torso twists",
+          "sport-specific drills",
+          "phase labels"
+        ]
+      },
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Starting with static stretching",
+        "Skipping cardio phase",
+        "Wrong order"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-ELow-K-CK-F-097",
+      "subject": "informatics",
+      "grade_level": "elementary_low",
+      "category": "K-CK",
+      "subcategory": "K-CK-F",
+      "prompt_text": "Generate an educational video showing the basic parts of a computer for young children: the monitor (shows pictures and text), keyboard (for typing), mouse (for clicking and pointing), and the computer case (the brain of the computer). Label each part clearly with large, colorful text.",
+      "ground_truth": {
+        "correct_answer": "Four basic computer parts: monitor, keyboard, mouse, computer case (CPU)",
+        "key_visual_elements": [
+          "monitor with screen",
+          "keyboard",
+          "mouse",
+          "computer case/tower",
+          "clear labels for each part"
+        ]
+      },
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Missing a major component",
+        "Mislabeling parts",
+        "Showing only software not hardware"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-EHigh-K-CK-F-098",
+      "subject": "informatics",
+      "grade_level": "elementary_high",
+      "category": "K-CK",
+      "subcategory": "K-CK-F",
+      "prompt_text": "Generate an educational video showing the standard flowchart symbols used in programming: oval (start/end), rectangle (process/action), diamond (decision/yes-no question), parallelogram (input/output), and arrows (flow direction). Display each symbol with its name and purpose labeled clearly.",
+      "ground_truth": {
+        "correct_answer": "Five standard flowchart symbols: oval=start/end, rectangle=process, diamond=decision, parallelogram=input/output, arrows=flow",
+        "key_visual_elements": [
+          "oval shape",
+          "rectangle shape",
+          "diamond shape",
+          "parallelogram shape",
+          "arrows connecting symbols",
+          "labels with names and purposes"
+        ]
+      },
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Wrong shapes for symbols",
+        "Missing diamond for decision",
+        "No labels",
+        "Incorrect symbol-purpose mapping"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-Mid-K-CK-F-099",
+      "subject": "informatics",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-F",
+      "prompt_text": "Generate an educational video explaining binary number conversion: show how the decimal number 13 is converted to binary (1101) by repeatedly dividing by 2 and recording remainders. Display the step-by-step division process (13÷2=6 R1, 6÷2=3 R0, 3÷2=1 R1, 1÷2=0 R1) and read the remainders bottom-to-top to get 1101.",
+      "ground_truth": {
+        "correct_answer": "Decimal 13 = Binary 1101, shown via repeated division by 2",
+        "key_visual_elements": [
+          "division steps",
+          "remainders highlighted",
+          "bottom-to-top reading",
+          "final binary result 1101"
+        ]
+      },
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Wrong binary result",
+        "Missing division steps",
+        "Reading remainders in wrong order",
+        "Arithmetic errors"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-High-K-CK-F-100",
+      "subject": "informatics",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-F",
+      "prompt_text": "Generate an educational video showing the three basic logic gates in digital circuits: AND gate (output is 1 only when both inputs are 1), OR gate (output is 1 when at least one input is 1), and NOT gate (output is the inverse of the input). Display each gate's symbol, truth table, and a simple circuit diagram.",
+      "ground_truth": {
+        "correct_answer": "Three logic gates: AND (both=1→1), OR (any=1→1), NOT (inverse). Each with symbol, truth table, circuit diagram.",
+        "key_visual_elements": [
+          "AND gate symbol",
+          "OR gate symbol",
+          "NOT gate symbol",
+          "truth tables for each",
+          "circuit diagrams"
+        ]
+      },
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Wrong truth table values",
+        "Swapped AND/OR behavior",
+        "Missing NOT gate",
+        "Incorrect gate symbols"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-Col-K-CK-P-101",
+      "subject": "informatics",
+      "grade_level": "college",
+      "category": "K-CK",
+      "subcategory": "K-CK-P",
+      "prompt_text": "Generate an educational video demonstrating the bubble sort algorithm step by step on the array [5, 3, 8, 1, 2]. Show each pass through the array: compare adjacent elements, swap if out of order, highlight the comparison pair, and show the array state after each pass until fully sorted [1, 2, 3, 5, 8].",
+      "ground_truth": {
+        "correct_answer": "Bubble sort on [5,3,8,1,2]: Pass 1→[3,5,1,2,8], Pass 2→[3,1,2,5,8], Pass 3→[1,2,3,5,8]. Final: [1,2,3,5,8]",
+        "key_visual_elements": [
+          "array visualization",
+          "comparison pair highlighting",
+          "swap animation",
+          "pass-by-pass progression",
+          "sorted result"
+        ]
+      },
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Wrong sort result",
+        "Skipping comparison steps",
+        "Incorrect swap logic",
+        "Not showing pass progression"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-High-K-CK-R-102",
+      "subject": "informatics",
+      "grade_level": "high",
+      "category": "K-CK",
+      "subcategory": "K-CK-R",
+      "prompt_text": "Generate an educational video explaining why binary search is faster than linear search. Show both algorithms searching for the number 7 in a sorted array [1, 3, 5, 7, 9, 11, 13, 15]. Linear search checks each element one by one (8 elements = up to 8 checks). Binary search repeatedly halves the array (check middle, eliminate half) and finds 7 in just 3 steps. Explain that binary search is O(log n) while linear search is O(n).",
+      "ground_truth": {
+        "correct_answer": "Binary search O(log n) is faster than linear search O(n) because it halves the search space each step",
+        "key_visual_elements": [
+          "sorted array",
+          "linear search stepping through each element",
+          "binary search halving",
+          "comparison count",
+          "Big-O notation"
+        ]
+      },
+      "rubric_criteria": "9-10: Both algorithms clearly demonstrated on the same array, step counts compared visually, Big-O notation explained accurately, clear conclusion about efficiency difference. 7-8: Both algorithms shown with mostly correct logic, efficiency comparison present but minor inaccuracies in step counts or Big-O explanation. 5-6: Basic concept of both searches shown but comparison is unclear, Big-O mentioned but not well explained. 3-4: Only one algorithm shown clearly, or significant errors in the comparison logic. 1-2: No recognizable search algorithm demonstration or completely incorrect explanation.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-Mid-K-CK-C-103",
+      "subject": "informatics",
+      "grade_level": "middle",
+      "category": "K-CK",
+      "subcategory": "K-CK-C",
+      "prompt_text": "Generate an educational video explaining the four pillars of computational thinking: (1) Decomposition — breaking a complex problem into smaller parts, (2) Pattern Recognition — finding similarities or trends, (3) Abstraction — focusing on important details while ignoring irrelevant ones, (4) Algorithm Design — creating step-by-step solutions. Use a real-world example like planning a school event to illustrate each pillar.",
+      "ground_truth": {
+        "correct_answer": "Four CT pillars: decomposition, pattern recognition, abstraction, algorithm design — illustrated with a real-world example",
+        "key_visual_elements": [
+          "four pillars labeled",
+          "decomposition example",
+          "pattern recognition example",
+          "abstraction example",
+          "algorithm design example",
+          "real-world context"
+        ]
+      },
+      "scoring_method": "exact_match",
+      "error_examples": [
+        "Missing one or more pillars",
+        "Wrong definitions",
+        "No real-world example",
+        "Confusing abstraction with decomposition"
+      ],
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "exact_match",
+        "expected_duration_sec": 8
+      }
+    },
+    {
+      "id": "EVB-Info-Col-K-PK-CTML-104",
+      "subject": "informatics",
+      "grade_level": "college",
+      "category": "K-PK",
+      "subcategory": "K-PK-CTML",
+      "prompt_text": "Generate an educational video teaching the concept of recursion in programming using the factorial function. Apply multimedia learning principles: use signaling to highlight the recursive call, spatial contiguity to place the code next to its visual execution trace, and segmenting to break down each recursive step (5! = 5×4! → 4×3! → 3×2! → 2×1! → 1). Show the call stack building up and unwinding.",
+      "ground_truth": {
+        "correct_answer": "Recursion via factorial with CTML principles applied: signaling, spatial contiguity, segmenting, with call stack visualization",
+        "key_visual_elements": [
+          "factorial code",
+          "recursive call highlighting",
+          "execution trace beside code",
+          "call stack visualization",
+          "step-by-step breakdown"
+        ]
+      },
+      "rubric_criteria": "9-10: Recursion clearly explained with factorial, CTML principles visibly applied (signaling, spatial contiguity, segmenting), call stack shown building and unwinding, code and visual trace well integrated. 7-8: Recursion mostly clear with factorial, some CTML principles evident, call stack partially shown. 5-6: Basic recursion concept present but CTML principles not clearly applied, call stack unclear or missing. 3-4: Attempt at explaining recursion but confusing, no CTML application evident. 1-2: No recognizable recursion explanation or completely incorrect.",
+      "scoring_method": "rubric_10pt",
+      "metadata": {
+        "cross_axes": {
+          "subject": true,
+          "grade": true
+        },
+        "eval_method": "rubric_10pt",
+        "expected_duration_sec": 8
+      }
+    }
+  ]
+}

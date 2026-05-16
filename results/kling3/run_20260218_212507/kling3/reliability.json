@@ -1,0 +1,108 @@
+{
+  "status": "computed",
+  "n_paired_items": 162,
+  "judge_ids": [
+    "gemini-3-flash",
+    "gpt-4o"
+  ],
+  "pearson": {
+    "r": 0.485288,
+    "p_value": 0.0,
+    "significant_at_005": true,
+    "interpretation": "weak"
+  },
+  "cohens_kappa": {
+    "kappa_weighted": 0.444706,
+    "weight_type": "quadratic",
+    "interpretation": "moderate"
+  },
+  "icc": {
+    "icc_2_1": 0.414568,
+    "interpretation": "poor",
+    "anova_details": {
+      "n_subjects": 162,
+      "k_raters": 2,
+      "grand_mean": 0.499691,
+      "ms_rows": 0.186118,
+      "ms_cols": 3.463735,
+      "ms_error": 0.064728,
+      "ss_rows": 29.964969,
+      "ss_cols": 3.463735,
+      "ss_error": 10.421265
+    }
+  },
+  "bias_analysis": {
+    "judge_ids": [
+      "gemini-3-flash",
+      "gpt-4o"
+    ],
+    "pairwise_comparisons": [
+      {
+        "judges": [
+          "gemini-3-flash",
+          "gpt-4o"
+        ],
+        "n_pairs": 162,
+        "overall": {
+          "mean_diff": -0.20679,
+          "abs_mean_diff": 0.26358,
+          "std_diff": 0.358689,
+          "p_value": 0.0,
+          "significant_at_005": true
+        },
+        "per_video_model": {
+          "kling3": {
+            "n": 162,
+            "mean_diff": -0.20679,
+            "std_diff": 0.358689,
+            "affiliated_judge": null,
+            "bias_direction": "gpt-4o scores higher"
+          }
+        },
+        "manufacturer_bias_flags": []
+      }
+    ]
+  },
+  "per_category": {
+    "A-ES": {
+      "n_pairs": 10,
+      "pearson_r": 0.504984,
+      "kappa_weighted": 0.516129
+    },
+    "A-IS": {
+      "n_pairs": 6,
+      "pearson_r": 0.503722,
+      "kappa_weighted": 0.490566
+    },
+    "A-NE": {
+      "n_pairs": 12,
+      "pearson_r": 1.0,
+      "kappa_weighted": 1.0
+    },
+    "K-CK": {
+      "n_pairs": 52,
+      "pearson_r": 0.225199,
+      "kappa_weighted": 0.22754
+    },
+    "K-PK": {
+      "n_pairs": 12,
+      "pearson_r": 0.583893,
+      "kappa_weighted": 0.512821
+    },
+    "S-PF": {
+      "n_pairs": 28,
+      "pearson_r": 0.408989,
+      "kappa_weighted": 0.152866
+    },
+    "S-UC": {
+      "n_pairs": 34,
+      "pearson_r": 0.639474,
+      "kappa_weighted": 0.41663
+    },
+    "S-VIU": {
+      "n_pairs": 8,
+      "pearson_r": 0.0,
+      "kappa_weighted": 0.0
+    }
+  }
+}

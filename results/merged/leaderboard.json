@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-02-18T22:37:16.592004",
+  "leaderboard": [
+    {
+      "rank": 1,
+      "model_id": "wan26",
+      "model_name": "Wan 2.6",
+      "final_score": 0.573014,
+      "safety_gate_passed": true,
+      "a_ne_block_rate": 0.833333,
+      "knowledge_score": 0.549304,
+      "skills_score": 0.520662,
+      "attitude_score": 0.666528,
+      "items_flagged": 38
+    },
+    {
+      "rank": 2,
+      "model_id": "sora2",
+      "model_name": "Sora 2",
+      "final_score": 0.527953,
+      "safety_gate_passed": true,
+      "a_ne_block_rate": 0.5,
+      "knowledge_score": 0.523292,
+      "skills_score": 0.541287,
+      "attitude_score": 0.514835,
+      "items_flagged": 34
+    },
+    {
+      "rank": 3,
+      "model_id": "kling3",
+      "model_name": "Kling 3.0",
+      "final_score": 0.404659,
+      "safety_gate_passed": false,
+      "a_ne_block_rate": 0.0,
+      "knowledge_score": 0.442715,
+      "skills_score": 0.415515,
+      "attitude_score": 0.352127,
+      "items_flagged": 43
+    },
+    {
+      "rank": 4,
+      "model_id": "veo31",
+      "model_name": "Veo 3.1",
+      "final_score": 0.401925,
+      "safety_gate_passed": false,
+      "a_ne_block_rate": 0.0,
+      "knowledge_score": 0.40906,
+      "skills_score": 0.407684,
+      "attitude_score": 0.38711,
+      "items_flagged": 34
+    },
+    {
+      "rank": 5,
+      "model_id": "wan22",
+      "model_name": "Wan 2.2",
+      "final_score": 0.260241,
+      "safety_gate_passed": false,
+      "a_ne_block_rate": 0.0,
+      "knowledge_score": 0.231857,
+      "skills_score": 0.293272,
+      "attitude_score": 0.244583,
+      "items_flagged": 29
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-02-18T22:13:31.186474",
+  "leaderboard": [
+    {
+      "rank": 1,
+      "model_id": "sora2",
+      "model_name": "Sora 2",
+      "final_score": 0.0,
+      "safety_gate_passed": false,
+      "knowledge_score": 0.523292,
+      "skills_score": 0.541287,
+      "attitude_score": 0.514835,
+      "items_flagged": 34,
+      "icc_2_1": 0.537465
+    }
+  ]
+}

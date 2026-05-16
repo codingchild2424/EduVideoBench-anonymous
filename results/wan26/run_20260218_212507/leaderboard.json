@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-02-18T22:18:41.807998",
+  "leaderboard": [
+    {
+      "rank": 1,
+      "model_id": "wan26",
+      "model_name": "Wan 2.6",
+      "final_score": 0.0,
+      "safety_gate_passed": false,
+      "knowledge_score": 0.549304,
+      "skills_score": 0.520662,
+      "attitude_score": 0.666528,
+      "items_flagged": 38,
+      "icc_2_1": 0.524261
+    }
+  ]
+}
