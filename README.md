@@ -4,9 +4,7 @@ Anonymous repository for the EduVideoBench submission. A KSA-grounded benchmark 
 
 ## Generated videos
 
-All 1,070 videos used in the evaluation are released on Google Drive:
-
-https://drive.google.com/drive/folders/1caQFcX2bSGN0n4Z_XmSx0gwSJy33voxr?usp=sharing
+All 1,070 videos used in the evaluation will be released on an anonymous hosting endpoint at the camera-ready stage. During review, the videos can be regenerated from the prompts in `eduvbench-dataset/` using the scripts described below.
 
 ## Reviewer quick start
 

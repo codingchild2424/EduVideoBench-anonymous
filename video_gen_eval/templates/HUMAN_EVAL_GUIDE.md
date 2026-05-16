@@ -5,7 +5,7 @@ This guide explains how the 215-prompt human-evaluation pass is conducted by dom
 ## Workflow
 
 1. **Open** the sheet for your subject (e.g., `math_eval.xlsx`).
-2. For each row (one prompt), watch the five video clips referenced in the `*_video` columns. Clips are released on Google Drive (see the root README for the link).
+2. For each row (one prompt), watch the five video clips referenced in the `*_video` columns. Clips will be released on an anonymous hosting endpoint at the camera-ready stage; reviewers can regenerate the clips locally with the scripts in `video_gen_eval/`.
 3. **Score** each clip in the corresponding `*_score` column.
 4. **Note** any pedagogical issues in the `*_notes` column (legibility, pacing, factual error, learner-fit, etc.).
 5. **Save** and submit the sheet.

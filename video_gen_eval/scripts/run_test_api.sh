@@ -1,8 +1,8 @@
 #!/bin/bash
 # =============================================================================
-# API Test Script - fal.ai 모델 5종 각 1건씩 테스트
+# API Test Script - smoke-test the 5 fal.ai models with 1 prompt each
 # =============================================================================
-# Veo 3.1, Sora 2, Kling 3.0, Wan 2.2, Wan 2.6 각각 1개 프롬프트로 테스트
+# Veo 3.1, Sora 2, Kling 3.0, Wan 2.2, Wan 2.6
 # =============================================================================
 
 set -e
@@ -39,7 +39,7 @@ fi
 # =============================================================================
 TEST_PROMPT="A teacher draws a right triangle on a whiteboard, labels the sides 3, 4, and 5, and explains the Pythagorean theorem step by step with clear handwriting and annotations."
 OUTPUT_DIR="./outputs/api_test"
-DURATION=8          # 8초 통일 (Wan 2.2는 최대 ~6.7초, Wan 2.6은 10초로 스냅)
+DURATION=8          # 8s nominal (Wan 2.2 caps at ~6.7s, Wan 2.6 snaps to 10s)
 
 echo "============================================================"
 echo "  fal.ai API Test - 5 Models x 1 Prompt"

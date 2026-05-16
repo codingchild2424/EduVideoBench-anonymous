@@ -137,13 +137,13 @@ def convert_md_to_docx(md_path: Path, docx_path: Path):
     # -- Default font --
     style = doc.styles["Normal"]
     font = style.font
-    font.name = "맑은 고딕"
+    font.name = "Calibri"
     font.size = Pt(10)
 
     # Configure heading styles
     for level in range(1, 5):
         h_style = doc.styles[f"Heading {level}"]
-        h_style.font.name = "맑은 고딕"
+        h_style.font.name = "Calibri"
         h_style.font.color.rgb = RGBColor(47, 84, 150)
 
     doc.styles["Heading 1"].font.size = Pt(18)
