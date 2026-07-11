@@ -70,7 +70,7 @@ The JSON dataset under `eduvbench-dataset/` contains the **complete 215-prompt s
 
 Every prompt entry carries an embedded `ground_truth` field (`correct_answer` / `key_visual_elements` / `key_steps` for Knowledge and Skills; `misconception` / `correct_concept` / `boundary_type` for Attitude). A flattened `ground_truth_sheet.csv` consolidating these across all 215 prompts is provided for convenience.
 
-**Evaluation coverage.** The full expert human evaluation covers all **215 prompts**; the completed evaluation sheets are available here (view-only): **https://drive.google.com/drive/folders/1pkOtLANw_G6TSS83EK4c8StWn2klSBMv?usp=sharing**. The automated VLM-judge outputs included in `results/` correspond to an earlier run over a **185-prompt subset**; a refreshed `results/` run covering the full 215-prompt set will accompany the camera-ready release.
+**Evaluation.** The primary evaluation is the **expert human evaluation over all 215 prompts** (two PhD-level domain experts per subject, 18 experts total, double-scoring). The aggregated KSA leaderboard and the raw per-item human scores are in **`results/human_eval/`** (`leaderboard_ksa.csv`, `human_eval_215_scores.csv`); the completed source evaluation sheets are also available here (view-only): **https://drive.google.com/drive/folders/1pkOtLANw_G6TSS83EK4c8StWn2klSBMv?usp=sharing**. An auxiliary dual-VLM judging signal is provided under `results/` for cross-checking.
 
 ## License
 
