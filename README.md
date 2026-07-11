@@ -35,7 +35,7 @@ python -m video_gen_eval.eval report --results-dir ./results/<run_id>
 | Track | Where | What reviewers can do |
 |---|---|---|
 | **VLM evaluation** | `video_gen_eval/eval/` | Run the dual-judge VLM pipeline (Gemini 3 Flash + GPT-4o) end to end with the API keys above. Outputs in `results/`. |
-| **Human evaluation** | `video_gen_eval/templates/*.xlsx` | Blank English evaluation sheets (one per subject) used by domain experts. See `video_gen_eval/templates/HUMAN_EVAL_GUIDE.md`. The full evaluation-sheet forms are also mirrored here (view-only): **https://drive.google.com/drive/folders/1kD6-dl8fUiSzsdeCJuE96O5s2oz2qnEC?usp=sharing** |
+| **Human evaluation** | `video_gen_eval/templates/*.xlsx` · `results/human_eval/` | Blank English evaluation sheets (one per subject) and the guide `video_gen_eval/templates/HUMAN_EVAL_GUIDE.md`. Aggregated 215-prompt human results and raw per-item scores are in `results/human_eval/`. |
 | **Expert interview (TPACK & TAM)** | `video_gen_eval/templates/TPACK_TAM_interview_questionnaire.pdf` | Blank TPACK & TAM interview questionnaire administered to domain experts. |
 
 Pre-computed evaluation outputs (model score cards, comparative reports) are in `results/`.
@@ -70,7 +70,7 @@ The JSON dataset under `eduvbench-dataset/` contains the **complete 215-prompt s
 
 Every prompt entry carries an embedded `ground_truth` field (`correct_answer` / `key_visual_elements` / `key_steps` for Knowledge and Skills; `misconception` / `correct_concept` / `boundary_type` for Attitude). A flattened `ground_truth_sheet.csv` consolidating these across all 215 prompts is provided for convenience.
 
-**Evaluation.** The primary evaluation is the **expert human evaluation over all 215 prompts** (two PhD-level domain experts per subject, 18 experts total, double-scoring). The aggregated KSA leaderboard and the raw per-item human scores are in **`results/human_eval/`** (`leaderboard_ksa.csv`, `human_eval_215_scores.csv`); the completed source evaluation sheets are also available here (view-only): **https://drive.google.com/drive/folders/1pkOtLANw_G6TSS83EK4c8StWn2klSBMv?usp=sharing**. An auxiliary dual-VLM judging signal is provided under `results/` for cross-checking.
+**Evaluation.** The primary evaluation is the **expert human evaluation over all 215 prompts** (two PhD-level domain experts per subject, 18 experts total, double-scoring). The aggregated KSA leaderboard and the raw per-item human scores are in **`results/human_eval/`** (`leaderboard_ksa.csv`, `human_eval_215_scores.csv`). An auxiliary dual-VLM judging signal is provided under `results/` for cross-checking.
 
 ## License
 
