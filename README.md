@@ -36,6 +36,7 @@ python -m video_gen_eval.eval report --results-dir ./results/<run_id>
 |---|---|---|
 | **VLM evaluation** | `video_gen_eval/eval/` | Run the dual-judge VLM pipeline (Gemini 3 Flash + GPT-4o) end to end with the API keys above. Outputs in `results/`. |
 | **Human evaluation** | `video_gen_eval/templates/*.xlsx` | Blank English evaluation sheets (one per subject) used by domain experts. See `video_gen_eval/templates/HUMAN_EVAL_GUIDE.md`. The full evaluation-sheet forms are also mirrored here (view-only): **https://drive.google.com/drive/folders/1kD6-dl8fUiSzsdeCJuE96O5s2oz2qnEC?usp=sharing** |
+| **Expert interview (TPACK & TAM)** | `video_gen_eval/templates/TPACK_TAM_interview_questionnaire.pdf` | Blank TPACK & TAM interview questionnaire administered to domain experts. |
 
 Pre-computed evaluation outputs (model score cards, comparative reports) are in `results/`.
 
