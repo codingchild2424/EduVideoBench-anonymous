@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "dimension": "Knowledge",
-  "description": "EduVBench v1 Knowledge dimension: 52 K-CK + 20 K-PK = 72 prompts",
+  "description": "EduVBench v1 Knowledge dimension: 61 K-CK + 21 K-PK = 82 prompts",
   "total_items": 82,
   "prompts": [
     {

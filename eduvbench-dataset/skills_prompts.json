@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "dimension": "Skills",
-  "description": "EduVBench v1 Skills dimension: 28 S-PF + 34 S-UC + 8 S-VIU = 70 entries",
+  "description": "EduVBench v1 Skills dimension: 35 S-PF + 42 S-UC + 9 S-VIU = 86 entries",
   "total_items": 86,
   "prompts": [
     {

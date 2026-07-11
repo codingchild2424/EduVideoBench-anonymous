@@ -1,7 +1,7 @@
 {
   "version": "v1",
   "dimension": "Attitude",
-  "description": "EduVBench v1 Attitude dimension: 10 A-ES + 6 A-IS + 12 A-NE + 15 A-DD = 43 prompts",
+  "description": "EduVBench v1 Attitude dimension: 13 A-ES + 7 A-IS + 12 A-NE + 15 A-DD = 47 prompts",
   "total_items": 47,
   "prompts": [
     {

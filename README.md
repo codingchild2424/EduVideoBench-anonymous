@@ -54,9 +54,18 @@ EduVideoBench-anonymous/
 └── README.md
 ```
 
-## Dataset version note
+## Dataset
 
-The xlsx human-evaluation templates and the `results/` outputs cover the 215-prompt set reported in the paper. The accompanying JSON dataset under `eduvbench-dataset/` is an earlier 185-prompt release; an updated JSON drop matching the 215-prompt set will accompany the camera-ready version.
+The JSON dataset under `eduvbench-dataset/` contains the **complete 215-prompt set** reported in the paper, split across the three KSA dimensions:
+
+| File | Dimension | Categories | Prompts |
+|---|---|---|---|
+| `knowledge_prompts.json` | Knowledge | 61 K-CK + 21 K-PK | 82 |
+| `skills_prompts.json` | Skills | 35 S-PF + 42 S-UC + 9 S-VIU | 86 |
+| `attitude_prompts.json` | Attitude | 13 A-ES + 7 A-IS + 12 A-NE + 15 A-DD | 47 |
+| **Total** | | | **215** |
+
+Every prompt entry carries an embedded `ground_truth` field (`correct_answer` / `key_visual_elements` / `key_steps` for Knowledge and Skills; `misconception` / `correct_concept` / `boundary_type` for Attitude). A flattened `ground_truth_sheet.csv` consolidating these across all 215 prompts is provided for convenience. The xlsx human-evaluation templates and the `results/` outputs cover the same 215-prompt set.
 
 ## License
 
