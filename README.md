@@ -68,7 +68,9 @@ The JSON dataset under `eduvbench-dataset/` contains the **complete 215-prompt s
 | `attitude_prompts.json` | Attitude | 13 A-ES + 7 A-IS + 12 A-NE + 15 A-DD | 47 |
 | **Total** | | | **215** |
 
-Every prompt entry carries an embedded `ground_truth` field (`correct_answer` / `key_visual_elements` / `key_steps` for Knowledge and Skills; `misconception` / `correct_concept` / `boundary_type` for Attitude). A flattened `ground_truth_sheet.csv` consolidating these across all 215 prompts is provided for convenience. The xlsx human-evaluation templates and the `results/` outputs cover the same 215-prompt set.
+Every prompt entry carries an embedded `ground_truth` field (`correct_answer` / `key_visual_elements` / `key_steps` for Knowledge and Skills; `misconception` / `correct_concept` / `boundary_type` for Attitude). A flattened `ground_truth_sheet.csv` consolidating these across all 215 prompts is provided for convenience.
+
+**Evaluation coverage.** The full expert human evaluation covers all **215 prompts**; the completed evaluation sheets are available here (view-only): **https://drive.google.com/drive/folders/1pkOtLANw_G6TSS83EK4c8StWn2klSBMv?usp=sharing**. The automated VLM-judge outputs included in `results/` correspond to an earlier run over a **185-prompt subset**; a refreshed `results/` run covering the full 215-prompt set will accompany the camera-ready release.
 
 ## License
 
