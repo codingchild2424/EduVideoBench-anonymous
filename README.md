@@ -17,7 +17,7 @@ cd video_gen_eval && pip install -r requirements.txt
 # 2. set API keys
 cp ../.env.example ../.env
 # then edit ../.env and fill:
-#   FAL_AI_API_KEY=<your fal.ai key>           # for Sora 2, Veo 3.1, Kling 3.0
+#   FAL_AI_API_KEY=<your fal.ai key>           # for all five generators
 #   OPENROUTER_API_KEY=<your openrouter key>   # for VLM judges (GPT-4o, Gemini 3 Flash)
 
 # 3a. (optional) regenerate videos from the prompt suite
@@ -70,7 +70,7 @@ The JSON dataset under `eduvbench-dataset/` contains the **complete 215-prompt s
 
 Every prompt entry carries an embedded `ground_truth` field (`correct_answer` / `key_visual_elements` / `key_steps` for Knowledge and Skills; `misconception` / `correct_concept` / `boundary_type` for Attitude). A flattened `ground_truth_sheet.csv` consolidating these across all 215 prompts is provided for convenience.
 
-**Evaluation.** The primary evaluation is the **expert human evaluation over all 215 prompts** (two PhD-level domain experts per subject, 18 experts total; 929 of the 1,070 scored cells carry both ratings). The aggregated KSA leaderboard and the raw per-item human scores are in **`results/human_eval/`** (`leaderboard_ksa.csv`, `human_eval_215_scores.csv`). The auxiliary dual-VLM judging signal behind the paper's VLM-Center leaderboard, including the algorithmic items (K-PK auto-metrics, S-VIU comparison, A-NE block test, A-DD consistency) used by the human leaderboard, is in `results/merged_v4/`. `results/merged/` and the per-model run folders hold an earlier 185-prompt VLM run kept for reference. `python results/human_eval/reproduce_leaderboard.py` recomputes every Human-Center value from the released files.
+**Evaluation.** The primary evaluation is the **expert human evaluation over all 215 prompts** (two doctoral-level domain experts per subject, 18 experts total; 929 of the 1,070 scored cells carry both ratings). The aggregated KSA leaderboard and the raw per-item human scores are in **`results/human_eval/`** (`leaderboard_ksa.csv`, `human_eval_215_scores.csv`). The auxiliary dual-VLM judging signal behind the paper's VLM-Center leaderboard, including the algorithmic items (K-PK auto-metrics, S-VIU comparison, A-NE block test, A-DD consistency) used by the human leaderboard, is in `results/merged_v4/`. `results/merged/` and the per-model run folders hold an earlier 185-prompt VLM run kept for reference. `python results/human_eval/reproduce_leaderboard.py` recomputes every Human-Center value from the released files.
 
 ## License
 

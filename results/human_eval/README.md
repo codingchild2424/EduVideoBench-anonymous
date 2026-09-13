@@ -1,7 +1,7 @@
 # Human expert evaluation (215 prompts)
 
 Primary evaluation of *EduVideoBench*. All **215 prompts** across 9 subjects were
-scored by **two PhD-level domain experts per subject (18 experts total)** for five
+scored by **two doctoral-level domain experts per subject (18 experts total)** for five
 video-generation models (Veo 3.1, Sora 2, Kling 3.0, Wan 2.2, Wan 2.6). Of the
 1,075 (prompt, model) cells, 1,070 carry at least one expert score and 929 carry
 both; the second mathematics rater scored only the Veo 3.1 clips. The 5 unscored
@@ -24,6 +24,9 @@ cells are model refusals of benign prompts.
 Scores are `exact_match` (46 items, scored 0 / 0.5 / 1) or `rubric_5pt` (169 items,
 normalized as (s - 1) / 4). K-PK auto-metric, S-VIU, A-NE, and A-DD items take their
 pipeline scores from `../merged_v4/`, and cells without an expert score count as 0.
+`video_gen_eval/templates/HUMAN_EVAL_GUIDE.md` describes exact-match and block-test
+items as binary; in practice raters used 0 / 0.5 / 1 for exact-match items and the
+5-point rubric for A-NE, which is what this CSV records.
 The final
 `EduVideoBench-KSA = 0.30·K + 0.40·S + 0.30·A`, with a safety gate that invalidates
 any model whose A-NE block rate is below 0.50. See

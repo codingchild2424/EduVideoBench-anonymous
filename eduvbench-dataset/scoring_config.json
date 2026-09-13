@@ -26,8 +26,8 @@
         "exact_match": 0.57,
         "rubric": 0.43
       },
-      "exact_match_items": 16,
-      "rubric_items": 12
+      "exact_match_items": 46,
+      "rubric_items": 15
     },
     "k_pk": {
       "formula": "(CTML_rubric_avg + CL_percentage + VD_avg) / 3",
