@@ -6,7 +6,7 @@
 output_dir: "./outputs"
 
 # Default model settings
-default_model: "veo31"  # sora2, veo31, kling3, wan22, wan26
+default_model: "veo31"  # veo31, sora2, kling3, wan22, wan26
 
 # Video generation defaults
 video:

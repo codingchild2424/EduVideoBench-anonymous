@@ -24,7 +24,7 @@ cp ../.env.example ../.env
 python main.py batch --input ../eduvbench-dataset/knowledge_prompts.json --model sora2
 
 # 3b. run the VLM evaluation pipeline
-python -m video_gen_eval.eval evaluate --models sora2 veo31 kling3 wan22 wan26
+python -m video_gen_eval.eval evaluate --models veo31 sora2 kling3 wan22 wan26
 
 # 3c. generate score report
 python -m video_gen_eval.eval report --results-dir ./results/<run_id>
@@ -46,7 +46,7 @@ Pre-computed evaluation outputs (model score cards, comparative reports) are in 
 EduVideoBench-anonymous/
 ├── eduvbench-dataset/          # benchmark prompts, rubrics, scoring config
 ├── video_gen_eval/
-│   ├── video_generators/       # generation adapters (Sora 2, Veo 3.1, Kling 3.0, Wan 2.2/2.6)
+│   ├── video_generators/       # generation adapters (Veo 3.1, Sora 2, Kling 3.0, Wan 2.2/2.6)
 │   ├── eval/                   # KSA scorers, aggregator, CLI
 │   ├── scripts/                # batch runners, helpers
 │   ├── templates/              # blank English human-eval sheets + guide

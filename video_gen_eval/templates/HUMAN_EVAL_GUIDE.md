@@ -5,7 +5,7 @@ This guide explains how the 215-prompt human-evaluation pass is conducted by dom
 ## Workflow
 
 1. **Open** the sheet for your subject (e.g., `math_eval.xlsx`).
-2. For each row (one prompt), watch the five video clips referenced in the `*_video` columns. Clips will be released on an anonymous hosting endpoint at the camera-ready stage; reviewers can regenerate the clips locally with the scripts in `video_gen_eval/`.
+2. For each row (one prompt), watch the five video clips referenced in the `*_video` columns. The generated clips are linked for view-only access from the repository README, and they can also be regenerated locally with the scripts in `video_gen_eval/`.
 3. **Score** each clip in the corresponding `*_score` column.
 4. **Note** any pedagogical issues in the `*_notes` column (legibility, pacing, factual error, learner-fit, etc.).
 5. **Save** and submit the sheet.
@@ -25,7 +25,7 @@ This guide explains how the 215-prompt human-evaluation pass is conducted by dom
 | `error_examples` | Common failure modes from prior reviews. |
 | `<model>_video` | Filename of the generated clip for that model. |
 | `<model>_score` | Your score for that model on this prompt. |
-| `<model>_notes` | Your free-text notes (English). |
+| `<model>_notes` | Your free-text notes. |
 
 ## Scoring conventions
 
