@@ -123,7 +123,7 @@ music,EVB-Art-ELow-S-PF-M-027,Skills,S-PF,elementary_low,rubric_5pt,2.0,3.0,2.5,
 music,EVB-Art-Mid-S-UC-4-053,Skills,S-UC,middle,rubric_5pt,3.0,2.0,2.5,3.0,3.0,3.0,2.0,3.0,2.5,1.0,1.0,1.0,2.0,2.0,2.0
 music,EVB-Art-None-A-ES-1-004,Attitude,A-ES,none,rubric_5pt,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,4.0,3.0,3.5
 pe,EVB-Art-Col-S-UC-5-096,Skills,S-UC,college,rubric_5pt,1.0,2,1.5,2.0,2,2.0,3.0,2,2.5,1.0,1,1.0,2.0,4,3.0
-pe,EVB-Art-EHigh-S-PF-D-093,Skills,S-PF,elementary_high,rubric_5pt,0.0,1,0.5,3.0,3,3.0,1.0,1,1.0,1.0,1,1.0,1.0,2,1.5
+pe,EVB-Art-EHigh-S-PF-D-093,Skills,S-PF,elementary_high,rubric_5pt,1,,1.0,3.0,3,3.0,1.0,1,1.0,1.0,1,1.0,1.0,2,1.5
 pe,EVB-Art-ELow-S-UC-1-095,Skills,S-UC,elementary_low,rubric_5pt,3.0,2,2.5,4.0,4,4.0,1.0,2,1.5,1.0,1,1.0,3.0,4,3.5
 pe,EVB-Art-High-K-CK-P-094,Knowledge,K-CK,high,exact_match,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0,0.25,0.0,0,0.0,0.5,0,0.25
 pe,EVB-Art-Mid-K-CK-F-093,Knowledge,K-CK,middle,exact_match,0.0,0,0.0,0.0,0,0.0,0.0,0,0.0,0.0,0,0.0,0.0,0,0.0
@@ -139,7 +139,7 @@ science,EVB-Sci-Col-S-UC-3a-029,Skills,S-UC,college,rubric_5pt,1.0,1.0,1.0,2.0,2
 science,EVB-Sci-Col-S-UC-4d-036,Skills,S-UC,college,rubric_5pt,2.0,1.0,1.5,2.0,2.0,2.0,2.0,1.0,1.5,1.0,1.0,1.0,2.0,1.0,1.5
 science,EVB-Sci-EHigh-K-CK-R2-031,Knowledge,K-CK,elementary_high,rubric_5pt,2.0,2.0,2.0,2.0,2.0,2.0,1.0,3.0,2.0,1.0,1.0,1.0,2.0,2.0,2.0
 science,EVB-Sci-EHigh-S-PF-V3-003,Skills,S-PF,elementary_high,rubric_5pt,3.0,4.0,3.5,3.0,4.0,3.5,3.0,2.0,2.5,1.0,2.0,1.5,3.0,2.0,2.5
-science,EVB-Sci-EHigh-S-UC-2a-025,Skills,S-UC,elementary_high,rubric_5pt,2.0,1.0,1.5,1.0,2.0,1.5,3.0,1.0,2.0,1.0,0.0,0.5,3.0,2.0,2.5
+science,EVB-Sci-EHigh-S-UC-2a-025,Skills,S-UC,elementary_high,rubric_5pt,2.0,1.0,1.5,1.0,2.0,1.5,3.0,1.0,2.0,1.0,,1.0,3.0,2.0,2.5
 science,EVB-Sci-EHigh-S-UC-6c-043,Skills,S-UC,elementary_high,rubric_5pt,1.0,1.0,1.0,2.0,2.0,2.0,2.0,2.0,2.0,2.0,1.0,1.5,3.0,3.0,3.0
 science,EVB-Sci-EHigh-S-VIU-R1-045,Skills,S-VIU,elementary_high,rubric_5pt,2.0,2.0,2.0,3.0,3.0,3.0,1.0,1.0,1.0,1.0,1.0,1.0,4.0,2.0,3.0
 science,EVB-Sci-ELow-K-CK-F1-001,Knowledge,K-CK,elementary_low,exact_match,0.5,0.5,0.5,1.0,1.0,1.0,0.5,0.5,0.5,0.0,0.0,0.0,0.0,0.0,0.0
@@ -151,7 +151,7 @@ science,EVB-Sci-ELow-S-UC-4a-033,Skills,S-UC,elementary_low,rubric_5pt,1.0,2.0,1
 science,EVB-Sci-ELow-S-UC-6d-044,Skills,S-UC,elementary_low,rubric_5pt,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,2.0,2.0
 science,EVB-Sci-High-K-CK-C1-015,Knowledge,K-CK,high,exact_match,0.5,0.5,0.5,0.5,0.5,0.5,0.0,0.5,0.25,0.0,0.0,0.0,0.5,0.0,0.25
 science,EVB-Sci-High-K-CK-P5-016,Knowledge,K-CK,high,exact_match,0.0,0.0,0.0,0.5,0.5,0.5,0.5,0.5,0.5,0.0,0.0,0.0,0.0,0.0,0.0
-science,EVB-Sci-High-K-CK-R3-033,Knowledge,K-CK,high,rubric_5pt,1.0,0.0,0.5,3.0,0.5,1.75,1.0,0.0,0.5,1.0,0.0,0.5,3.0,0.5,1.75
+science,EVB-Sci-High-K-CK-R3-033,Knowledge,K-CK,high,rubric_5pt,1.0,,1.0,3.0,,3.0,1.0,,1.0,1.0,,1.0,3.0,,3.0
 science,EVB-Sci-High-K-CK-R5-038,Knowledge,K-CK,high,rubric_5pt,1.0,1.0,1.0,2.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,3.0,3.0,3.0
 science,EVB-Sci-High-S-PF-D1-013,Skills,S-PF,high,rubric_5pt,1.0,1.0,1.0,2.0,2.0,2.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,1.5
 science,EVB-Sci-High-S-PF-V1-001,Skills,S-PF,high,rubric_5pt,2.0,1.0,1.5,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,1.0,2.0,1.0,1.5

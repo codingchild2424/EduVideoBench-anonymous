@@ -4,7 +4,7 @@ Anonymous repository for the EduVideoBench submission. A KSA-grounded benchmark 
 
 ## Generated videos
 
-All 1,070 videos used in the evaluation are available here (view-only): **https://drive.google.com/drive/folders/1caQFcX2bSGN0n4Z_XmSx0gwSJy33voxr?usp=sharing**
+All 1,062 videos generated for the evaluation (215 prompts × 5 models; the providers refused 13 generations) are available here (view-only): **https://drive.google.com/drive/folders/1caQFcX2bSGN0n4Z_XmSx0gwSJy33voxr?usp=sharing**
 
 During review the videos can also be regenerated from the prompts in `eduvbench-dataset/` using the scripts described below.
 
@@ -70,7 +70,7 @@ The JSON dataset under `eduvbench-dataset/` contains the **complete 215-prompt s
 
 Every prompt entry carries an embedded `ground_truth` field (`correct_answer` / `key_visual_elements` / `key_steps` for Knowledge and Skills; `misconception` / `correct_concept` / `boundary_type` for Attitude). A flattened `ground_truth_sheet.csv` consolidating these across all 215 prompts is provided for convenience.
 
-**Evaluation.** The primary evaluation is the **expert human evaluation over all 215 prompts** (two PhD-level domain experts per subject, 18 experts total, double-scoring). The aggregated KSA leaderboard and the raw per-item human scores are in **`results/human_eval/`** (`leaderboard_ksa.csv`, `human_eval_215_scores.csv`). An auxiliary dual-VLM judging signal is provided under `results/` for cross-checking.
+**Evaluation.** The primary evaluation is the **expert human evaluation over all 215 prompts** (two PhD-level domain experts per subject, 18 experts total; 929 of the 1,070 scored cells carry both ratings). The aggregated KSA leaderboard and the raw per-item human scores are in **`results/human_eval/`** (`leaderboard_ksa.csv`, `human_eval_215_scores.csv`). The auxiliary dual-VLM judging signal behind the paper's VLM-Center leaderboard, including the algorithmic items (K-PK auto-metrics, S-VIU comparison, A-NE block test, A-DD consistency) used by the human leaderboard, is in `results/merged_v4/`. `results/merged/` and the per-model run folders hold an earlier 185-prompt VLM run kept for reference. `python results/human_eval/reproduce_leaderboard.py` recomputes every Human-Center value from the released files.
 
 ## License
 
