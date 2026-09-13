@@ -74,4 +74,4 @@ Every prompt entry carries an embedded `ground_truth` field (`correct_answer` / 
 
 ## License
 
-Code and rubrics are released under a permissive license for research use. Generated videos follow the terms of the respective providers.
+The dataset, rubrics, and scores are planned for release under CC-BY-4.0, and the code under a permissive research license. Generated videos follow the terms of the respective providers.

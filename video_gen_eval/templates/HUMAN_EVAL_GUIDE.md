@@ -20,7 +20,8 @@ This guide explains how the 215-prompt human-evaluation pass is conducted by dom
 | `grade_level` | Target grade band (elementary-low, elementary-high, middle, high, college, or none). |
 | `scoring_method` | `exact_match`, `rubric_5pt`, `block_test`, `consistency`, or `vlm_comparison`. |
 | `prompt_text` | The prompt sent to each VGM. |
-| `ground_truth / criteria` | Expected content and rubric criteria. |
+| `ground_truth` | Expected content (answer, key visual elements, key steps). |
+| `criteria` | Per-item rubric criteria, with the 5-point anchors for rubric items. |
 | `error_examples` | Common failure modes from prior reviews. |
 | `<model>_video` | Filename of the generated clip for that model. |
 | `<model>_score` | Your score for that model on this prompt. |
